@@ -1,0 +1,1 @@
+export { HousePageImage } from './HousePageImage'

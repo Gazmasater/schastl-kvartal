@@ -1,0 +1,24 @@
+.center {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  row-gap: 25px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 250px;
+  }
+}
+
+.containerOneFraction {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.title-and-description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+}
