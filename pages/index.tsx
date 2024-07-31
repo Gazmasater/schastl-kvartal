@@ -2,13 +2,14 @@ import React, { FC } from 'react'
 import type { GetServerSideProps } from 'next'
 import { Meta } from '@components'
 import { HomePage } from '@pages'
-import { homePageMock } from '@mocks/homePage'
 import { TMeta } from '@localTypes/meta'
-import { TCards } from '@localTypes/cards'
+import { TNavData } from '@localTypes/navData'
+import { homePageMock } from '@mocks/homePage'
 
 type THomeProps = {
   meta: TMeta
-} & TCards
+  navData: TNavData
+}
 
 export const getServerSideProps: GetServerSideProps<THomeProps> = async () => {
   return { props: { ...homePageMock } }
@@ -17,7 +18,7 @@ export const getServerSideProps: GetServerSideProps<THomeProps> = async () => {
 const Home: FC<THomeProps> = () => (
   <>
     <Meta {...homePageMock.meta} />
-    <HomePage {...homePageMock} />
+    <HomePage navData={homePageMock.navData} />
   </>
 )
 

@@ -1,1 +1,0 @@
-export { HousePageImage } from './HousePageImage'

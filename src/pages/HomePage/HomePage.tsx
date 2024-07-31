@@ -1,14 +1,11 @@
 import React, { FC } from 'react'
 import { HomeTemplate } from '@templates'
-import { TCards } from '@localTypes/cards'
+import { TNavData } from '@localTypes/navData'
 
 type THomePageProps = {
-  houseTitle: string
-} & TCards
+  navData: TNavData
+}
 
-export const HomePage: FC<THomePageProps> = ({ houseTitle, cards }) => {
-  console.log(houseTitle)
-  console.log(cards)
-
-  return <HomeTemplate />
+export const HomePage: FC<THomePageProps> = ({ navData }) => {
+  return <HomeTemplate navData={navData} />
 }

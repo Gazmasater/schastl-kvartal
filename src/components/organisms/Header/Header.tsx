@@ -1,8 +1,13 @@
 import React, { FC, useState } from 'react'
+import { TNavData } from '@localTypes/navData'
 import { BlurContainer } from './molecules'
 import { Styled } from './styled'
 
-export const Header: FC = () => {
+type THeaderProps = {
+  navData: TNavData
+}
+
+export const Header: FC<THeaderProps> = ({ navData }) => {
   const [isNavOpen, setIsNavOpen] = useState(false)
 
   return (
@@ -10,12 +15,12 @@ export const Header: FC = () => {
       <Styled.Header $isNavOpen={isNavOpen} className="header">
         <Styled.Container>
           <Styled.Logo>
-            <Styled.LogoLink title="Главная страница" href="/">
+            <Styled.LogoLink title={navData.title} href={navData.url}>
               <Styled.Image
-                src={isNavOpen ? '/img/logo-white.svg' : '/img/logo-default.svg'}
+                src={isNavOpen ? navData.logoUrlWhite : navData.logoUrl}
                 width="113"
                 height="128"
-                alt="Логотип"
+                alt={navData.altText}
                 draggable="false"
               />
             </Styled.LogoLink>
@@ -35,7 +40,7 @@ export const Header: FC = () => {
                   />
                 </Styled.PhoneSVG>
                 <Styled.PhoneText>
-                  <a href="tel:+7 1112223344">+7 1112223344</a>
+                  <a href={navData.phoneLink}>{navData.phone}</a>
                 </Styled.PhoneText>
                 {/* <Styled.PhonePopupSVG viewBox="0 0 12 13" role="presentation">
                   <rect y="0.5" width="12" height="12" rx="6" fill="currentColor" />
@@ -49,62 +54,16 @@ export const Header: FC = () => {
           </Styled.MiddleContainer>
           <Styled.LinksRight>
             <Styled.LinksRightContainer className="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap">
-              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
-                <Styled.RightLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="#buildings"
-                >
-                  Будинки
-                </Styled.RightLink>
-              </div>
-              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
-                <Styled.RightLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="#3d-tour"
-                >
-                  3D тур
-                </Styled.RightLink>
-              </div>
-              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
-                <Styled.RightLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="#gallery"
-                >
-                  Галерея
-                </Styled.RightLink>
-              </div>
-              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
-                <Styled.RightLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="#infrastructure"
-                >
-                  Інфраструктура
-                </Styled.RightLink>
-              </div>
-              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
-                <Styled.RightLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="/villaggo/hid-budivnytstva"
-                >
-                  Хід будівництва
-                </Styled.RightLink>
-              </div>
-              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
-                <Styled.RightLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="/aktsii"
-                >
-                  Акції
-                </Styled.RightLink>
-              </div>
-              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
-                <Styled.RightLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="/kontakty"
-                >
-                  Контакти
-                </Styled.RightLink>
-              </div>
+              {navData.navLinks.map(({ label, url }) => (
+                <div key={label} className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
+                  <Styled.RightLink
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                    href={url}
+                  >
+                    {label}
+                  </Styled.RightLink>
+                </div>
+              ))}
             </Styled.LinksRightContainer>
           </Styled.LinksRight>
           <Styled.CustomButton type="button" onClick={() => setIsNavOpen(!isNavOpen)}>
@@ -139,7 +98,7 @@ export const Header: FC = () => {
           </Styled.CustomButton>
         </Styled.Container>
       </Styled.Header>
-      <BlurContainer isNavOpen={isNavOpen} />
+      <BlurContainer navLinks={navData.navLinks} socialLinks={navData.socialLinks} isNavOpen={isNavOpen} />
     </>
   )
 }

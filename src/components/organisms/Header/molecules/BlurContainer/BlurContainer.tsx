@@ -1,74 +1,30 @@
-/* eslint-disable max-lines-per-function */
 import React, { FC } from 'react'
+import { TNavLinks, TNavSocialLinks } from '@localTypes/navData'
 import { Styled } from './styled'
 
 type TBlurContainerProps = {
   isNavOpen: boolean
+  navLinks: TNavLinks
+  socialLinks: TNavSocialLinks
 }
 
-export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen }) => {
+export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen, navLinks, socialLinks }) => {
   return (
     <Styled.BlurContainer $isNavOpen={isNavOpen}>
       <Styled.PaddingContainer>
         <Styled.FlexContainer>
           <Styled.MenuContainer>
             <Styled.Menu>
-              <div>
-                <Styled.MenuLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="#buildings"
-                >
-                  Будинки
-                </Styled.MenuLink>
-              </div>
-              <div>
-                <Styled.MenuLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="#3d-tour"
-                >
-                  3D тур
-                </Styled.MenuLink>
-              </div>
-              <div>
-                <Styled.MenuLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="#gallery"
-                >
-                  Галерея
-                </Styled.MenuLink>
-              </div>
-              <div>
-                <Styled.MenuLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="#infrastructure"
-                >
-                  Інфраструктура
-                </Styled.MenuLink>
-              </div>
-              <div>
-                <Styled.MenuLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="/villaggo/hid-budivnytstva"
-                >
-                  Хід будівництва
-                </Styled.MenuLink>
-              </div>
-              <div>
-                <Styled.MenuLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="/aktsii"
-                >
-                  Акції
-                </Styled.MenuLink>
-              </div>
-              <div>
-                <Styled.MenuLink
-                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="/kontakty"
-                >
-                  Контакти
-                </Styled.MenuLink>
-              </div>
+              {navLinks.map(({ url, label }) => (
+                <div key={label}>
+                  <Styled.MenuLink
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                    href={url}
+                  >
+                    {label}
+                  </Styled.MenuLink>
+                </div>
+              ))}
             </Styled.Menu>
           </Styled.MenuContainer>
         </Styled.FlexContainer>
@@ -82,8 +38,8 @@ export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen }) => {
                   <a
                     className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                     aria-disabled="false"
-                    title="Youtube канал"
-                    href="https://www.youtube.com/channel/UCxq0u32tk_mwEFwoS0Toz_w"
+                    title={socialLinks.youtube.title}
+                    href={socialLinks.youtube.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -111,8 +67,8 @@ export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen }) => {
                   <a
                     className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                     aria-disabled="false"
-                    title="Facebook паблік"
-                    href="https://www.facebook.com/beliy.shokolad.company"
+                    title={socialLinks.facebook.title}
+                    href={socialLinks.facebook.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -136,8 +92,8 @@ export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen }) => {
                   <a
                     className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                     aria-disabled="false"
-                    title="Instagram канал"
-                    href="https://www.instagram.com/biliy_shokolad/"
+                    title={socialLinks.insta.title}
+                    href={socialLinks.insta.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
