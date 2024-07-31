@@ -37,7 +37,6 @@ export const Header: FC = () => {
                 <Styled.PhoneText>
                   <a href="tel:+7 1112223344">+7 1112223344</a>
                 </Styled.PhoneText>
-
                 {/* <Styled.PhonePopupSVG viewBox="0 0 12 13" role="presentation">
                   <rect y="0.5" width="12" height="12" rx="6" fill="currentColor" />
                   <path
