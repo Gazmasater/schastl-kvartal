@@ -3,11 +3,11 @@ import { TNavData } from '@localTypes/navData'
 import { BlurContainer } from './molecules'
 import { Styled } from './styled'
 
-type THeaderProps = {
+type TNavProps = {
   navData: TNavData
 }
 
-export const Header: FC<THeaderProps> = ({ navData }) => {
+export const Nav: FC<TNavProps> = ({ navData }) => {
   const [isNavOpen, setIsNavOpen] = useState(false)
 
   return (

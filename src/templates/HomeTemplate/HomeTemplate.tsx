@@ -1,6 +1,7 @@
 import React, { FC, PropsWithChildren } from 'react'
-import { Header } from '@components'
+import { Nav, Footer } from '@components'
 import { TNavData } from '@localTypes/navData'
+import { Styled } from './styled'
 
 type THomeTemplateProps = {
   navData: TNavData
@@ -8,7 +9,8 @@ type THomeTemplateProps = {
 
 export const HomeTemplate: FC<THomeTemplateProps & PropsWithChildren> = ({ children, navData }) => (
   <>
-    <Header navData={navData} />
-    {children}
+    <Nav navData={navData} />
+    <Styled.MainContainer>{children}</Styled.MainContainer>
+    <Footer />
   </>
 )

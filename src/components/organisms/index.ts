@@ -1,4 +1,4 @@
-export { Header } from './Header'
-export { Footer } from './Footer'
-export { Cards } from './Cards'
 export { Meta } from './Meta'
+export { Nav } from './Nav'
+export { Footer } from './Footer'
+export { MainPageHeader } from './MainPageHeader'
