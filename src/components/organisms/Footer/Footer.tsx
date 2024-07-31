@@ -1,25 +1,24 @@
 import React, { FC } from 'react'
+import { TFooterData } from '@localTypes/footerData'
 import { Styled } from './styled'
 
-export const Footer: FC = () => {
+type TFooterProps = {
+  data: TFooterData
+}
+
+export const Footer: FC<TFooterProps> = ({ data }) => {
   return (
     <Styled.Footer>
       <div className="MuiContainer-root MuiContainer-maxWidthXl">
         <Styled.FooterContainer>
           <Styled.ImageContainer>
-            <Styled.ImageLink title="Головна сторінка" href="/">
-              <Styled.ImageCustom
-                src="/img/logo-default.svg"
-                width="113"
-                height="128"
-                alt="Логотип компанії 'Білий шоколад'"
-                draggable="false"
-              />
+            <Styled.ImageLink title={data.imageTitle} href={data.imageLinkUrl}>
+              <Styled.ImageCustom src={data.imageUrl} width="113" height="128" alt={data.imageAlt} draggable="false" />
             </Styled.ImageLink>
           </Styled.ImageContainer>
           <Styled.MainFooterGrid className="MuiGrid-root MuiGrid-container">
             <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-true">
-              <Styled.CopyRightText>© 2024 | ЖК Білий Шоколад - надійний забудовник</Styled.CopyRightText>
+              <Styled.CopyRightText>{data.copyrightText}</Styled.CopyRightText>
             </div>
             <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-auto">
               <Styled.SocialLinksPadding>
@@ -28,8 +27,8 @@ export const Footer: FC = () => {
                     <a
                       className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                       aria-disabled="false"
-                      title="Youtube канал"
-                      href="https://www.youtube.com/channel/UCxq0u32tk_mwEFwoS0Toz_w"
+                      title={data.socialLinks.youtube.title}
+                      href={data.socialLinks.youtube.url}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -51,8 +50,8 @@ export const Footer: FC = () => {
                     <a
                       className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                       aria-disabled="false"
-                      title="Facebook паблік"
-                      href="https://www.facebook.com/beliy.shokolad.company"
+                      title={data.socialLinks.facebook.title}
+                      href={data.socialLinks.facebook.url}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -70,8 +69,8 @@ export const Footer: FC = () => {
                     <a
                       className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                       aria-disabled="false"
-                      title="Instagram канал"
-                      href="https://www.instagram.com/biliy_shokolad/"
+                      title={data.socialLinks.insta.title}
+                      href={data.socialLinks.insta.url}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -94,30 +93,19 @@ export const Footer: FC = () => {
             </div>
             <Styled.FooterMenuContainer className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-auto">
               <Styled.FooterMenuGrid className="MuiGrid-root MuiGrid-container">
-                <Styled.FooterMenuItem className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-auto">
-                  <Styled.FooterMenuItemLink
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                    href="/about"
+                {data.footerLinks.map(({ url, label }) => (
+                  <Styled.FooterMenuItem
+                    key={label}
+                    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-auto"
                   >
-                    Про забудовника
-                  </Styled.FooterMenuItemLink>
-                </Styled.FooterMenuItem>
-                <Styled.FooterMenuItem className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-auto">
-                  <Styled.FooterMenuItemLink
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                    href="/novyny"
-                  >
-                    Новини та Акції
-                  </Styled.FooterMenuItemLink>
-                </Styled.FooterMenuItem>
-                <Styled.FooterMenuItem className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-auto">
-                  <Styled.FooterMenuItemLink
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                    href="/kontakty"
-                  >
-                    Контакти
-                  </Styled.FooterMenuItemLink>
-                </Styled.FooterMenuItem>
+                    <Styled.FooterMenuItemLink
+                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href={url}
+                    >
+                      {label}
+                    </Styled.FooterMenuItemLink>
+                  </Styled.FooterMenuItem>
+                ))}
               </Styled.FooterMenuGrid>
             </Styled.FooterMenuContainer>
           </Styled.MainFooterGrid>

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const Footer = styled.footer`
   position: absolute;
   bottom: 0;
+  width: 100%;
   padding: 3rem 0 2.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 
