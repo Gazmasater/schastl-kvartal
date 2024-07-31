@@ -1,13 +1,9 @@
 import React, { FC, PropsWithChildren } from 'react'
-import { Header, Footer, Spacer, NonFooterWrapper } from '@components'
+import { Header } from '@components'
 
 export const HomeTemplate: FC<PropsWithChildren> = ({ children }) => (
   <>
-    <NonFooterWrapper>
-      <Header />
-      {children}
-      <Spacer />
-    </NonFooterWrapper>
-    <Footer />
+    <Header />
+    {children}
   </>
 )
