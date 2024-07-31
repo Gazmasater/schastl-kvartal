@@ -44,7 +44,7 @@ body {
   margin: 0;
   position: relative;
   min-width: 320px;
-  min-height: 320px;
+  min-height: 100vh;
   font-family: Gilroy, sans-serif;
   line-height: 1.5;
   background-color: #fff;
