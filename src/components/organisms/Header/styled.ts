@@ -34,8 +34,9 @@ const Container = styled.div`
   align-items: flex-end;
   padding-bottom: 0.3125rem;
 
-  @media (max-width: 639.95px) {
+  @media (max-width: 1200px) {
     align-items: center;
+    justify-content: center;
   }
 `
 
@@ -251,6 +252,19 @@ const CustomSVG = styled.svg`
   }
 `
 
+const CustomSVGCross = styled.svg`
+  width: 1.0625rem;
+  height: auto;
+
+  @media (min-width: 360px) {
+    width: 1.3125rem;
+  }
+
+  @media (min-width: 456px) {
+    width: 1.375rem;
+  }
+`
+
 export const Styled = {
   Header,
   Container,
@@ -268,4 +282,5 @@ export const Styled = {
   CustomButton,
   CustomButtonLabel,
   CustomSVG,
+  CustomSVGCross,
 }
