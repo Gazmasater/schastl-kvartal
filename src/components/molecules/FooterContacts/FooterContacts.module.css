@@ -1,0 +1,130 @@
+.container {
+  margin-bottom: 50px;
+}
+
+.padding {
+  width: calc(100% + 1.5rem);
+  margin: calc(1.5rem / -2);
+}
+
+.heading {
+  font-size: 2.5rem;
+  padding-bottom: 0.85714em;
+}
+
+.infoBlock {
+  font-size: 1.5rem;
+}
+
+.infoBlock + .infoBlock {
+  margin-top: 1.25em;
+  margin-bottom: 1.41667em;
+}
+
+.infoHeading {
+  font-size: inherit;
+  font-weight: 500;
+  margin-bottom: 0.41667em;
+}
+
+.infoAddr {
+  font-size: 1.125rem;
+  max-width: 16.38889em;
+  line-height: 1.33333em;
+}
+
+.infoPhoneLink {
+  color: #202020;
+  outline: none;
+  transition: color 0.2s ease-out;
+  margin-right: 1.27778em;
+  text-decoration: none;
+}
+
+.infoPhoneLink:hover {
+  color: #965a46;
+}
+
+.infoPhoneLink:active {
+  color: #693e31;
+}
+
+.mapLink {
+  color: #202020;
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  transition: color 0.25s ease-out;
+  align-items: safe center;
+  --color-arrow: #5c2a26;
+  text-decoration: none;
+}
+
+.mapLink .svg {
+  color: #fccda2;
+  width: 2.9em;
+  height: 2.95em;
+  transition: color 0.25s ease-out;
+}
+
+.mapLink:active {
+  color: #202020;
+}
+
+.mapLink:active .svg {
+  color: #cc9d76;
+}
+
+.mapLink:hover .svg {
+  color: #f8dfca;
+}
+
+.svg {
+  font-size: inherit;
+  margin-right: 1.0625em;
+}
+
+@media (min-width: 640px) {
+  .container {
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    margin-bottom: 6.25rem;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+    padding-bottom: 0.71429em;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .infoBlock + .infoBlock {
+    margin-top: 1.83333em;
+  }
+
+  .infoAddr {
+    max-width: initial;
+  }
+
+  .mapLink {
+    padding: 0 0.3125em;
+    font-size: 1rem;
+  }
+
+  .mapLink .svg {
+    width: 3.625em;
+    height: 3.6875em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    margin-bottom: 10rem;
+  }
+}
