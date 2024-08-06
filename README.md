@@ -13,18 +13,14 @@ docker compose -f .\docker-compose.yml up -d --build
 3. Components
 
 ```
-ChooseHouse
-HouseTypeInfo
 ContactsMainBlock
 BigContactsMap
 ```
 
-4. Modify MainPageHeader
+4. House choosing on map with type providing // Chouse House Component
 
-5. House choosing on map with type providing
+5. Maps in footer contacts in big contacts
 
-6. Maps in footer contacts in big contacts
+6. Form logic for callback row
 
-7. Form for callback
-
-8. Telegram bot integration
+7. Telegram bot integration

@@ -28,14 +28,32 @@ export const MainPageHeader: FC<TMainPageHeader> = ({ data }) => {
                 </li>
               </ol>
             </nav>
-            <Styled.Headings>
+            <Styled.Headings $isBlack={data.blackHeadings}>
               <Styled.HeadingsSpacer />
               <Styled.HeadingFirst className="MuiTypography-root MuiTypography-h1">
                 {data.headingFirst}
               </Styled.HeadingFirst>
-              <Styled.HeadingSecond className="MuiTypography-root MuiTypography-subtitle1">
-                {data.headingSecond}
-              </Styled.HeadingSecond>
+              {data.headingSecond && (
+                <Styled.HeadingSecond className="MuiTypography-root MuiTypography-subtitle1">
+                  {data.headingSecond}
+                </Styled.HeadingSecond>
+              )}
+              {data.features && (
+                <Styled.FeaturesContainer>
+                  <Styled.FeaturesItem>
+                    <div>
+                      <div>{data.features.first.label}</div>
+                      <b>{data.features.first.value}</b>
+                    </div>
+                  </Styled.FeaturesItem>
+                  <Styled.FeaturesItem>
+                    <div>
+                      <div>{data.features.first.label}</div>
+                      <b>{data.features.first.value}</b>
+                    </div>
+                  </Styled.FeaturesItem>
+                </Styled.FeaturesContainer>
+              )}
             </Styled.Headings>
           </Styled.FlexWrapper>
         </Styled.Padding>

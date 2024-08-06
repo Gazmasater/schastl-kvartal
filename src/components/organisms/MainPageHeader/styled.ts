@@ -43,7 +43,11 @@ const CustomNav = styled.nav`
   }
 `
 
-const Headings = styled.div`
+type THeadingsProps = {
+  $isBlack?: boolean
+}
+
+const Headings = styled.div<THeadingsProps>`
   flex: 1;
   width: 100%;
   display: flex;
@@ -53,7 +57,7 @@ const Headings = styled.div`
   justify-content: flex-start;
 
   @media (min-width: 640px) {
-    color: #fff;
+    color: ${({ $isBlack }) => ($isBlack ? '#000' : '#fff')};
   }
 `
 
@@ -102,6 +106,76 @@ const HeadingSecond = styled.div`
   @media (min-width: 992px) {
     font-size: 1.5rem;
     margin-top: 1.625rem;
+  }
+`
+
+const FeaturesContainer = styled.div`
+  width: 100%;
+  display: flex;
+  padding: 3.0625rem 0;
+  justify-content: center;
+
+  @media (min-width: 456px) {
+    width: auto;
+  }
+
+  @media (max-width: 455.95px) {
+    padding: 1.5rem 0 2.1875rem;
+    max-width: 17.5rem;
+  }
+`
+
+const FeaturesItem = styled.div`
+  width: 50%;
+  display: flex;
+  padding: 0;
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5em;
+
+  &:nth-child(odd) {
+    color: #000;
+    padding-right: 2em;
+    justify-content: flex-start;
+  }
+
+  &:nth-child(even) {
+    color: #000;
+    padding-left: 2em;
+    justify-content: flex-end;
+  }
+
+  b {
+    color: #965a46;
+    display: block;
+    font-size: 2.25rem;
+    margin-top: 0.33333em;
+    font-weight: 700;
+    line-height: 1.16em;
+  }
+
+  & + &::after {
+    top: 0.16667em;
+    left: 0;
+    width: 1px;
+    bottom: 0.16667em;
+    content: '';
+    position: absolute;
+    background-color: rgba(32, 32, 32, 0.08);
+  }
+
+  @media (min-width: 900px) {
+    width: initial;
+  }
+
+  @media (max-width: 455.95px) {
+    font-size: 0.75rem;
+    font-weight: 400;
+
+    b {
+      font-size: 1.5rem;
+    }
   }
 `
 
@@ -206,6 +280,8 @@ export const Styled = {
   HeadingsSpacer,
   HeadingFirst,
   HeadingSecond,
+  FeaturesContainer,
+  FeaturesItem,
   ImageWrapper,
   ImageContainer,
 }
