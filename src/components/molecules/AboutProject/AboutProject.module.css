@@ -1,22 +1,25 @@
-.jss35 {
-  width: calc(100% + 1.5rem);
-  margin: calc(1.5rem / -2);
-}
-
-.jss192 {
+.fontAndPadding {
   font-size: 2.5rem;
   padding-top: 4rem;
   padding-bottom: 1em;
 }
-.jss193 {
+
+.positioning {
   z-index: 0;
   position: relative;
 }
-.jss194 {
+
+.positioningInner {
   position: relative;
   align-items: flex-start;
 }
-.jss195 {
+
+.marginingInner {
+  width: calc(100% + 1.5rem);
+  margin: calc(1.5rem / -2);
+}
+
+.mainHeader {
   color: #202020;
   margin: 0;
   font-size: inherit;
@@ -24,7 +27,8 @@
   line-height: 1.21429em;
   margin-bottom: 0.71429em;
 }
-.jss197 {
+
+.smallText {
   color: rgba(32, 32, 32, 0.7);
   font-size: 1rem;
   max-width: 36.25rem;
@@ -32,21 +36,26 @@
   line-height: 1.40625em;
   padding-bottom: 1.25em;
 }
-.jss197 p {
+
+.smallText p {
   margin: 0.625rem 0 0.625rem;
 }
-.jss197 p:first-child {
+
+.smallText p:first-child {
   margin-top: 0;
 }
-.jss197 p:last-child {
+
+.smallText p:last-child {
   margin-bottom: 0;
 }
-.jss198 {
+
+.description {
   display: flex;
   flex-wrap: wrap;
   font-size: 1.25rem;
 }
-.jss199 {
+
+.boldText {
   width: 50%;
   border: 1px solid rgba(32, 32, 32, 0.08);
   padding: 2.4em 2.65em;
@@ -55,7 +64,8 @@
   flex-shrink: 0;
   line-height: 1.2em;
 }
-.jss199 b {
+
+.boldText b {
   color: #965a46;
   display: block;
   font-size: 1.5rem;
@@ -63,25 +73,31 @@
   line-height: 1.2em;
   margin-bottom: 0.45em;
 }
-.jss199 span {
+
+.boldText span {
   display: block;
   max-width: 10em;
 }
-.jss199:nth-child(odd) {
+
+.boldText:nth-child(odd) {
   border-left: none;
 }
-.jss199:nth-child(even) {
+
+.boldText:nth-child(even) {
   border-left: none;
   border-right: none;
 }
-.jss199:nth-child(n + 3) {
+
+.boldText:nth-child(n + 3) {
   border-top: none;
 }
-.jss200 {
+
+.videoContainer {
   position: relative;
   padding-bottom: 117%;
 }
-.jss201 {
+
+.videoPositioning {
   top: 0;
   left: 0;
   right: 0;
@@ -90,13 +106,15 @@
   overflow: hidden;
   position: absolute;
 }
-.jss202 {
+
+.video {
   width: 100%;
   height: calc(100% + 2px);
   max-width: initial;
   object-fit: cover;
 }
-.jss203 {
+
+.link {
   color: #202020;
   right: 0;
   display: flex;
@@ -108,27 +126,33 @@
   justify-content: end;
   text-decoration: none;
 }
-.jss203 .jss204 {
+
+.link .svg {
   color: #fccda2;
   width: 2.9em;
   height: 2.95em;
   transition: color 0.25s ease-out;
 }
-.jss203:active {
+
+.link:active {
   color: #202020;
 }
-.jss203:active .jss204 {
+
+.link:active .svg {
   color: #cc9d76;
 }
-.jss203:hover .jss204 {
+
+.link:hover .svg {
   color: #f8dfca;
 }
-.jss204 {
+
+.svg {
   font-size: inherit;
   margin-right: 1.0625em;
 }
+
 @media (min-width: 456px) {
-  .jss200 {
+  .videoContainer {
     width: 95%;
     margin: 0 0 0 auto;
     padding-bottom: 115%;
@@ -136,53 +160,62 @@
 }
 
 @media (min-width: 640px) {
-  .jss197 {
+  .smallText {
     font-size: 1rem;
     padding-bottom: 2.5em;
   }
 }
 
 @media (min-width: 900px) {
-  .jss198 {
+  .description {
     margin-right: 2em;
     padding-bottom: 2em;
   }
-  .jss199 {
+
+  .boldText {
     padding: 2em 3em;
     font-size: 1rem;
   }
-  .jss199 b {
+
+  .boldText b {
     font-size: 1.875rem;
     margin-bottom: 0.2em;
   }
-  .jss203 {
+
+  .link {
     padding: 0 0;
     position: absolute;
     margin-top: -2.5rem;
   }
-  .jss203 .jss204 {
+
+  .link .svg {
     width: 3.625em;
     height: 3.6875em;
   }
 }
 
 @media (min-width: 1280px) {
-  .jss196 {
+  .smallTextContainer {
     margin-right: 3.125em;
   }
-  .jss198 {
+
+  .description {
     margin-right: 3em;
   }
-  .jss199 {
+
+  .boldText {
     font-size: 1.25rem;
   }
-  .jss199 b {
+
+  .boldText b {
     font-size: 2.25rem;
   }
-  .jss200 {
+
+  .videoContainer {
     margin: -3.875em 0 0 auto;
   }
-  .jss203 {
+
+  .link {
     z-index: 20;
     margin-top: -2.5rem;
     margin-right: 1rem;
@@ -190,11 +223,12 @@
 }
 
 @media (min-width: 1520px) {
-  .jss192 {
+  .fontAndPadding {
     font-size: 3.5rem;
     padding-top: 2.85714em;
   }
-  .jss199 b {
+
+  .boldText b {
     font-size: 2.5rem;
   }
 }
