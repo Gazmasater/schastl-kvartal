@@ -1,9 +1,14 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { FC } from 'react'
 import { clx } from '@utils/clx'
+import { TBookCallback } from '@localTypes/bookCallback'
 import classes from './BookCallback.module.css'
 
-export const BookCallback: FC = () => {
+type TBookCallbackProps = {
+  data: TBookCallback
+}
+
+export const BookCallback: FC<TBookCallbackProps> = ({ data }) => {
   return (
     <div className={classes.container}>
       <div className="MuiContainer-root MuiContainer-maxWidthXl">
@@ -19,7 +24,7 @@ export const BookCallback: FC = () => {
               >
                 <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4">
                   <h2 className={clx(['MuiTypography-root', classes.headingSecond, 'MuiTypography-h2'])}>
-                    Записатися на перегляд
+                    {data.heading}
                   </h2>
                 </div>
                 <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 MuiGrid-grid-lg-3">
@@ -115,7 +120,7 @@ export const BookCallback: FC = () => {
                         <path d="M0 10.4781L46.9544 0L70 21.5205L56.638 47.7158L43.0509 59L0 10.4781Z" fill="#5C2A26" />
                         <path d="M35 27H49M42 34L42 20" stroke="var(--color-arrow)" />
                       </svg>
-                      <span>Записатися на перегляд</span>
+                      <span>{data.buttonText}</span>
                     </span>
                   </button>
                 </div>

@@ -1,8 +1,13 @@
 import React, { FC } from 'react'
 import { clx } from '@utils/clx'
+import { TAboutProject } from '@localTypes/aboutProject'
 import classes from './AboutProject.module.css'
 
-export const AboutProject: FC = () => {
+type TAboutProjectProps = {
+  data: TAboutProject
+}
+
+export const AboutProject: FC<TAboutProjectProps> = ({ data }) => {
   return (
     <div className={clx([classes.fontAndPadding, classes.positioning])}>
       <div className="MuiContainer-root MuiContainer-maxWidthXl">
@@ -15,34 +20,26 @@ export const AboutProject: FC = () => {
           ])}
         >
           <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-7 MuiGrid-grid-lg-6">
-            <h2 className={classes.mainHeader}>Про проєкт</h2>
+            <h2 className={classes.mainHeader}>{data.heading}</h2>
             <div className={classes.smallTextContainer}>
               <div className={classes.smallText}>
-                <p>
-                  У комплексі знаходиться близько 200 котеджів, а ми пропонуємо обрати свій ідеальний варіант із 8 типів
-                  будинків.&nbsp;
-                </p>
-                <p>Ознайомитися з кожним можна в розділі &quot;будинки&quot;.&nbsp;</p>
-                <p>Містечко оточене чистим лісом, а всередині панує приємна атмосфера і затишок.&nbsp;</p>
-                <p>
-                  Ми пропонуємо зануритися в інший світогляд, де не потрібно будувати 5-метрові паркани від
-                  сусідів.&nbsp;
-                </p>
-                <p>Тут ви знайдете тільки зелені огорожі, ландшафтний дизайн буде радувати кожен день!</p>
+                {data.smallText.map(el => (
+                  <p key={el}>{el}</p>
+                ))}
               </div>
             </div>
             <div className={classes.description}>
               <div className={classes.boldText}>
                 <div>
-                  <b>24/7</b>
+                  <b>{data.featureFirst.label}</b>
                 </div>
-                <span>охорона території</span>
+                <span>{data.featureFirst.subtext}</span>
               </div>
               <div className={classes.boldText}>
                 <div>
-                  <b>8</b>
+                  <b>{data.featureSecond.label}</b>
                 </div>
-                <span>проектів сучасних будинків</span>
+                <span>{data.featureSecond.subtext}</span>
               </div>
             </div>
           </div>
@@ -54,12 +51,7 @@ export const AboutProject: FC = () => {
                 </video>
               </div>
             </div>
-            <a
-              href="https://maps.google.com/?saddr=My%20Location&amp;daddr=50.4142289254263,30.278142662692854"
-              rel="noreferrer"
-              target="_blank"
-              className={classes.link}
-            >
+            <a href={data.linkToMapProvider} rel="noreferrer" target="_blank" className={classes.link}>
               <svg className={classes.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 67">
                 <path
                   d="M56.7947 66.7759L8.85997 46.3316L0.0859375 15.8759L27.4725 7.93795L54.8914 1.52588e-05L65.73 37.8105L56.7947 66.7759Z"
@@ -71,7 +63,7 @@ export const AboutProject: FC = () => {
                   strokeWidth="1.13179"
                 />
               </svg>
-              <span>Прокласти маршрут</span>
+              <span>{data.mapText}</span>
             </a>
           </div>
         </div>
