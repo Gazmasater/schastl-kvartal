@@ -3,16 +3,18 @@ import { HomeTemplate } from '@templates'
 import { TNavData } from '@localTypes/navData'
 import { TFooterData } from '@localTypes/footerData'
 import { MainPageHeader } from 'src/components'
+import { TMainPageHeader } from '@localTypes/mainPageHeader'
 
 type THomePageProps = {
   navData: TNavData
   footerData: TFooterData
+  mainPageHeaderData: TMainPageHeader['data']
 }
 
-export const HomePage: FC<THomePageProps> = ({ navData, footerData }) => {
+export const HomePage: FC<THomePageProps> = ({ navData, footerData, mainPageHeaderData }) => {
   return (
     <HomeTemplate navData={navData} footerData={footerData}>
-      <MainPageHeader />
+      <MainPageHeader data={mainPageHeaderData} />
     </HomeTemplate>
   )
 }
