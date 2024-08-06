@@ -2,15 +2,7 @@ import React, { FC } from 'react'
 import { HomeTemplate } from '@templates'
 import { TNavData } from '@localTypes/navData'
 import { TFooterData } from '@localTypes/footerData'
-import {
-  AboutProject,
-  BookCallback,
-  ChooseHouse,
-  FooterContacts,
-  HouseTypeInfo,
-  MainPageHeader,
-  ThreeHousesRow,
-} from 'src/components'
+import { AboutProject, BookCallback, ChooseHouse, FooterContacts, MainPageHeader, ThreeHousesRow } from 'src/components'
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 
 type THomePageProps = {
