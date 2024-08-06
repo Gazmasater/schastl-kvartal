@@ -12,17 +12,10 @@ docker compose -f .\docker-compose.yml up -d --build
 
 2. Provide types to house types page
 
-3. Components
+3. House choosing on map with type providing // Chouse House Component
 
-```
-ContactsMainBlock
-BigContactsMap
-```
+4. Maps in footer contacts & in big contacts // search "map here"
 
-4. House choosing on map with type providing // Chouse House Component
+5. Form logic for callback row
 
-5. Maps in footer contacts & in big contacts // search "map here"
-
-6. Form logic for callback row
-
-7. Telegram bot integration
+6. Telegram bot integration

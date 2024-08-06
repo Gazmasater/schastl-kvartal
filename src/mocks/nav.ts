@@ -15,11 +15,11 @@ export const NavMock: TNavData = {
     },
     {
       label: 'Проекты',
-      url: '/',
+      url: '/#choose-house',
     },
     {
       label: 'Контакты',
-      url: '/',
+      url: '/contacts',
     },
   ],
   socialLinks: {
