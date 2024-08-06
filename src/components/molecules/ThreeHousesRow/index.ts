@@ -1,0 +1,1 @@
+export { ThreeHousesRow } from './ThreeHousesRow'
