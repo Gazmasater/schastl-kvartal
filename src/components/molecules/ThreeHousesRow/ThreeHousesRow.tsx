@@ -9,7 +9,10 @@ export const ThreeHousesRow: FC = () => {
       <div className={classes.padding}>
         <div className={classes.grid}>
           <div>
-            <a href="/" className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary">
+            <a
+              href="/"
+              className={clx(['MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary'])}
+            >
               <div className={clx([classes.imageClipContainer, classes.imageClipFirst])}>
                 <div className={classes.imageClipInner}>
                   <img className={classes.imageInClip} src="/img/slider/pic1.jpg" alt="" />
@@ -35,7 +38,10 @@ export const ThreeHousesRow: FC = () => {
             </a>
           </div>
           <div>
-            <a href="/" className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary">
+            <a
+              href="/"
+              className={clx(['MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary'])}
+            >
               <div className={clx([classes.imageClipContainer, classes.imageClipSecond])}>
                 <div className={classes.imageClipInner}>
                   <img className={classes.imageInClip} src="/img/slider/pic2.jpg" alt="" />
@@ -61,7 +67,10 @@ export const ThreeHousesRow: FC = () => {
             </a>
           </div>
           <div>
-            <a href="/" className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary">
+            <a
+              href="/"
+              className={clx(['MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary'])}
+            >
               <div className={clx([classes.imageClipContainer, classes.imageClipSecond])}>
                 <div className={classes.imageClipInner}>
                   <img className={classes.imageInClip} src="/img/slider/pic3.jpg" alt="" />

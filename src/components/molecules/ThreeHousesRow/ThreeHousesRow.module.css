@@ -1,5 +1,4 @@
 .container {
-  height: 48.75rem;
   margin: 50px auto;
   padding: 5.625rem 0 0;
   position: relative;
@@ -46,6 +45,11 @@
   .grid {
     grid-template-columns: 1fr;
   }
+}
+
+a.noDecoration,
+.noDecoration {
+  text-decoration: none;
 }
 
 .imageClipContainer {
