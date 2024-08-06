@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { HomeTemplate } from '@templates'
 import { TNavData } from '@localTypes/navData'
 import { TFooterData } from '@localTypes/footerData'
-import { MainPageHeader } from 'src/components'
+import { AboutProject, MainPageHeader } from 'src/components'
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 
 type THomePageProps = {
@@ -15,6 +15,7 @@ export const HomePage: FC<THomePageProps> = ({ navData, footerData, mainPageHead
   return (
     <HomeTemplate navData={navData} footerData={footerData}>
       <MainPageHeader data={mainPageHeaderData} />
+      <AboutProject />
     </HomeTemplate>
   )
 }

@@ -1,0 +1,200 @@
+.jss35 {
+  width: calc(100% + 1.5rem);
+  margin: calc(1.5rem / -2);
+}
+
+.jss192 {
+  font-size: 2.5rem;
+  padding-top: 4rem;
+  padding-bottom: 1em;
+}
+.jss193 {
+  z-index: 0;
+  position: relative;
+}
+.jss194 {
+  position: relative;
+  align-items: flex-start;
+}
+.jss195 {
+  color: #202020;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.21429em;
+  margin-bottom: 0.71429em;
+}
+.jss197 {
+  color: rgba(32, 32, 32, 0.7);
+  font-size: 1rem;
+  max-width: 36.25rem;
+  font-weight: 300;
+  line-height: 1.40625em;
+  padding-bottom: 1.25em;
+}
+.jss197 p {
+  margin: 0.625rem 0 0.625rem;
+}
+.jss197 p:first-child {
+  margin-top: 0;
+}
+.jss197 p:last-child {
+  margin-bottom: 0;
+}
+.jss198 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+}
+.jss199 {
+  width: 50%;
+  border: 1px solid rgba(32, 32, 32, 0.08);
+  padding: 2.4em 2.65em;
+  font-size: 0.75rem;
+  flex-basis: 50%;
+  flex-shrink: 0;
+  line-height: 1.2em;
+}
+.jss199 b {
+  color: #965a46;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 0.45em;
+}
+.jss199 span {
+  display: block;
+  max-width: 10em;
+}
+.jss199:nth-child(odd) {
+  border-left: none;
+}
+.jss199:nth-child(even) {
+  border-left: none;
+  border-right: none;
+}
+.jss199:nth-child(n + 3) {
+  border-top: none;
+}
+.jss200 {
+  position: relative;
+  padding-bottom: 117%;
+}
+.jss201 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+}
+.jss202 {
+  width: 100%;
+  height: calc(100% + 2px);
+  max-width: initial;
+  object-fit: cover;
+}
+.jss203 {
+  color: #202020;
+  right: 0;
+  display: flex;
+  position: relative;
+  font-size: 1rem;
+  transition: color 0.25s ease-out;
+  align-items: safe center;
+  --color-arrow: #5c2a26;
+  justify-content: end;
+  text-decoration: none;
+}
+.jss203 .jss204 {
+  color: #fccda2;
+  width: 2.9em;
+  height: 2.95em;
+  transition: color 0.25s ease-out;
+}
+.jss203:active {
+  color: #202020;
+}
+.jss203:active .jss204 {
+  color: #cc9d76;
+}
+.jss203:hover .jss204 {
+  color: #f8dfca;
+}
+.jss204 {
+  font-size: inherit;
+  margin-right: 1.0625em;
+}
+@media (min-width: 456px) {
+  .jss200 {
+    width: 95%;
+    margin: 0 0 0 auto;
+    padding-bottom: 115%;
+  }
+}
+
+@media (min-width: 640px) {
+  .jss197 {
+    font-size: 1rem;
+    padding-bottom: 2.5em;
+  }
+}
+
+@media (min-width: 900px) {
+  .jss198 {
+    margin-right: 2em;
+    padding-bottom: 2em;
+  }
+  .jss199 {
+    padding: 2em 3em;
+    font-size: 1rem;
+  }
+  .jss199 b {
+    font-size: 1.875rem;
+    margin-bottom: 0.2em;
+  }
+  .jss203 {
+    padding: 0 0;
+    position: absolute;
+    margin-top: -2.5rem;
+  }
+  .jss203 .jss204 {
+    width: 3.625em;
+    height: 3.6875em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .jss196 {
+    margin-right: 3.125em;
+  }
+  .jss198 {
+    margin-right: 3em;
+  }
+  .jss199 {
+    font-size: 1.25rem;
+  }
+  .jss199 b {
+    font-size: 2.25rem;
+  }
+  .jss200 {
+    margin: -3.875em 0 0 auto;
+  }
+  .jss203 {
+    z-index: 20;
+    margin-top: -2.5rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 1520px) {
+  .jss192 {
+    font-size: 3.5rem;
+    padding-top: 2.85714em;
+  }
+  .jss199 b {
+    font-size: 2.5rem;
+  }
+}
