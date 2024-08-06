@@ -1,0 +1,385 @@
+.container {
+  position: relative;
+  margin-bottom: 3.875rem;
+  background-color: #eeeeee;
+  background-image: url('/img/callback/feedback-form-background-mobile.png');
+  background-position: center 100%;
+}
+
+.containerInner {
+  width: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.form {
+  padding: 2.79167em 0;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.formInnerContainer {
+  width: calc(100% + 2rem);
+  margin: calc(2rem / -2);
+}
+
+.headingSecond {
+  font-size: 2.5rem;
+  padding-right: 0.71429em;
+  padding-bottom: 0.26786em;
+}
+
+.submitButton {
+  color: #202020;
+  display: flex;
+  padding: 0;
+  font-size: 1.25rem;
+  text-align: left;
+  transition: color 0.25s ease-out;
+  align-items: safe center;
+  font-weight: 500;
+  line-height: 1.1875em;
+  --color-arrow: #fff;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+.submitButton span {
+  max-width: 13.5rem;
+}
+
+.submitButton .svg {
+  color: #5c2a26;
+  width: 4.375rem;
+  height: 3.6875rem;
+  transition: color 0.25s ease-out;
+  flex-shrink: 0;
+}
+
+.submitButton:hover {
+  color: rgba(32, 32, 32, 0.7);
+}
+
+.submitButton:active {
+  color: #202020;
+}
+
+.submitButton:active .svg {
+  color: #965a46;
+}
+
+.submitButton:hover .svg {
+  color: #ab7b6b;
+}
+
+.svg {
+  font-size: inherit;
+  margin-right: 0.75em;
+}
+
+@media (min-width: 900px) {
+  .container {
+    margin-bottom: 10rem;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .form {
+    padding: 2.5em 2.08333em;
+    font-size: 1.125rem;
+    background-color: #eeeeee;
+    background-image: url('/img/callback/feedback-form-background.png');
+    background-position: center 100%;
+  }
+
+  .headingSecond {
+    font-size: 3.5rem;
+    margin-bottom: 0.42857em;
+    padding-right: 0.71429em;
+    padding-bottom: 0;
+  }
+
+  .submitButton {
+    padding: 0 0.625em;
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 400;
+  }
+
+  .submitButton span {
+    max-width: initial;
+  }
+
+  .svg {
+    font-weight: 400;
+    margin-right: 0.9375em;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form {
+    padding: 2.375em 2.91667em 2.91667em 2.08333em;
+    font-size: 1.375rem;
+  }
+
+  .form .MuiTextField-root {
+    margin-bottom: 0;
+  }
+
+  .headingSecond {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1520px) {
+  .form {
+    font-size: 1.5rem;
+  }
+}
+
+/* form */
+
+.positionRelative {
+  position: relative;
+}
+
+.itemContainer {
+  margin-bottom: 1.5rem;
+}
+
+.itemContainer .MuiFormHelperText-root {
+  line-height: 1.2;
+}
+
+.itemContainer .MuiOutlinedInput-notchedOutline {
+  border-color: #d8d8d8;
+  border-radius: 0;
+}
+
+.itemContainer :-webkit-autofill,
+.itemContainer :-webkit-autofill:active,
+.itemContainer :-webkit-autofill:hover,
+.itemContainer :-webkit-autofill:focus {
+  color: #202020;
+  box-shadow: inset 0 0 0 100px #eeeeee;
+  -webkit-text-fill-color: #202020;
+}
+
+.itemContainer .MuiFormHelperText-root.MuiFormHelperText-contained {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.label {
+  color: #202020;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 456px) {
+  .itemContainer {
+    margin-bottom: 1.625rem;
+  }
+}
+
+.fieldSet {
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.legend {
+  width: auto;
+  height: 11px;
+  display: block;
+  padding: 0;
+  font-size: 0.75em;
+  max-width: 1000px;
+  text-align: left;
+  transition: max-width 100ms cubic-bezier(0, 0, 0.2, 1) 50ms;
+  visibility: hidden;
+}
+.legend > span {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.jss256 {
+  position: relative;
+  margin-bottom: 3.875rem;
+  background-color: #eeeeee;
+  background-image: url('/images/feedback-form-background-mobile.png');
+  background-position: center 100%;
+}
+.jss257 {
+  top: -8.75rem;
+  right: 0;
+  z-index: -5;
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+.jss258 {
+  background: none;
+}
+.jss259 {
+  padding: 2.79167em 0;
+  position: relative;
+  font-size: 1.25rem;
+}
+.jss260 {
+  color: #fff !important;
+  padding: 2.79167em 1.25em;
+  background:
+    url('/pic/callback/dark-bg.svg') no-repeat center top,
+    #5c2a26 !important;
+}
+.jss261 {
+  font-size: 2.5rem;
+  padding-right: 0.71429em;
+  padding-bottom: 0.26786em;
+}
+.jss263 {
+  color: #202020;
+  display: flex;
+  padding: 0;
+  font-size: 1.25rem;
+  text-align: left;
+  transition: color 0.25s ease-out;
+  align-items: safe center;
+  font-weight: 500;
+  line-height: 1.1875em;
+  --color-arrow: #fff;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+.jss263 span {
+  max-width: 13.5rem;
+}
+.jss263 .jss264 {
+  color: #5c2a26;
+  width: 4.375rem;
+  height: 3.6875rem;
+  transition: color 0.25s ease-out;
+  flex-shrink: 0;
+}
+.jss263:hover {
+  color: rgba(32, 32, 32, 0.7);
+}
+.jss263:active {
+  color: #202020;
+}
+.jss260 .jss263 {
+  color: #fff;
+  --color-arrow: #202020;
+}
+.jss260 .jss263 .jss264 {
+  color: #5c2a26;
+}
+.jss260 .jss263:hover,
+.jss260 .jss263:active {
+  color: inherit;
+}
+.jss260 .jss263:hover .jss264,
+.jss260 .jss263:active .jss264 {
+  color: #f8dfca;
+}
+.jss263:active .jss264 {
+  color: #965a46;
+}
+.jss263:hover .jss264 {
+  color: #ab7b6b;
+}
+.jss264 {
+  font-size: inherit;
+  margin-right: 0.75em;
+}
+@media (min-width: 456px) {
+  .jss257 {
+    top: -12.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .jss256 {
+    margin-bottom: 10rem;
+    background-color: transparent;
+    background-image: none;
+  }
+  .jss259 {
+    padding: 2.5em 2.08333em;
+    font-size: 1.125rem;
+    background-color: #eeeeee;
+    background-image: url('/images/feedback-form-background.png');
+    background-position: center 100%;
+  }
+  .jss260 {
+    padding: 2.5em 2.08333em;
+  }
+  .jss261 {
+    font-size: 3.5rem;
+    margin-bottom: 0.42857em;
+    padding-right: 0.71429em;
+    padding-bottom: 0;
+  }
+  .jss263 {
+    padding: 0 0.625em;
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 400;
+  }
+  .jss263 span {
+    max-width: initial;
+  }
+  .jss264 {
+    font-weight: 400;
+    margin-right: 0.9375em;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .jss259 {
+    padding: 2.375em 2.91667em 2.91667em 2.08333em;
+    font-size: 1.375rem;
+  }
+  .jss259 .MuiTextField-root {
+    margin-bottom: 0;
+  }
+  .jss260 {
+    padding: 2.875em 2.91667em 3.25em 2.08333em;
+  }
+  .jss261 {
+    margin-bottom: 0;
+  }
+  .jss260 .jss262 {
+    top: 0.3125rem;
+    position: relative;
+  }
+  .jss260 .jss263 {
+    top: 0.3125rem;
+    position: relative;
+  }
+}
+
+@media (min-width: 1520px) {
+  .jss259 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 899.95px) {
+  .jss258 .MuiContainer-root {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
