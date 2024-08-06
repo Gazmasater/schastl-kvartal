@@ -1,0 +1,1 @@
+export { HouseTypeInfo } from './HouseTypeInfo'

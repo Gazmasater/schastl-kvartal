@@ -2,20 +2,27 @@ import React, { FC } from 'react'
 import { HomeTemplate } from '@templates'
 import { TNavData } from '@localTypes/navData'
 import { TFooterData } from '@localTypes/footerData'
-import { AboutProject, BookCallback, ChooseHouse, FooterContacts, MainPageHeader, ThreeHousesRow } from 'src/components'
+import {
+  BookCallback,
+  ChooseHouse,
+  FooterContacts,
+  HouseTypeInfo,
+  MainPageHeader,
+  ThreeHousesRow,
+} from 'src/components'
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 
-type THomePageProps = {
+type THouseTypeProps = {
   navData: TNavData
   footerData: TFooterData
   mainPageHeaderData: TMainPageHeader['data']
 }
 
-export const HomePage: FC<THomePageProps> = ({ navData, footerData, mainPageHeaderData }) => {
+export const HouseTypePage: FC<THouseTypeProps> = ({ navData, footerData, mainPageHeaderData }) => {
   return (
     <HomeTemplate navData={navData} footerData={footerData}>
       <MainPageHeader data={mainPageHeaderData} />
-      <AboutProject />
+      <HouseTypeInfo />
       <ThreeHousesRow />
       <ChooseHouse />
       <BookCallback />

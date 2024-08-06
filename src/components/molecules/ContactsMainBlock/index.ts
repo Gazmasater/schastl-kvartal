@@ -1,0 +1,1 @@
+export { ContactsMainBlock } from './ContactsMainBlock'
