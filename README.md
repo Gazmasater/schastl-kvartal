@@ -6,6 +6,8 @@ docker compose -f .\docker-compose.yml up -d --build
 
 # Todo:
 
+0. Tab Switching
+
 1. Provide mocks
 
 2. Provide types to house types page

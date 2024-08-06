@@ -1,3 +1,188 @@
-.container {
-  display: none;
+.headingContainer {
+  margin: 1.625rem auto;
+  padding-left: 2rem;
+}
+
+.headingText {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .headingContainer {
+    margin: 0.875rem auto 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .headingContainer {
+    margin: 1rem auto 3.125rem;
+  }
+}
+
+@media (max-width: 1279.95px) {
+  .headingText {
+    font-size: 3.5rem;
+    margin-top: 1.625rem;
+  }
+}
+
+.contactsContainer {
+  height: 50rem;
+  display: flex;
+  padding: 0 2rem 7.8125rem;
+}
+
+.imageContainer {
+  display: flex;
+}
+
+.contactsInner {
+  color: #ffffff;
+  height: auto;
+  padding: 6.375rem 8.25rem;
+  min-width: 38.875rem;
+  background: url('/img/bigContacts/bg.svg');
+  background-color: #5c2a26;
+}
+
+.addrFirstRow {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.addrSecondRow {
+  font-size: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.phonesText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.phonesItem {
+  display: flex;
+  align-items: center;
+}
+
+.phonesItem a {
+  display: flex;
+  margin-right: 0.625rem;
+}
+
+.phonesItemLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.phonesItemLink:hover {
+  color: #f8dfca;
+}
+
+.phonesItemSvg {
+  fill: #fff;
+}
+
+.phonesItemSvg:hover {
+  fill: #f8dfca;
+}
+
+.email {
+  color: #fff;
+  text-decoration: none;
+}
+
+.email:hover {
+  color: #f8dfca;
+}
+
+.phonesContainer {
+  font-size: 1rem;
+  padding-bottom: 1.875rem;
+}
+
+.workHours {
+  padding-bottom: 1.5rem;
+}
+
+.mapLink {
+  width: 12.5rem;
+  display: flex;
+  align-items: center;
+  padding-top: 1.875rem;
+  --color-arrow: #693e31;
+  padding-bottom: 0.3125rem;
+  text-decoration: none;
+}
+
+.mapLink span {
+  color: #fff;
+  line-height: 1.25rem;
+}
+
+.mapLink:hover {
+  --color-arrow: #000;
+}
+
+.mapLink:hover span {
+  color: #f8dfca;
+}
+
+.mapLink:hover path {
+  fill: #f8dfca;
+}
+
+.buttonSvg {
+  width: 4.6875rem;
+  margin-right: 0.9375rem;
+}
+
+@media (max-width: 1279.95px) {
+  .contactsInner {
+    padding: 6.375rem 5rem;
+    min-width: 31.25rem;
+  }
+}
+
+@media (max-width: 899.95px) {
+  .contactsContainer {
+    height: auto;
+    padding: 0 0 4rem;
+    flex-direction: column;
+  }
+
+  .contactsInner {
+    padding: 3.75rem 2.5rem;
+  }
+
+  .addrFirstRow {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .addrSecondRow {
+    font-size: 1rem;
+  }
+
+  .phonesText {
+    font-size: 1.5rem;
+  }
+
+  .mapLink {
+    width: 13.75rem;
+  }
+
+  .mapLink span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 455.95px) {
+  .contactsInner {
+    padding: 3.75rem 2rem;
+    min-width: 7.625rem;
+  }
 }
