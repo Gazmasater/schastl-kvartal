@@ -19,7 +19,7 @@ BigContactsMap
 
 4. House choosing on map with type providing // Chouse House Component
 
-5. Maps in footer contacts in big contacts
+5. Maps in footer contacts & in big contacts // search "map here"
 
 6. Form logic for callback row
 

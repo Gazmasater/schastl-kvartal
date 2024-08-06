@@ -2,8 +2,6 @@ import React, { FC } from 'react'
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 import { Styled } from './styled'
 
-// TBD | TO BE DONE | TO-BE-DONE
-
 export const MainPageHeader: FC<TMainPageHeader> = ({ data }) => {
   return (
     <Styled.Wrapper>

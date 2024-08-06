@@ -1,3 +1,22 @@
-.container {
-  display: none;
+.heading {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 99rem;
+}
+
+@media (max-width: 899.95px) {
+  .heading {
+    padding: 0 2rem;
+  }
+}
+
+.mapContainer {
+  padding-top: 3.4375rem;
+}
+
+@media (max-width: 899.95px) {
+  .mapContainer {
+    padding-top: 2.8125rem;
+  }
 }
