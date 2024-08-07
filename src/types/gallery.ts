@@ -1,10 +1,13 @@
+export type TGalleryImgUrls = {
+  full: string
+  thumb: string
+}[]
+
 export type TGallery = {
   title: string
   gallery: {
     date: string
-    imgUrls: {
-      full: string
-      thumb: string
-    }[]
+    text?: string[]
+    imgUrls: TGalleryImgUrls
   }[]
 }

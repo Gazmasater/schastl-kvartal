@@ -1,0 +1,92 @@
+:root {
+  --ui-css-baseline-scrollbar-width: 0.125rem;
+  --ui-css-baseline-scrollbar-height: 1.25rem !important;
+  --ui-css-baseline-scrollbar-thumb-color: #5c2a26;
+  --ui-css-baseline-scrollbar-border-radius: 0;
+}
+
+.container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 163px 1fr;
+    grid-gap: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.leftSideContainer {
+  max-height: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+
+.leftSide {
+  color: #202020;
+  width: var(--nav-width);
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+  overflow: auto;
+  position: relative;
+}
+
+.cursorPointerLeftside {
+  cursor: pointer;
+}
+
+.imageLeftSide {
+  display: block;
+}
+
+.bigImageContainer {
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+}
+
+.currentOverlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  background: rgba(78, 52, 46, 0.6);
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayContainer sup {
+  font-size: 0.58333em;
+  margin-left: 0.28571em;
+}
+
+@media (max-width: 455.95px) {
+  .overlayContainer {
+    font-size: 1.125rem;
+  }
+}
+
+.previewHeightFull {
+  height: 100%;
+  position: relative;
+}
+
+.previewContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.marginZero {
+  margin: 0;
+}
+
+.previewImage {
+  display: block;
+  object-fit: cover;
+}

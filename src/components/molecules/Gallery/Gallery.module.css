@@ -15,27 +15,17 @@
   padding-bottom: 1.0625rem;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
-  margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.galleryItem {
+.galleryItemDescriptionFlex {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.date {
+  max-width: 300px;
+}
+
+.textContainer p {
+  margin-top: 0;
+  margin-left: 50px;
 }
