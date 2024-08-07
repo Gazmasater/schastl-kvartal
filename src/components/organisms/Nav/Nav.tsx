@@ -98,7 +98,9 @@ export const Nav: FC<TNavProps> = ({ navData }) => {
           </Styled.CustomButton>
         </Styled.Container>
       </Styled.Header>
-      <BlurContainer navLinks={navData.navLinks} socialLinks={navData.socialLinks} isNavOpen={isNavOpen} />
+      {isNavOpen && (
+        <BlurContainer navLinks={navData.navLinks} socialLinks={navData.socialLinks} isNavOpen={isNavOpen} />
+      )}
     </>
   )
 }
