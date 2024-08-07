@@ -13,6 +13,10 @@ export const Metas: TMetas = {
     title: 'Foo',
     description: 'Foo',
   },
+  gallery: {
+    title: 'Foo',
+    description: 'Foo',
+  },
   house1: {
     title: 'Foo',
     description: 'Foo',

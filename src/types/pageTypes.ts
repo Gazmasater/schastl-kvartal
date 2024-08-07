@@ -10,6 +10,7 @@ import { TBookCallback } from '@localTypes/bookCallback'
 import { TFooterContacts } from '@localTypes/footerContacts'
 import { TContactsMainBlock } from '@localTypes/contactsMainBlock'
 import { TBigContactsMap } from '@localTypes/bigContactsMap'
+import { TGallery } from '@localTypes/gallery'
 
 export type THomePage = {
   meta: TMeta
@@ -42,4 +43,11 @@ export type THousePage = {
   chooseHouseData: TChooseHouse
   bookCallBackData: TBookCallback
   footerContactsData: TFooterContacts
+}
+
+export type TGalleryPage = {
+  meta: TMeta
+  navData: TNav
+  footerData: TFooter
+  galleryData: TGallery
 }
