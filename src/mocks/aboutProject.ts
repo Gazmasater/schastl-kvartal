@@ -9,14 +9,29 @@ export const AboutProjectMock: TAboutProject = {
     'Мы предлагаем погрузиться в другое мировоззрение, где не нужно строить 5-метровые заборы от соседей.&nbsp;',
     'Здесь вы найдете только зеленые изгороди, ландшафтный дизайн будет радовать каждый день!',
   ],
-  featureFirst: {
-    label: '24/7',
-    subtext: 'охрана территории',
-  },
-  featureSecond: {
-    label: '8',
-    subtext: 'непереводимые слова',
-  },
+  features: [
+    {
+      first: {
+        label: '24/7',
+        subtext: 'охрана территории',
+      },
+      second: {
+        label: '8',
+        subtext: 'непереводимые слова',
+      },
+    },
+    {
+      first: {
+        label: '24/7',
+        subtext: 'охрана территории',
+      },
+      second: {
+        label: '8',
+        subtext: 'непереводимые слова',
+      },
+    },
+  ],
   linkToMapProvider: 'https://maps.google.com/?saddr=My%20Location&amp;daddr=50.4142289254263,30.278142662692854',
   mapText: 'Проложить маршрут',
+  videoUrl: '/video/map.mp4',
 }

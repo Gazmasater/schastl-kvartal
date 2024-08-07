@@ -167,11 +167,6 @@
 }
 
 @media (min-width: 900px) {
-  .description {
-    margin-right: 2em;
-    padding-bottom: 2em;
-  }
-
   .boldText {
     padding: 2em 3em;
     font-size: 1rem;

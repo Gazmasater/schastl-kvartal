@@ -28,26 +28,28 @@ export const AboutProject: FC<TAboutProjectProps> = ({ data }) => {
                 ))}
               </div>
             </div>
-            <div className={classes.description}>
-              <div className={classes.boldText}>
-                <div>
-                  <b>{data.featureFirst.label}</b>
+            {data.features.map(({ first, second }) => (
+              <div className={classes.description} key={first.label}>
+                <div className={classes.boldText}>
+                  <div>
+                    <b>{first.label}</b>
+                  </div>
+                  <span>{first.subtext}</span>
                 </div>
-                <span>{data.featureFirst.subtext}</span>
-              </div>
-              <div className={classes.boldText}>
-                <div>
-                  <b>{data.featureSecond.label}</b>
+                <div className={classes.boldText}>
+                  <div>
+                    <b>{second.label}</b>
+                  </div>
+                  <span>{second.subtext}</span>
                 </div>
-                <span>{data.featureSecond.subtext}</span>
               </div>
-            </div>
+            ))}
           </div>
           <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 MuiGrid-grid-lg-6">
             <div className={classes.videoContainer}>
               <div className={classes.videoPositioning}>
                 <video playsInline className={classes.video} autoPlay loop muted>
-                  <source src="/video/map.mp4" type="video/mp4" />
+                  <source src={data.videoUrl} type="video/mp4" />
                 </video>
               </div>
             </div>

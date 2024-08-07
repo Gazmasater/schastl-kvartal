@@ -1,14 +1,17 @@
 export type TAboutProject = {
   heading: string
   smallText: string[]
-  featureFirst: {
-    label: string
-    subtext: string
-  }
-  featureSecond: {
-    label: string
-    subtext: string
-  }
+  features: {
+    first: {
+      label: string
+      subtext: string
+    }
+    second: {
+      label: string
+      subtext: string
+    }
+  }[]
   linkToMapProvider: string
   mapText: string
+  videoUrl: string
 }
