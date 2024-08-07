@@ -15,7 +15,7 @@ export const BigContactsMap: FC<TBigContactsMapProps> = ({ data }) => {
       <div className={classes.mapContainer}>
         <YMaps>
           <Map defaultState={data.config} width="100%" height="400px">
-            <Placemark geometry={[55.684758, 37.738521]} />
+            <Placemark geometry={data.config.center} />
           </Map>
         </YMaps>
       </div>
