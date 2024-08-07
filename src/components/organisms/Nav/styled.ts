@@ -93,6 +93,7 @@ const MiddleContainer = styled.div`
 `
 
 const MobPhone = styled.div`
+  display: none;
   display: flex;
   padding: 0.4375rem 0 0 1rem;
   align-items: center;

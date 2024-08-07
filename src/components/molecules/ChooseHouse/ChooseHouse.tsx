@@ -2,7 +2,7 @@
 import React, { FC, useState } from 'react'
 import ImageMapper, { CustomArea } from 'react-img-mapper'
 import { TChooseHouse, THouseMetadata } from '@localTypes/chooseHouse'
-import classes from './MappedImage.module.css'
+import classes from './ChooseHouse.module.css'
 import { Popover } from './atoms'
 
 type TChooseHouseProps = {
@@ -18,6 +18,13 @@ export const ChooseHouse: FC<TChooseHouseProps> = ({ data }) => {
     }
   }
 
+  const onAreaClick = (area: CustomArea) => {
+    if (area.id) {
+      // eslint-disable-next-line no-restricted-globals
+      location.href = data.housesMetadata[area.id].linkUrl
+    }
+  }
+
   return (
     <div className={classes.container}>
       {currentHouse && <Popover currentHouse={currentHouse} />}
@@ -29,6 +36,7 @@ export const ChooseHouse: FC<TChooseHouseProps> = ({ data }) => {
           height={922}
           onMouseEnter={area => onAreaHover(area)}
           onMouseLeave={() => setCurrentHouse(null)}
+          onClick={area => onAreaClick(area)}
         />
       </div>
     </div>

@@ -34,11 +34,13 @@ export const ChooseHouseMock: TChooseHouse = {
   housesMetadata: {
     'house-1': {
       type: 'sold',
+      linkUrl: '/houses/house1',
       statusText: 'Продано',
       text: 'УПС, этот коттедж уже продан! Наведи курсор на зеленый коттедж и выбери свободный',
     },
     'house-2': {
       type: 'available',
+      linkUrl: '/houses/house2',
       statusText: 'Доступно',
       houseId: 'Коттедж №96',
       imgUrl: '/img/mappedImage/house1thumb.jpg',
@@ -57,6 +59,7 @@ export const ChooseHouseMock: TChooseHouse = {
     },
     'house-3': {
       type: 'available',
+      linkUrl: '/houses/house3',
       statusText: 'Доступно',
       houseId: 'Коттедж №96',
       imgUrl: '/img/mappedImage/house1thumb.jpg',

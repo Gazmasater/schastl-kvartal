@@ -3,11 +3,13 @@ import { Map } from 'react-img-mapper'
 export type THouseMetadata =
   | {
       type: 'sold'
+      linkUrl: string
       statusText: string
       text: string
     }
   | {
       type: 'available'
+      linkUrl: string
       statusText: string
       houseId: string
       imgUrl: string
