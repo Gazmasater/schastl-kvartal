@@ -4,6 +4,7 @@ import { NavMock } from '@mocks/nav'
 import { FooterMock } from '@mocks/footer'
 import { houseTypeInfoExampleMock } from '@mocks/houseTypeInfos'
 import { ThreeHousesRowMock } from '@mocks/threeHousesRow'
+import { ChooseHouseMock } from '@mocks/chooseHouse'
 import { BookCallbackMock } from '@mocks/bookCallback'
 import { FooterContactsMock } from '@mocks/footerContacts'
 
@@ -34,6 +35,7 @@ export const house1PageMock: THousePage = {
   },
   houseTypeInfoData: houseTypeInfoExampleMock,
   threeHousesRowData: ThreeHousesRowMock,
+  chooseHouseData: ChooseHouseMock,
   bookCallBackData: BookCallbackMock,
   footerContactsData: FooterContactsMock,
 }

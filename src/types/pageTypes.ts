@@ -5,6 +5,7 @@ import { TMainPageHeader } from '@localTypes/mainPageHeader'
 import { TAboutProject } from '@localTypes/aboutProject'
 import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
 import { TThreeHousesRow } from '@localTypes/threeHousesRow'
+import { TChooseHouse } from '@localTypes/chooseHouse'
 import { TBookCallback } from '@localTypes/bookCallback'
 import { TFooterContacts } from '@localTypes/footerContacts'
 import { TContactsMainBlock } from '@localTypes/contactsMainBlock'
@@ -17,6 +18,7 @@ export type THomePage = {
   mainPageHeaderData: TMainPageHeader
   aboutProjectData: TAboutProject
   threeHousesRowData: TThreeHousesRow
+  chooseHouseData: TChooseHouse
   bookCallBackData: TBookCallback
   footerContactsData: TFooterContacts
 }
@@ -37,6 +39,7 @@ export type THousePage = {
   mainPageHeaderData: TMainPageHeader
   houseTypeInfoData: THouseTypeInfo
   threeHousesRowData: TThreeHousesRow
+  chooseHouseData: TChooseHouse
   bookCallBackData: TBookCallback
   footerContactsData: TFooterContacts
 }

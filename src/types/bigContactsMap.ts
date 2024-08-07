@@ -11,4 +11,5 @@ export type TBigContactsMap = {
     type?: 'yandex#map' | 'yandex#satellite' | 'yandex#hybrid' | undefined
     zoom?: number | undefined
   }
+  mapPlaceMarkCoords: number[]
 }

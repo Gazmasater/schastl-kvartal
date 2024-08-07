@@ -1,3 +1,16 @@
 .container {
-  display: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 922px;
+}
+
+.imageWrapper {
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: auto;
+  right: auto;
 }

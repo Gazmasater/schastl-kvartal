@@ -5,6 +5,7 @@ import { FooterMock } from '@mocks/footer'
 import { MainPageHeaderMock } from '@mocks/mainPageHeader'
 import { AboutProjectMock } from '@mocks/aboutProject'
 import { ThreeHousesRowMock } from '@mocks/threeHousesRow'
+import { ChooseHouseMock } from '@mocks/chooseHouse'
 import { BookCallbackMock } from '@mocks/bookCallback'
 import { FooterContactsMock } from '@mocks/footerContacts'
 
@@ -15,6 +16,7 @@ export const homePageMock: THomePage = {
   mainPageHeaderData: MainPageHeaderMock,
   aboutProjectData: AboutProjectMock,
   threeHousesRowData: ThreeHousesRowMock,
+  chooseHouseData: ChooseHouseMock,
   bookCallBackData: BookCallbackMock,
   footerContactsData: FooterContactsMock,
 }

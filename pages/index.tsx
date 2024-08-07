@@ -16,6 +16,7 @@ const Home: FC<THomePage> = ({
   mainPageHeaderData,
   aboutProjectData,
   threeHousesRowData,
+  chooseHouseData,
   bookCallBackData,
   footerContactsData,
 }) => (
@@ -27,6 +28,7 @@ const Home: FC<THomePage> = ({
       mainPageHeaderData={mainPageHeaderData}
       aboutProjectData={aboutProjectData}
       threeHousesRowData={threeHousesRowData}
+      chooseHouseData={chooseHouseData}
       bookCallBackData={bookCallBackData}
       footerContactsData={footerContactsData}
     />

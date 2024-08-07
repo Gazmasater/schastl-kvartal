@@ -22,6 +22,7 @@ const House: FC<THousePage> = ({
   mainPageHeaderData,
   houseTypeInfoData,
   threeHousesRowData,
+  chooseHouseData,
   bookCallBackData,
   footerContactsData,
 }) => (
@@ -33,6 +34,7 @@ const House: FC<THousePage> = ({
       mainPageHeaderData={mainPageHeaderData}
       houseTypeInfoData={houseTypeInfoData}
       threeHousesRowData={threeHousesRowData}
+      chooseHouseData={chooseHouseData}
       bookCallBackData={bookCallBackData}
       footerContactsData={footerContactsData}
     />

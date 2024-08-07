@@ -1,12 +1,6 @@
 import React, { FC } from 'react'
 import { HomeTemplate } from '@templates'
-import { TNav } from '@localTypes/nav'
-import { TFooter } from '@localTypes/footer'
-import { TMainPageHeader } from '@localTypes/mainPageHeader'
-import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
-import { TThreeHousesRow } from '@localTypes/threeHousesRow'
-import { TBookCallback } from '@localTypes/bookCallback'
-import { TFooterContacts } from '@localTypes/footerContacts'
+import { THousePage } from '@localTypes/pageTypes'
 import {
   BookCallback,
   ChooseHouse,
@@ -16,22 +10,13 @@ import {
   ThreeHousesRow,
 } from 'src/components'
 
-type THousePageProps = {
-  navData: TNav
-  footerData: TFooter
-  mainPageHeaderData: TMainPageHeader
-  houseTypeInfoData: THouseTypeInfo
-  threeHousesRowData: TThreeHousesRow
-  bookCallBackData: TBookCallback
-  footerContactsData: TFooterContacts
-}
-
-export const HousePage: FC<THousePageProps> = ({
+export const HousePage: FC<Omit<THousePage, 'meta'>> = ({
   navData,
   footerData,
   mainPageHeaderData,
   houseTypeInfoData,
   threeHousesRowData,
+  chooseHouseData,
   bookCallBackData,
   footerContactsData,
 }) => {
@@ -40,7 +25,7 @@ export const HousePage: FC<THousePageProps> = ({
       <MainPageHeader data={mainPageHeaderData} />
       <HouseTypeInfo data={houseTypeInfoData} />
       <ThreeHousesRow data={threeHousesRowData} />
-      <ChooseHouse />
+      <ChooseHouse data={chooseHouseData} />
       <BookCallback data={bookCallBackData} />
       <FooterContacts data={footerContactsData} />
     </HomeTemplate>

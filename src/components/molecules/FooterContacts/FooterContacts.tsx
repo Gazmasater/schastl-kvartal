@@ -50,7 +50,7 @@ export const FooterContacts: FC<TFooterContactsProps> = ({ data }) => {
           <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-7">
             <YMaps>
               <Map defaultState={data.mapConfig} width="100%" height="400px">
-                <Placemark geometry={data.mapConfig.center} />
+                <Placemark geometry={data.mapPlaceMarkCoords} />
               </Map>
             </YMaps>
           </div>
