@@ -1,10 +1,10 @@
 import React, { FC, useState } from 'react'
-import { TNavData } from '@localTypes/navData'
+import { TNav } from '@localTypes/nav'
 import { BlurContainer } from './molecules'
 import { Styled } from './styled'
 
 type TNavProps = {
-  navData: TNavData
+  navData: TNav
 }
 
 export const Nav: FC<TNavProps> = ({ navData }) => {

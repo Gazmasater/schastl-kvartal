@@ -2,28 +2,14 @@ import React, { FC } from 'react'
 import type { GetServerSideProps } from 'next'
 import { Meta } from '@components'
 import { ContactsPage } from '@pages'
-import { TMeta } from '@localTypes/meta'
-import { TNavData } from '@localTypes/navData'
-import { TFooterData } from '@localTypes/footerData'
-import { TContactsMainBlock } from '@localTypes/contactsMainBlock'
-import { TBigContactsMap } from '@localTypes/bigContactsMap'
-import { TBookCallback } from '@localTypes/bookCallback'
+import { TContactsPage } from '@localTypes/pageTypes'
 import { contactsPageMock } from '@mocks/pages/contactsPage'
 
-type THomeProps = {
-  meta: TMeta
-  navData: TNavData
-  footerData: TFooterData
-  contactsMainBlockData: TContactsMainBlock
-  bigContactsMapData: TBigContactsMap
-  bookCallBackData: TBookCallback
-}
-
-export const getServerSideProps: GetServerSideProps<THomeProps> = async () => {
+export const getServerSideProps: GetServerSideProps<TContactsPage> = async () => {
   return { props: { ...contactsPageMock } }
 }
 
-const Contacts: FC<THomeProps> = ({
+const Contacts: FC<TContactsPage> = ({
   meta,
   navData,
   footerData,

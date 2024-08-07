@@ -1,6 +1,6 @@
-import { TFooterData } from '@localTypes/footerData'
+import { TFooter } from '@localTypes/footer'
 
-export const FooterMock: TFooterData = {
+export const FooterMock: TFooter = {
   imageUrl: '/img/logo-default.svg',
   imageAlt: 'Логотип',
   imageTitle: 'Название',

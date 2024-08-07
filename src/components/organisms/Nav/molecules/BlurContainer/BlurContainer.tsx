@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { TNavLinks, TNavSocialLinks } from '@localTypes/navData'
+import { TNavLinks, TNavSocialLinks } from '@localTypes/nav'
 import { Styled } from './styled'
 
 type TBlurContainerProps = {

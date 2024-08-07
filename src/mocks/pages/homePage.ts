@@ -1,32 +1,14 @@
-import { TMeta } from '@localTypes/meta'
-import { TNavData } from '@localTypes/navData'
-import { TFooterData } from '@localTypes/footerData'
-import { TMainPageHeader } from '@localTypes/mainPageHeader'
-import { TAboutProject } from '@localTypes/aboutProject'
-import { TThreeHousesRow } from '@localTypes/threeHousesRow'
-import { TBookCallback } from '@localTypes/bookCallback'
-import { TFooterContacts } from '@localTypes/footerContacts'
-import { Metas } from '../meta'
-import { NavMock } from '../nav'
-import { FooterMock } from '../footer'
-import { MainPageHeaderMock } from '../mainPageHeader'
-import { AboutProjectMock } from '../aboutProject'
-import { ThreeHousesRowMock } from '../threeHousesRow'
-import { BookCallbackMock } from '../bookCallback'
-import { FooterContactsMock } from '../footerContacts'
+import { THomePage } from '@localTypes/pageTypes'
+import { Metas } from '@mocks/meta'
+import { NavMock } from '@mocks/nav'
+import { FooterMock } from '@mocks/footer'
+import { MainPageHeaderMock } from '@mocks/mainPageHeader'
+import { AboutProjectMock } from '@mocks/aboutProject'
+import { ThreeHousesRowMock } from '@mocks/threeHousesRow'
+import { BookCallbackMock } from '@mocks/bookCallback'
+import { FooterContactsMock } from '@mocks/footerContacts'
 
-type THomePageMock = {
-  meta: TMeta
-  navData: TNavData
-  footerData: TFooterData
-  mainPageHeaderData: TMainPageHeader['data']
-  aboutProjectData: TAboutProject
-  threeHousesRowData: TThreeHousesRow
-  bookCallBackData: TBookCallback
-  footerContactsData: TFooterContacts
-}
-
-export const homePageMock: THomePageMock = {
+export const homePageMock: THomePage = {
   meta: Metas.homepage,
   navData: NavMock,
   footerData: FooterMock,

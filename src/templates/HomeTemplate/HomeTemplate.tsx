@@ -1,12 +1,12 @@
 import React, { FC, PropsWithChildren } from 'react'
 import { Nav, Footer } from '@components'
-import { TNavData } from '@localTypes/navData'
-import { TFooterData } from '@localTypes/footerData'
+import { TNav } from '@localTypes/nav'
+import { TFooter } from '@localTypes/footer'
 import { Styled } from './styled'
 
 type THomeTemplateProps = {
-  navData: TNavData
-  footerData: TFooterData
+  navData: TNav
+  footerData: TFooter
 }
 
 export const HomeTemplate: FC<THomeTemplateProps & PropsWithChildren> = ({ children, navData, footerData }) => (

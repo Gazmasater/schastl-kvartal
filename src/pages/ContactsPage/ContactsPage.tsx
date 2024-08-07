@@ -1,15 +1,15 @@
 import React, { FC } from 'react'
 import { HomeTemplate } from '@templates'
-import { TNavData } from '@localTypes/navData'
-import { TFooterData } from '@localTypes/footerData'
+import { TNav } from '@localTypes/nav'
+import { TFooter } from '@localTypes/footer'
 import { TContactsMainBlock } from '@localTypes/contactsMainBlock'
 import { TBigContactsMap } from '@localTypes/bigContactsMap'
 import { TBookCallback } from '@localTypes/bookCallback'
 import { BigContactsMap, BookCallback, ContactsMainBlock } from 'src/components'
 
 type TContactsPageProps = {
-  navData: TNavData
-  footerData: TFooterData
+  navData: TNav
+  footerData: TFooter
   contactsMainBlockData: TContactsMainBlock
   bigContactsMapData: TBigContactsMap
   bookCallBackData: TBookCallback

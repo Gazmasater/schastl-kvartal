@@ -2,7 +2,11 @@ import React, { FC } from 'react'
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 import { Styled } from './styled'
 
-export const MainPageHeader: FC<TMainPageHeader> = ({ data }) => {
+type TMainPageHeaderProps = {
+  data: TMainPageHeader
+}
+
+export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
   return (
     <Styled.Wrapper>
       <Styled.Container>

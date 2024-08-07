@@ -1,6 +1,6 @@
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 
-export const MainPageHeaderMock: TMainPageHeader['data'] = {
+export const MainPageHeaderMock: TMainPageHeader = {
   mainPageLink: '/',
   mainPageLabel: 'Главная страница',
   separator: '/',

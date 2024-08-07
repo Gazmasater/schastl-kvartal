@@ -10,7 +10,7 @@
   height: 375px;
   z-index: -1;
   position: absolute;
-  background: url('/img/slider/bg.svg') center #eeeeee;
+  background: url('/img/threeHousesRow/bg.svg') center #eeeeee;
 }
 
 @media (max-width: 1024px) {

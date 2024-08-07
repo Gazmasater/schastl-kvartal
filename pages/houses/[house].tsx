@@ -2,28 +2,10 @@ import React, { FC } from 'react'
 import type { GetServerSideProps } from 'next'
 import { Meta } from '@components'
 import { HousePage } from '@pages'
-import { TMeta } from '@localTypes/meta'
-import { TNavData } from '@localTypes/navData'
-import { TFooterData } from '@localTypes/footerData'
-import { TMainPageHeader } from '@localTypes/mainPageHeader'
-import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
-import { TThreeHousesRow } from '@localTypes/threeHousesRow'
-import { TBookCallback } from '@localTypes/bookCallback'
-import { TFooterContacts } from '@localTypes/footerContacts'
+import { THousePage } from '@localTypes/pageTypes'
 import { housesAvailableUrls, housesContent } from '@mocks/pages/housesList'
 
-type THouseProps = {
-  meta: TMeta
-  navData: TNavData
-  footerData: TFooterData
-  mainPageHeaderData: TMainPageHeader['data']
-  houseTypeInfoData: THouseTypeInfo
-  threeHousesRowData: TThreeHousesRow
-  bookCallBackData: TBookCallback
-  footerContactsData: TFooterContacts
-}
-
-export const getServerSideProps: GetServerSideProps<THouseProps> = async ({ params }) => {
+export const getServerSideProps: GetServerSideProps<THousePage> = async ({ params }) => {
   const pageId = params.house
   if (!pageId || Array.isArray(pageId) || housesAvailableUrls.indexOf(pageId) === -1) {
     return { notFound: true }
@@ -33,7 +15,7 @@ export const getServerSideProps: GetServerSideProps<THouseProps> = async ({ para
   return { props: { ...content } }
 }
 
-const House: FC<THouseProps> = ({
+const House: FC<THousePage> = ({
   meta,
   navData,
   footerData,

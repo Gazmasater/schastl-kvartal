@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
-import { TFooterData } from '@localTypes/footerData'
+import { TFooter } from '@localTypes/footer'
 import { Styled } from './styled'
 
 type TFooterProps = {
-  data: TFooterData
+  data: TFooter
 }
 
 export const Footer: FC<TFooterProps> = ({ data }) => {

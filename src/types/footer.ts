@@ -1,6 +1,6 @@
-import { TNavSocialLinks } from '@localTypes/navData'
+import { TNavSocialLinks } from '@localTypes/nav'
 
-export type TFooterData = {
+export type TFooter = {
   imageUrl: string
   imageAlt: string
   imageTitle: string

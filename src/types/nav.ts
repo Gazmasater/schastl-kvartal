@@ -18,7 +18,7 @@ export type TNavSocialLinks = {
   }
 }
 
-export type TNavData = {
+export type TNav = {
   title: string
   url: string
   logoUrl: string

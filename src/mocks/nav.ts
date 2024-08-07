@@ -1,6 +1,6 @@
-import { TNavData } from '@localTypes/navData'
+import { TNav } from '@localTypes/nav'
 
-export const NavMock: TNavData = {
+export const NavMock: TNav = {
   title: 'Главная страница',
   url: '/',
   logoUrl: '/img/logo-default.svg',

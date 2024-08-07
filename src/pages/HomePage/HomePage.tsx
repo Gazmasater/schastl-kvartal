@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { HomeTemplate } from '@templates'
-import { TNavData } from '@localTypes/navData'
-import { TFooterData } from '@localTypes/footerData'
+import { TNav } from '@localTypes/nav'
+import { TFooter } from '@localTypes/footer'
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 import { TAboutProject } from '@localTypes/aboutProject'
 import { TThreeHousesRow } from '@localTypes/threeHousesRow'
@@ -10,9 +10,9 @@ import { TFooterContacts } from '@localTypes/footerContacts'
 import { AboutProject, BookCallback, ChooseHouse, FooterContacts, MainPageHeader, ThreeHousesRow } from 'src/components'
 
 type THomePageProps = {
-  navData: TNavData
-  footerData: TFooterData
-  mainPageHeaderData: TMainPageHeader['data']
+  navData: TNav
+  footerData: TFooter
+  mainPageHeaderData: TMainPageHeader
   aboutProjectData: TAboutProject
   threeHousesRowData: TThreeHousesRow
   bookCallBackData: TBookCallback
