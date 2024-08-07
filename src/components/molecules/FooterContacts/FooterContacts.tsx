@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { FC } from 'react'
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps'
 import { clx } from '@utils/clx'
 import { TFooterContacts } from '@localTypes/footerContacts'
 import classes from './FooterContacts.module.css'
@@ -44,7 +45,13 @@ export const FooterContacts: FC<TFooterContactsProps> = ({ data }) => {
               <span>{data.mapProviderLinkText}</span>
             </a>
           </div>
-          <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-7">Map here</div>
+          <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-7">
+            <YMaps>
+              <Map defaultState={data.mapConfig} width="100%" height="400px">
+                <Placemark geometry={[55.684758, 37.738521]} />
+              </Map>
+            </YMaps>
+          </div>
         </div>
       </div>
     </div>

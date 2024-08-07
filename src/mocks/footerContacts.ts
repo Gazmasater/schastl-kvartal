@@ -21,4 +21,8 @@ export const FooterContactsMock: TFooterContacts = {
   ],
   mapProviderLink: '/',
   mapProviderLinkText: 'Проложить маршрут',
+  mapConfig: {
+    center: [55.751574, 37.573856],
+    zoom: 5,
+  },
 }
