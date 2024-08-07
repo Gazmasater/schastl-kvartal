@@ -1,9 +1,11 @@
-import { ReactElement } from 'react'
-
 export type THouseTypeInfoTab = {
   imageUrl: string
   subtitle: string
-  features: ReactElement[]
+  features: {
+    textInSpan: string
+    middleText: string
+    supText?: string
+  }[]
   firstLinkText: string
   firstLinkUrl: string
   secondLinkText: string

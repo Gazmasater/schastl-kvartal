@@ -22,7 +22,7 @@ export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
                 className={clx([
                   'MuiButtonBase-root MuiTab-root MuiTab-textColorInherit',
                   classes.tabButton,
-                  classes.tabButtonSelected,
+                  currentTab === 'firstTab' && classes.tabButtonSelected,
                 ])}
                 type="button"
                 role="tab"
@@ -33,7 +33,11 @@ export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
                 {currentTab === 'firstTab' && <span className={classes.tabButtonUnderline} />}
               </button>
               <button
-                className={clx(['MuiButtonBase-root MuiTab-root MuiTab-textColorInherit', classes.tabButton])}
+                className={clx([
+                  'MuiButtonBase-root MuiTab-root MuiTab-textColorInherit',
+                  classes.tabButton,
+                  currentTab === 'secondTab' && classes.tabButtonSelected,
+                ])}
                 type="button"
                 role="tab"
                 aria-selected="false"
@@ -70,9 +74,10 @@ export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
               <div className={classes.featuresInner}>
                 <div className={classes.featuresSubtitle}>{data[currentTab].subtitle}</div>
                 <div className={classes.featuresItems}>
-                  {data[currentTab].features.map((el, index) => (
-                    <div className={classes.featuresSingleItem} key={index}>
-                      {el}
+                  {data[currentTab].features.map(({ textInSpan, middleText, supText }) => (
+                    <div className={classes.featuresSingleItem} key={textInSpan}>
+                      <span>{textInSpan}</span> {middleText}
+                      {supText && <sup>{supText}</sup>}
                     </div>
                   ))}
                 </div>

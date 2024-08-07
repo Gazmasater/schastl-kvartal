@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
 
 export const houseTypeInfoExampleMock: THouseTypeInfo = {
@@ -9,18 +8,26 @@ export const houseTypeInfoExampleMock: THouseTypeInfo = {
     imageUrl: '/img/houseTypeInfo/houseTypeInfoExample1.jpg',
     subtitle: 'Первый этаж',
     features: [
-      <Fragment key="1">
-        <span>101. Тамбур</span> 2.03 m<sup>2</sup>
-      </Fragment>,
-      <Fragment key="2">
-        <span>102. Коридор</span> 2.21 m<sup>2</sup>
-      </Fragment>,
-      <Fragment key="3">
-        <span>104. Кухня-вітальна</span> 30.78 m<sup>2</sup>
-      </Fragment>,
-      <Fragment key="4">
-        <span>105. Комора</span> 1.86 m<sup>2</sup>
-      </Fragment>,
+      {
+        textInSpan: '101. Тамбур',
+        middleText: '2.03 m',
+        supText: '2',
+      },
+      {
+        textInSpan: '102. Коридор',
+        middleText: '2.21 m',
+        supText: '2',
+      },
+      {
+        textInSpan: '104. Кухня',
+        middleText: '30.78 m',
+        supText: '2',
+      },
+      {
+        textInSpan: '105. Чулан',
+        middleText: '1.86 m',
+        supText: '2',
+      },
     ],
     firstLinkText: 'Первая ссылка',
     firstLinkUrl: '/contacts',
@@ -31,24 +38,36 @@ export const houseTypeInfoExampleMock: THouseTypeInfo = {
     imageUrl: '/img/houseTypeInfo/houseTypeInfoExample2.jpg',
     subtitle: 'Второй этаж',
     features: [
-      <Fragment key="1">
-        <span>201. Коридор</span> 4.18 m<sup>2</sup>
-      </Fragment>,
-      <Fragment key="2">
-        <span>202. Ванна кімната</span> 6.96 m<sup>2</sup>
-      </Fragment>,
-      <Fragment key="3">
-        <span>203. Спальня</span> 14.18 m<sup>2</sup>
-      </Fragment>,
-      <Fragment key="4">
-        <span>204. Спальня</span> 9.55 m<sup>2</sup>
-      </Fragment>,
-      <Fragment key="4">
-        <span>205. Гардеробна</span> 3.72 m<sup>2</sup>
-      </Fragment>,
-      <Fragment key="4">
-        <span>206. Сходи</span> 4.92 m<sup>2</sup>
-      </Fragment>,
+      {
+        textInSpan: '201. Коридор',
+        middleText: '4.18 m',
+        supText: '2',
+      },
+      {
+        textInSpan: '202. Ванная комната',
+        middleText: '6.96 m',
+        supText: '2',
+      },
+      {
+        textInSpan: '203. Спальня',
+        middleText: '14.18 m',
+        supText: '2',
+      },
+      {
+        textInSpan: '204. Спальня',
+        middleText: '9.55 m',
+        supText: '2',
+      },
+      {
+        textInSpan: '205. Гардеробна',
+        middleText: '4.92 m',
+        supText: '2',
+      },
+      {
+        textInSpan: '206. Что-то',
+        middleText: '4.92 m',
+        supText: '2',
+      },
     ],
     firstLinkText: 'Первая ссылка',
     firstLinkUrl: '/contacts',

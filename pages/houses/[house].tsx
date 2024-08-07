@@ -29,7 +29,8 @@ export const getServerSideProps: GetServerSideProps<THouseProps> = async ({ para
     return { notFound: true }
   }
 
-  return { props: { ...housesContent[pageId] } }
+  const content = housesContent[pageId]
+  return { props: { ...content } }
 }
 
 const House: FC<THouseProps> = ({

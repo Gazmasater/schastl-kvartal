@@ -9,7 +9,6 @@ import { TFooterContacts } from '@localTypes/footerContacts'
 import { Metas } from '../../meta'
 import { NavMock } from '../../nav'
 import { FooterMock } from '../../footer'
-import { MainPageHeaderMock } from '../../mainPageHeader'
 import { houseTypeInfoExampleMock } from '../../houseTypeInfos'
 import { ThreeHousesRowMock } from '../../threeHousesRow'
 import { BookCallbackMock } from '../../bookCallback'
@@ -30,7 +29,28 @@ export const house2PageMock: THousePageMock = {
   meta: Metas.house2,
   navData: NavMock,
   footerData: FooterMock,
-  mainPageHeaderData: MainPageHeaderMock,
+  mainPageHeaderData: {
+    mainPageLink: '/',
+    mainPageLabel: 'Главная страница',
+    separator: '/',
+    subitemText: 'Название',
+    headingFirst: 'Дом 2',
+    headingSecond: 'Заголовок 2',
+    features: {
+      first: {
+        label: 'Общая площадь',
+        value: '83.84 m2',
+      },
+      second: {
+        label: 'Размер чего-то',
+        value: 'вид 5.3 а',
+      },
+    },
+    mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg',
+    mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg',
+    mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg',
+    blackHeadings: true,
+  },
   houseTypeInfoData: houseTypeInfoExampleMock,
   threeHousesRowData: ThreeHousesRowMock,
   bookCallBackData: BookCallbackMock,

@@ -2,7 +2,7 @@ import { TThreeHousesRow } from '@localTypes/threeHousesRow'
 
 export const ThreeHousesRowMock: TThreeHousesRow = {
   first: {
-    linkUrl: '/',
+    linkUrl: '/houses/house1',
     imgUrl: '/img/slider/pic1.jpg',
     imgAlt: '',
     title: 'CASA BIANCA',
@@ -12,7 +12,7 @@ export const ThreeHousesRowMock: TThreeHousesRow = {
     featureSecondValue: 'вид 5.17 a',
   },
   second: {
-    linkUrl: '/',
+    linkUrl: '/houses/house2',
     imgUrl: '/img/slider/pic2.jpg',
     imgAlt: '',
     title: 'BRILLIANTE',
@@ -22,7 +22,7 @@ export const ThreeHousesRowMock: TThreeHousesRow = {
     featureSecondValue: 'вид 6.15 ',
   },
   third: {
-    linkUrl: '/',
+    linkUrl: '/houses/house3',
     imgUrl: '/img/slider/pic3.jpg',
     imgAlt: '',
     title: 'PALAZZO',
