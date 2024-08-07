@@ -9,4 +9,20 @@ export const Metas: TMetas = {
     title: 'Foo',
     description: 'Foo',
   },
+  contacts: {
+    title: 'Foo',
+    description: 'Foo',
+  },
+  house1: {
+    title: 'Foo',
+    description: 'Foo',
+  },
+  house2: {
+    title: 'Foo',
+    description: 'Foo',
+  },
+  house3: {
+    title: 'Foo',
+    description: 'Foo',
+  },
 }

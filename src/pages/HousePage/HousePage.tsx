@@ -3,27 +3,34 @@ import { HomeTemplate } from '@templates'
 import { TNavData } from '@localTypes/navData'
 import { TFooterData } from '@localTypes/footerData'
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
-import { TAboutProject } from '@localTypes/aboutProject'
+import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
 import { TThreeHousesRow } from '@localTypes/threeHousesRow'
 import { TBookCallback } from '@localTypes/bookCallback'
 import { TFooterContacts } from '@localTypes/footerContacts'
-import { AboutProject, BookCallback, ChooseHouse, FooterContacts, MainPageHeader, ThreeHousesRow } from 'src/components'
+import {
+  BookCallback,
+  ChooseHouse,
+  FooterContacts,
+  HouseTypeInfo,
+  MainPageHeader,
+  ThreeHousesRow,
+} from 'src/components'
 
-type THomePageProps = {
+type THousePageProps = {
   navData: TNavData
   footerData: TFooterData
   mainPageHeaderData: TMainPageHeader['data']
-  aboutProjectData: TAboutProject
+  houseTypeInfoData: THouseTypeInfo
   threeHousesRowData: TThreeHousesRow
   bookCallBackData: TBookCallback
   footerContactsData: TFooterContacts
 }
 
-export const HomePage: FC<THomePageProps> = ({
+export const HousePage: FC<THousePageProps> = ({
   navData,
   footerData,
   mainPageHeaderData,
-  aboutProjectData,
+  houseTypeInfoData,
   threeHousesRowData,
   bookCallBackData,
   footerContactsData,
@@ -31,7 +38,7 @@ export const HomePage: FC<THomePageProps> = ({
   return (
     <HomeTemplate navData={navData} footerData={footerData}>
       <MainPageHeader data={mainPageHeaderData} />
-      <AboutProject data={aboutProjectData} />
+      <HouseTypeInfo data={houseTypeInfoData} />
       <ThreeHousesRow data={threeHousesRowData} />
       <ChooseHouse />
       <BookCallback data={bookCallBackData} />

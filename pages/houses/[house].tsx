@@ -1,29 +1,58 @@
 import React, { FC } from 'react'
 import type { GetServerSideProps } from 'next'
 import { Meta } from '@components'
-import { HOUSES_PAGE } from '@constants'
-// import { housesContent } from '@mocks/housesContent'
+import { HousePage } from '@pages'
 import { TMeta } from '@localTypes/meta'
+import { TNavData } from '@localTypes/navData'
+import { TFooterData } from '@localTypes/footerData'
+import { TMainPageHeader } from '@localTypes/mainPageHeader'
+import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
+import { TThreeHousesRow } from '@localTypes/threeHousesRow'
+import { TBookCallback } from '@localTypes/bookCallback'
+import { TFooterContacts } from '@localTypes/footerContacts'
+import { housesAvailableUrls, housesContent } from '@mocks/pages/housesList'
 
 type THouseProps = {
   meta: TMeta
+  navData: TNavData
+  footerData: TFooterData
+  mainPageHeaderData: TMainPageHeader['data']
+  houseTypeInfoData: THouseTypeInfo
+  threeHousesRowData: TThreeHousesRow
+  bookCallBackData: TBookCallback
+  footerContactsData: TFooterContacts
 }
 
 export const getServerSideProps: GetServerSideProps<THouseProps> = async ({ params }) => {
   const pageId = params.house
-  if (!pageId || Array.isArray(pageId) || HOUSES_PAGE.indexOf(pageId) === -1) {
+  if (!pageId || Array.isArray(pageId) || housesAvailableUrls.indexOf(pageId) === -1) {
     return { notFound: true }
   }
 
-  // return { props: { ...housesContent[pageId] } }
-  return { props: { meta: { title: 'bar', description: 'bar' } } }
+  return { props: { ...housesContent[pageId] } }
 }
 
-// const House: FC<THouse> = ({ meta, ...rest }) => (
-const House: FC<THouseProps> = ({ meta }) => (
+const House: FC<THouseProps> = ({
+  meta,
+  navData,
+  footerData,
+  mainPageHeaderData,
+  houseTypeInfoData,
+  threeHousesRowData,
+  bookCallBackData,
+  footerContactsData,
+}) => (
   <>
     <Meta {...meta} />
-    {/* <HousePage {...rest} /> */}
+    <HousePage
+      navData={navData}
+      footerData={footerData}
+      mainPageHeaderData={mainPageHeaderData}
+      houseTypeInfoData={houseTypeInfoData}
+      threeHousesRowData={threeHousesRowData}
+      bookCallBackData={bookCallBackData}
+      footerContactsData={footerContactsData}
+    />
   </>
 )
 
