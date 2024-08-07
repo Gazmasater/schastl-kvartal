@@ -9,7 +9,7 @@ type TThreeHousesRowProps = {
 
 export const ThreeHousesRow: FC<TThreeHousesRowProps> = ({ data }) => {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="threeHouses">
       <div className={classes.background} />
       <div className={classes.padding}>
         <div className={classes.grid}>

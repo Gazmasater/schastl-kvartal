@@ -15,7 +15,7 @@ export const NavMock: TNavData = {
     },
     {
       label: 'Проекты',
-      url: '/#choose-house',
+      url: '/#threeHouses',
     },
     {
       label: 'Контакты',
