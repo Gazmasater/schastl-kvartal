@@ -1,0 +1,10 @@
+.gallery {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    display: none;
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+}

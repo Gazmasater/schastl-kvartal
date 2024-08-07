@@ -2,7 +2,8 @@
 import React, { FC, Fragment } from 'react'
 import { TGallery } from '@localTypes/gallery'
 import { clx } from '@utils/clx'
-import { ImageGrid, ImageSimpleGrid } from './atoms'
+// import { ImageGrid, ImageSimpleGrid, SwiperImageGrid } from './atoms'
+import { ImageGrid, SliderImageGrid } from './atoms'
 import classes from './Gallery.module.css'
 
 type TGalleryProps = {
@@ -23,7 +24,8 @@ export const Gallery: FC<TGalleryProps> = ({ data }) => {
               <div className={classes.textContainer}>{text && text.map(el => <p key={el}>{el}</p>)}</div>
             </div>
             <ImageGrid data={imgUrls} />
-            <ImageSimpleGrid data={imgUrls} />
+            {/* <ImageSimpleGrid data={imgUrls} /> */}
+            <SliderImageGrid data={imgUrls} />
           </Fragment>
         ))}
       </div>
