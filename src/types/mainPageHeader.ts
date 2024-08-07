@@ -8,7 +8,6 @@ export type TMainPageHeader = {
   mainPageImageXs: string
   mainPageImageMd: string
   mainPageImageLg: string
-  blackHeadings?: boolean
   features?: {
     first: {
       label: string
@@ -19,4 +18,8 @@ export type TMainPageHeader = {
       value: string
     }
   }
+  blackHeadings?: boolean
+  customHeadingHexColor?: string
+  customFeaturesBaseColor?: string
+  customFeaturesPrimaryColor?: string
 }

@@ -30,7 +30,7 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
                 </li>
               </ol>
             </nav>
-            <Styled.Headings $isBlack={data.blackHeadings}>
+            <Styled.Headings $isBlack={data.blackHeadings} $customHeadingHexColor={data.customHeadingHexColor}>
               <Styled.HeadingsSpacer />
               <Styled.HeadingFirst className="MuiTypography-root MuiTypography-h1">
                 {data.headingFirst}
@@ -42,7 +42,10 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
               )}
               {data.features && (
                 <Styled.FeaturesContainer>
-                  <Styled.FeaturesItem>
+                  <Styled.FeaturesItem
+                    $customFeaturesBaseColor={data.customFeaturesBaseColor}
+                    $customFeaturesPrimaryColor={data.customFeaturesPrimaryColor}
+                  >
                     <div>
                       <div>{data.features.first.label}</div>
                       <b>{data.features.first.value}</b>

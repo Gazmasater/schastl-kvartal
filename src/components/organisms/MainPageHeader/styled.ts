@@ -45,6 +45,7 @@ const CustomNav = styled.nav`
 
 type THeadingsProps = {
   $isBlack?: boolean
+  $customHeadingHexColor?: string
 }
 
 const Headings = styled.div<THeadingsProps>`
@@ -57,7 +58,12 @@ const Headings = styled.div<THeadingsProps>`
   justify-content: flex-start;
 
   @media (min-width: 640px) {
-    color: ${({ $isBlack }) => ($isBlack ? '#000' : '#fff')};
+    color: ${({ $isBlack, $customHeadingHexColor }) => {
+      if ($customHeadingHexColor) {
+        return $customHeadingHexColor
+      }
+      return $isBlack ? '#000' : '#fff'
+    }};
   }
 `
 
@@ -125,7 +131,12 @@ const FeaturesContainer = styled.div`
   }
 `
 
-const FeaturesItem = styled.div`
+type TFeaturesItem = {
+  $customFeaturesBaseColor?: string
+  $customFeaturesPrimaryColor?: string
+}
+
+const FeaturesItem = styled.div<TFeaturesItem>`
   width: 50%;
   display: flex;
   padding: 0;
@@ -135,19 +146,19 @@ const FeaturesItem = styled.div`
   line-height: 1.5em;
 
   &:nth-child(odd) {
-    color: #000;
+    color: ${({ $customFeaturesBaseColor }) => $customFeaturesBaseColor || '#000'};
     padding-right: 2em;
     justify-content: flex-start;
   }
 
   &:nth-child(even) {
-    color: #000;
+    color: ${({ $customFeaturesBaseColor }) => $customFeaturesBaseColor || '#000'};
     padding-left: 2em;
     justify-content: flex-end;
   }
 
   b {
-    color: #965a46;
+    color: ${({ $customFeaturesPrimaryColor }) => $customFeaturesPrimaryColor || '#965a46'};
     display: block;
     font-size: 2.25rem;
     margin-top: 0.33333em;
