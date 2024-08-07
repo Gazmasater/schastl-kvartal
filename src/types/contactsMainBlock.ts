@@ -1,6 +1,6 @@
 export type TContactsMainBlock = {
   mainHeading: string
-  addr: string
+  addr?: string
   phoneHeading: string
   telegramLink: string
   phone: {

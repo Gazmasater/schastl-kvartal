@@ -16,7 +16,7 @@ export const ContactsMainBlock: FC<TContactsMainBlockProps> = ({ data }) => {
       <div className={clx(['MuiContainer-root', classes.contactsContainer, 'MuiContainer-maxWidthXl'])}>
         <div className={classes.contactsInner}>
           <div className={classes.addrFirstRow}>{data.mainHeading}</div>
-          <div className={classes.addrSecondRow}>{data.addr}</div>
+          {data.addr && <div className={classes.addrSecondRow}>{data.addr}</div>}
           <div className={classes.phonesText}>{data.phoneHeading}</div>
           <div className={classes.phonesContainer}>
             {data.phone.map(({ url, tel }) => (

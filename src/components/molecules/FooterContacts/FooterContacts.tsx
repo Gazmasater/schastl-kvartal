@@ -16,10 +16,12 @@ export const FooterContacts: FC<TFooterContactsProps> = ({ data }) => {
         <div className={clx(['MuiGrid-root', classes.padding, 'MuiGrid-container MuiGrid-align-items-xs-center'])}>
           <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-5">
             <h2 className={clx(['MuiTypography-root', classes.heading, 'MuiTypography-h2'])}>{data.heading}</h2>
-            <div className={classes.infoBlock}>
-              <div className={classes.infoHeading}>{data.addrSubheading}</div>
-              <div className={classes.infoAddr}>{data.addr}</div>
-            </div>
+            {data.addrSubheading && data.addr && (
+              <div className={classes.infoBlock}>
+                <div className={classes.infoHeading}>{data.addrSubheading}</div>
+                <div className={classes.infoAddr}>{data.addr}</div>
+              </div>
+            )}
             <div className={classes.infoBlock}>
               <div className={classes.infoHeading}>{data.phonesSubheading}</div>
               {data.phones.map(({ url, text }) => (

@@ -2,8 +2,8 @@
 
 export type TFooterContacts = {
   heading: string
-  addrSubheading: string
-  addr: string
+  addrSubheading?: string
+  addr?: string
   phonesSubheading: string
   phones: {
     url: string
