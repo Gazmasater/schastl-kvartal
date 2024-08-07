@@ -19,7 +19,7 @@ export const BookCallback: FC<TBookCallbackProps> = ({ data }) => {
   const onSubmit = () => {
     axios
       .post(
-        `/api/contacts`,
+        '/api/contacts',
         {
           name: nameValue,
           phone: phoneValue,
