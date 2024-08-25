@@ -53,8 +53,8 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
                   </Styled.FeaturesItem>
                   <Styled.FeaturesItem>
                     <div>
-                      <div>{data.features.first.label}</div>
-                      <b>{data.features.first.value}</b>
+                      <div>{data.features.second.label}</div>
+                      <b>{data.features.second.value}</b>
                     </div>
                   </Styled.FeaturesItem>
                 </Styled.FeaturesContainer>

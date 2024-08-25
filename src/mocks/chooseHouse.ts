@@ -43,7 +43,7 @@ export const ChooseHouseMock: TChooseHouse = {
       linkUrl: '/houses/house2',
       statusText: 'Доступно',
       houseId: 'Коттедж №96',
-      imgUrl: '/img/mappedImage/house1thumb.jpg',
+      imgUrl: '/img/mappedImage/house-1-155m2/main.jpg',
       imgAlt: '',
       title: 'BRILLIANTE',
       features: {
@@ -62,7 +62,7 @@ export const ChooseHouseMock: TChooseHouse = {
       linkUrl: '/houses/house3',
       statusText: 'Доступно',
       houseId: 'Коттедж №96',
-      imgUrl: '/img/mappedImage/house1thumb.jpg',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg',
       imgAlt: '',
       title: 'BRILLIANTE',
       features: {
