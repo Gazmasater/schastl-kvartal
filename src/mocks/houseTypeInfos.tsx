@@ -1,5 +1,7 @@
 import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
 
+/* imageUrl: 1080x1080 */
+
 export const houseTypeInfoExampleMock: THouseTypeInfo = {
   heading: 'Спецификация дома',
   firstTabTitle: '1й этаж',

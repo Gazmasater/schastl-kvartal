@@ -1,5 +1,10 @@
 import { TChooseHouse } from '@localTypes/chooseHouse'
 
+/*
+imgUrl: 1280x922
+thumb imgUrl: 539x337
+*/
+
 export const ChooseHouseMock: TChooseHouse = {
   imgUrl: '/img/mappedImage/image.jpg',
   housesCoords: {

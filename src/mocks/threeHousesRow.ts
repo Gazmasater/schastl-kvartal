@@ -1,5 +1,9 @@
 import { TThreeHousesRow } from '@localTypes/threeHousesRow'
 
+/*
+imgUrl: 539x337
+*/
+
 export const ThreeHousesRowMock: TThreeHousesRow = {
   first: {
     linkUrl: '/houses/house1',
