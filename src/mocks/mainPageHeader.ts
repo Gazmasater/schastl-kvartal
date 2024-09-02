@@ -1,5 +1,11 @@
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 
+/*
+mainPageImageXs: 521x521
+mainPageImageMd: 1280x720
+mainPageImageLg: 2160x1080
+*/
+
 export const MainPageHeaderMock: TMainPageHeader = {
   mainPageLink: '/',
   mainPageLabel: 'Главная страница',

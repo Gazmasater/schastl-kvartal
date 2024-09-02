@@ -1,5 +1,9 @@
 import { TContactsMainBlock } from '@localTypes/contactsMainBlock'
 
+/*
+imgUrl: 898x677
+*/
+
 export const ContactsMainBlockMock: TContactsMainBlock = {
   mainHeading: 'ЖК Такой-то, главный офис продаж',
   addr: 'Адрес такой-то',

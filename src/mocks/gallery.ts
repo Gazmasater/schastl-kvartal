@@ -1,5 +1,10 @@
 import { TGallery } from '@localTypes/gallery'
 
+/*
+full: 1920x1080
+thumb: 996x560
+*/
+
 export const GalleryMock: TGallery = {
   title: 'Ход строительства',
   gallery: [

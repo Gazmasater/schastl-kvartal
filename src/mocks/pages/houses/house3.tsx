@@ -8,6 +8,12 @@ import { ChooseHouseMock } from '@mocks/chooseHouse'
 import { BookCallbackMock } from '@mocks/bookCallback'
 import { FooterContactsMock } from '@mocks/footerContacts'
 
+/*
+mainPageImageXs: 521x521
+mainPageImageMd: 1280x720
+mainPageImageLg: 2160x1080
+*/
+
 export const house3PageMock: THousePage = {
   meta: Metas.house3,
   navData: NavMock,
