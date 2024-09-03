@@ -13,7 +13,7 @@ export const MainPageHeaderMock: TMainPageHeader = {
   subitemText: 'Счастливый квартал',
   headingFirst: 'ЖК Лазурный',
   headingSecond: 'Счастливый квартал',
-  mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg',
-  mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg',
-  mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg',
+  mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
+  mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
+  mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
 }

@@ -35,10 +35,13 @@ export const house2PageMock: THousePage = {
         value: '8 соток',
       },
     },
-    mainPageImageXs: '/img/mainPageBanner/house-2-115m2/mainPageBanner-xs.jpg',
-    mainPageImageMd: '/img/mainPageBanner/house-2-115m2/mainPageBanner-md.jpg',
-    mainPageImageLg: '/img/mainPageBanner/house-2-115m2/mainPageBanner-lg.jpg',
-    blackHeadings: true,
+    mainPageImageXs: '/img/mainPageBanner/house-2-115m2/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
+    mainPageImageMd: '/img/mainPageBanner/house-2-115m2/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
+    mainPageImageLg: '/img/mainPageBanner/house-2-115m2/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
+    blackHeadings: false,
+    customHeadingHexColor: '#fff', // optional param
+    customFeaturesBaseColor: '#fff', // optional param
+    customFeaturesPrimaryColor: '#ff0000', // optional param
   },
   houseTypeInfoData: houseTypeInfoExampleMock,
   threeHousesRowData: ThreeHousesRowMock,

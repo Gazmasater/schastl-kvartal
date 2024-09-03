@@ -28,6 +28,6 @@ export const ContactsMainBlockMock: TContactsMainBlock = {
   mailtoText: 'foo@local.local',
   mapProviderLink: '/',
   mapProviderText: 'Проложить маршрут',
-  imgUrl: '/img/bigContacts/image.jpg',
+  imgUrl: '/img/bigContacts/image.jpg', // 898x677
   imgAlt: '',
 }

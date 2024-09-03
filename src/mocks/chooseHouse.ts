@@ -6,7 +6,7 @@ thumb imgUrl: 539x337
 */
 
 export const ChooseHouseMock: TChooseHouse = {
-  imgUrl: '/img/mappedImage/image.jpg',
+  imgUrl: '/img/mappedImage/image.jpg', // imgUrl: 1280x922
   housesCoords: {
     name: 'my-map',
     areas: [
@@ -48,7 +48,7 @@ export const ChooseHouseMock: TChooseHouse = {
       linkUrl: '/houses/house2',
       statusText: 'Доступно',
       houseId: 'Коттедж №96',
-      imgUrl: '/img/mappedImage/house-1-155m2/main.jpg',
+      imgUrl: '/img/mappedImage/house-1-155m2/main.jpg', // 539x337
       imgAlt: '',
       title: 'BRILLIANTE',
       features: {
@@ -67,7 +67,7 @@ export const ChooseHouseMock: TChooseHouse = {
       linkUrl: '/houses/house3',
       statusText: 'Доступно',
       houseId: 'Коттедж №96',
-      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
       imgAlt: '',
       title: 'BRILLIANTE',
       features: {

@@ -35,10 +35,12 @@ export const house3PageMock: THousePage = {
         value: 'вид 5.3 а',
       },
     },
-    mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg',
-    mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg',
-    mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg',
-    blackHeadings: true,
+    mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
+    mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
+    mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
+    blackHeadings: true, // optional param
+    customHeadingHexColor: '#fff', // optional param
+    customFeaturesBaseColor: '#fff', // optional param
   },
   houseTypeInfoData: houseTypeInfoExampleMock,
   threeHousesRowData: ThreeHousesRowMock,

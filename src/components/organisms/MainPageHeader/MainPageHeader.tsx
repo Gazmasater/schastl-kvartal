@@ -51,7 +51,10 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
                       <b>{data.features.first.value}</b>
                     </div>
                   </Styled.FeaturesItem>
-                  <Styled.FeaturesItem>
+                  <Styled.FeaturesItem
+                    $customFeaturesBaseColor={data.customFeaturesBaseColor}
+                    $customFeaturesPrimaryColor={data.customFeaturesPrimaryColor}
+                  >
                     <div>
                       <div>{data.features.second.label}</div>
                       <b>{data.features.second.value}</b>

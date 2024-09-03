@@ -85,7 +85,6 @@ const HeadingFirst = styled.h1`
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.25;
-  color: #333; /* Задай нужный цвет текста */
 
   @media (min-width: 900px) {
     font-size: 2.375rem;
