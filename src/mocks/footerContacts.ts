@@ -19,7 +19,8 @@ export const FooterContactsMock: TFooterContacts = {
       text: '+7113',
     },
   ],
-  mapProviderLink: '/',
+  mapProviderLink:
+    'https://yandex.ru/maps/9/lipetsk/?ll=39.469925%2C52.514550&mode=routes&rtext=~52.513711%2C39.468675&rtt=auto&ruri=~&z=18',
   mapProviderLinkText: 'Проложить маршрут',
   mapConfig: {
     center: [52.586018, 39.520206],
