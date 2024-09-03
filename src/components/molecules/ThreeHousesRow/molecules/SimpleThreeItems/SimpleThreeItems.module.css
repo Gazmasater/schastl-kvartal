@@ -1,0 +1,115 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 65px;
+}
+
+@media (max-width: 899.95px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+a.noDecoration,
+.noDecoration {
+  text-decoration: none;
+}
+
+.imageClipContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  font-size: inherit;
+  padding-bottom: 70%;
+}
+
+.imageClipFirst {
+  clip-path: polygon(0% 15%, 71% 0, 115% 31%, 100% 100%, 0% 100%);
+}
+
+.imageClipSecond {
+  clip-path: polygon(0% 21%, 29% 0, 115% 18%, 100% 100%, 0% 100%);
+}
+
+.imageClipInner {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+}
+
+.imageInClip {
+  width: 100%;
+  height: 100%;
+  max-width: initial;
+  object-fit: cover;
+  transition: transform 0.35s ease-out;
+}
+
+.underImageContainer {
+  font-size: inherit;
+  transition:
+    background-color 0.25s ease-out,
+    box-shadow 0.25s ease-out;
+  padding-top: 1.08333em;
+  padding-bottom: 0.83333em;
+}
+
+.descriptionTitle {
+  font-size: 24px;
+  color: #202020;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.20833em;
+  padding-bottom: 0.66667em;
+  text-transform: uppercase;
+}
+
+.descriptionFlex {
+  display: flex;
+  align-items: safe center;
+  justify-content: center;
+}
+
+.descriptionText {
+  width: 50%;
+  display: flex;
+  padding: 0;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.descriptionText:nth-child(odd) {
+  color: #000;
+  padding-right: 2em;
+  justify-content: flex-start;
+}
+
+.descriptionText:nth-child(even) {
+  color: #000;
+  padding-left: 2em;
+  justify-content: flex-end;
+}
+
+.descriptionText b {
+  color: #965a46;
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 0.33333em;
+  font-weight: 700;
+  line-height: 1.16em;
+}
+
+.descriptionText + .descriptionText::after {
+  top: 0.16667em;
+  left: 0;
+  width: 1px;
+  bottom: 0.16667em;
+  content: '';
+  position: absolute;
+  background-color: rgba(32, 32, 32, 0.08);
+}

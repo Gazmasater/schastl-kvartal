@@ -10,7 +10,5 @@ type THouse = {
 }
 
 export type TThreeHousesRow = {
-  first: THouse
-  second: THouse
-  third: THouse
+  houses: THouse[]
 }
