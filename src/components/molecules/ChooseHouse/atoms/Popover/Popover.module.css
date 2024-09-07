@@ -2,7 +2,7 @@
   position: relative;
   z-index: 999;
   top: 0;
-  left: 0;
+  left: 150px;
   width: 400px;
   background: #fff;
 }

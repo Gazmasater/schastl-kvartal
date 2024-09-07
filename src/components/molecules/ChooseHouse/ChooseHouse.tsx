@@ -32,7 +32,7 @@ export const ChooseHouse: FC<TChooseHouseProps> = ({ data }) => {
         <ImageMapper
           src={data.imgUrl}
           map={data.housesCoords}
-          width={1280}
+          width={1520}
           height={922}
           onMouseEnter={area => onAreaHover(area)}
           onMouseLeave={() => setCurrentHouse(null)}

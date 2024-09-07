@@ -1,0 +1,169 @@
+/* eslint-disable no-console */
+
+/*
+220, 625, 340, 524, 562, 612, 450, 715
+354, 509, 460, 422, 682, 505, 583, 591
+*/
+
+/* source */
+// const bigRect = {
+//   coord1: { x: 220, y: 625 },
+//   coord2: { x: 340, y: 524 },
+//   coord3: { x: 562, y: 612 },
+//   coord4: { x: 450, y: 715 },
+// }
+const bigRect = {
+  coord1: { x: 354, y: 509 },
+  coord2: { x: 460, y: 422 },
+  coord3: { x: 682, y: 505 },
+  coord4: { x: 583, y: 591 },
+}
+
+/* compution */
+
+const upperHalf = {
+  coord1: bigRect.coord1,
+  coord2: bigRect.coord2,
+  coord3: { x: (bigRect.coord3.x + bigRect.coord2.x) / 2, y: (bigRect.coord3.y + bigRect.coord2.y) / 2 },
+  coord4: { x: (bigRect.coord4.x + bigRect.coord1.x) / 2, y: (bigRect.coord4.y + bigRect.coord1.y) / 2 },
+}
+
+const lowerHalf = {
+  coord1: upperHalf.coord4,
+  coord2: upperHalf.coord3,
+  coord3: bigRect.coord3,
+  coord4: bigRect.coord4,
+}
+
+const firstQuarter = {
+  coord1: upperHalf.coord1,
+  coord2: { x: (bigRect.coord2.x + bigRect.coord1.x) / 2, y: (bigRect.coord2.y + bigRect.coord1.y) / 2 },
+  coord3: { x: (bigRect.coord3.x + bigRect.coord1.x) / 2, y: (bigRect.coord3.y + bigRect.coord1.y) / 2 },
+  coord4: { x: (bigRect.coord4.x + bigRect.coord1.x) / 2, y: (bigRect.coord4.y + bigRect.coord1.y) / 2 },
+}
+
+const secondQuarter = {
+  coord1: firstQuarter.coord2,
+  coord2: upperHalf.coord2,
+  coord3: upperHalf.coord3,
+  coord4: firstQuarter.coord3,
+}
+
+const thirdQuarter = {
+  coord1: lowerHalf.coord1,
+  coord2: { x: (lowerHalf.coord2.x + lowerHalf.coord1.x) / 2, y: (lowerHalf.coord2.y + lowerHalf.coord1.y) / 2 },
+  coord3: { x: (bigRect.coord4.x + bigRect.coord3.x) / 2, y: (bigRect.coord4.y + bigRect.coord3.y) / 2 },
+  coord4: bigRect.coord4,
+}
+
+const fourthQuarter = {
+  coord1: thirdQuarter.coord2,
+  coord2: lowerHalf.coord2,
+  coord3: lowerHalf.coord3,
+  coord4: thirdQuarter.coord3,
+}
+
+const area1 = {
+  coord1: {
+    x: (thirdQuarter.coord4.x + thirdQuarter.coord1.x) / 2,
+    y: (thirdQuarter.coord4.y + thirdQuarter.coord1.y) / 2,
+  },
+  coord2: {
+    x: (thirdQuarter.coord3.x + thirdQuarter.coord2.x) / 2,
+    y: (thirdQuarter.coord3.y + thirdQuarter.coord2.y) / 2,
+  },
+  coord3: thirdQuarter.coord3,
+  coord4: thirdQuarter.coord4,
+}
+
+const area2 = {
+  coord1: thirdQuarter.coord1,
+  coord2: thirdQuarter.coord2,
+  coord3: area1.coord2,
+  coord4: area1.coord1,
+}
+
+const area3 = {
+  coord1: {
+    x: (secondQuarter.coord4.x + secondQuarter.coord1.x) / 2,
+    y: (secondQuarter.coord4.y + secondQuarter.coord1.y) / 2,
+  },
+  coord2: {
+    x: (secondQuarter.coord3.x + secondQuarter.coord2.x) / 2,
+    y: (secondQuarter.coord3.y + secondQuarter.coord2.y) / 2,
+  },
+  coord3: secondQuarter.coord3,
+  coord4: secondQuarter.coord4,
+}
+
+const area4 = {
+  coord1: secondQuarter.coord1,
+  coord2: secondQuarter.coord2,
+  coord3: area3.coord2,
+  coord4: area3.coord1,
+}
+
+const area5 = {
+  coord1: {
+    x: (fourthQuarter.coord4.x + fourthQuarter.coord1.x) / 2,
+    y: (fourthQuarter.coord4.y + fourthQuarter.coord1.y) / 2,
+  },
+  coord2: {
+    x: (fourthQuarter.coord3.x + fourthQuarter.coord2.x) / 2,
+    y: (fourthQuarter.coord3.y + fourthQuarter.coord2.y) / 2,
+  },
+  coord3: fourthQuarter.coord3,
+  coord4: fourthQuarter.coord4,
+}
+
+const area6 = {
+  coord1: fourthQuarter.coord1,
+  coord2: fourthQuarter.coord2,
+  coord3: area5.coord2,
+  coord4: area5.coord1,
+}
+
+const area7 = {
+  coord1: {
+    x: (firstQuarter.coord4.x + firstQuarter.coord1.x) / 2,
+    y: (firstQuarter.coord4.y + firstQuarter.coord1.y) / 2,
+  },
+  coord2: {
+    x: (firstQuarter.coord3.x + firstQuarter.coord2.x) / 2,
+    y: (firstQuarter.coord3.y + firstQuarter.coord2.y) / 2,
+  },
+  coord3: firstQuarter.coord3,
+  coord4: firstQuarter.coord4,
+}
+
+const area8 = {
+  coord1: firstQuarter.coord1,
+  coord2: firstQuarter.coord2,
+  coord3: area7.coord2,
+  coord4: area7.coord1,
+}
+
+console.log(
+  `${area1.coord1.x},${area1.coord1.y},${area1.coord2.x},${area1.coord2.y},${area1.coord3.x},${area1.coord3.y},${area1.coord4.x},${area1.coord4.y}`,
+)
+console.log(
+  `${area2.coord1.x},${area2.coord1.y},${area2.coord2.x},${area2.coord2.y},${area2.coord3.x},${area2.coord3.y},${area2.coord4.x},${area2.coord4.y}`,
+)
+console.log(
+  `${area3.coord1.x},${area3.coord1.y},${area3.coord2.x},${area3.coord2.y},${area3.coord3.x},${area3.coord3.y},${area3.coord4.x},${area3.coord4.y}`,
+)
+console.log(
+  `${area4.coord1.x},${area4.coord1.y},${area4.coord2.x},${area4.coord2.y},${area4.coord3.x},${area4.coord3.y},${area4.coord4.x},${area4.coord4.y}`,
+)
+console.log(
+  `${area5.coord1.x},${area5.coord1.y},${area5.coord2.x},${area5.coord2.y},${area5.coord3.x},${area5.coord3.y},${area5.coord4.x},${area5.coord4.y}`,
+)
+console.log(
+  `${area6.coord1.x},${area6.coord1.y},${area6.coord2.x},${area6.coord2.y},${area6.coord3.x},${area6.coord3.y},${area6.coord4.x},${area6.coord4.y}`,
+)
+console.log(
+  `${area7.coord1.x},${area7.coord1.y},${area7.coord2.x},${area7.coord2.y},${area7.coord3.x},${area7.coord3.y},${area7.coord4.x},${area7.coord4.y}`,
+)
+console.log(
+  `${area8.coord1.x},${area8.coord1.y},${area8.coord2.x},${area8.coord2.y},${area8.coord3.x},${area8.coord3.y},${area8.coord4.x},${area8.coord4.y}`,
+)
