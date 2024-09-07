@@ -125,8 +125,8 @@ export const ChooseHouseMock: TChooseHouse = {
       {
         id: 'house-15',
         shape: 'poly',
-        fillColor: '#00800073',
-        preFillColor: '#00800073',
+        fillColor: '#00800052',
+        preFillColor: '#00800026',
         strokeColor: 'black',
         coords: [411.25, 529.5, 462.5, 486.25, 518, 507, 468.5, 550],
       },
