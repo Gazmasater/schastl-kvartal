@@ -25,7 +25,7 @@ export const SliderItems: FC<TSliderItemsProps> = ({ data }) => {
     infinite: true,
     speed: 150,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     responsive: [
