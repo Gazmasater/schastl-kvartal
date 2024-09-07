@@ -230,6 +230,16 @@ const ImageWrapper = styled.div`
     padding-top: unset;
     --header-height: 6.4375rem;
   }
+
+  ::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000026;
+  }
 `
 
 const ImageContainer = styled.div`
