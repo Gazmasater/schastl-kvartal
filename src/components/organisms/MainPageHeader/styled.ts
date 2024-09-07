@@ -32,6 +32,18 @@ const FlexWrapper = styled.div`
   justify-content: flex-start;
 `
 
+type TBreadcrumbsContainerProps = {
+  $color?: string
+}
+
+const BreadcrumbsContainer = styled.div<TBreadcrumbsContainerProps>`
+  color: ${({ $color }) => $color || '#fff'};
+
+  a {
+    color: ${({ $color }) => $color || '#fff'};
+  }
+`
+
 const CustomNav = styled.nav`
   font-size: 0.8571428571428571rem;
   font-family: Gilroy, sans-serif;
@@ -64,6 +76,14 @@ const Headings = styled.div<THeadingsProps>`
       }
       return $isBlack ? '#000' : '#fff'
     }};
+  }
+`
+
+const DarkenContainer = styled.div`
+  @media (min-width: 640px) {
+    background: #000000c7;
+    padding: 23px;
+    border-radius: 30px;
   }
 `
 
@@ -230,16 +250,6 @@ const ImageWrapper = styled.div`
     padding-top: unset;
     --header-height: 6.4375rem;
   }
-
-  ::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00000026;
-  }
 `
 
 const ImageContainer = styled.div`
@@ -296,8 +306,10 @@ export const Styled = {
   Container,
   Padding,
   FlexWrapper,
+  BreadcrumbsContainer,
   CustomNav,
   Headings,
+  DarkenContainer,
   HeadingsSpacer,
   HeadingFirst,
   HeadingSecond,

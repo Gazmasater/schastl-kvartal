@@ -41,7 +41,8 @@ export const house2PageMock: THousePage = {
     blackHeadings: false,
     customHeadingHexColor: '#fff', // optional param
     customFeaturesBaseColor: '#fff', // optional param
-    customFeaturesPrimaryColor: '#ff0000', // optional param
+    // customFeaturesPrimaryColor: '#ff0000', // optional param
+    breadcrumbsColor: '#000', // optional
   },
   houseTypeInfoData: houseTypeInfoExampleMock,
   threeHousesRowData: ThreeHousesRowMock,

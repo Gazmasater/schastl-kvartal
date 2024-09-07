@@ -22,4 +22,5 @@ export type TMainPageHeader = {
   customHeadingHexColor?: string
   customFeaturesBaseColor?: string
   customFeaturesPrimaryColor?: string
+  breadcrumbsColor?: string
 }
