@@ -12,11 +12,20 @@
 //   coord3: { x: 562, y: 612 },
 //   coord4: { x: 450, y: 715 },
 // }
+// const bigRect = {
+//   coord1: { x: 354, y: 509 },
+//   coord2: { x: 460, y: 422 },
+//   coord3: { x: 682, y: 505 },
+//   coord4: { x: 583, y: 591 },
+// }
+
+const rect = [297, 496, 367, 386, 525, 447, 423, 544]
+
 const bigRect = {
-  coord1: { x: 354, y: 509 },
-  coord2: { x: 460, y: 422 },
-  coord3: { x: 682, y: 505 },
-  coord4: { x: 583, y: 591 },
+  coord1: { x: rect[0], y: rect[1] },
+  coord2: { x: rect[2], y: rect[3] },
+  coord3: { x: rect[4], y: rect[5] },
+  coord4: { x: rect[6], y: rect[7] },
 }
 
 /* compution */

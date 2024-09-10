@@ -97,6 +97,20 @@
   padding-bottom: 117%;
 }
 
+@media (min-width: 1280px) {
+  .videoContainer {
+    margin: -60px 0 0 auto;
+  }
+}
+
+@media (min-width: 456px) {
+  .videoContainer {
+    width: 95%;
+    margin: 0 0 0 auto;
+    padding-bottom: 115%;
+  }
+}
+
 .videoPositioning {
   top: 0;
   left: 0;
@@ -105,6 +119,10 @@
   display: flex;
   overflow: hidden;
   position: absolute;
+  background: url(/img/how-to-get.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .video {
@@ -149,14 +167,6 @@
 .svg {
   font-size: inherit;
   margin-right: 1.0625em;
-}
-
-@media (min-width: 456px) {
-  .videoContainer {
-    width: 95%;
-    margin: 0 0 0 auto;
-    padding-bottom: 115%;
-  }
 }
 
 @media (min-width: 640px) {
@@ -206,13 +216,9 @@
     font-size: 2.25rem;
   }
 
-  .videoContainer {
-    margin: -3.875em 0 0 auto;
-  }
-
   .link {
     z-index: 20;
-    margin-top: -2.5rem;
+    margin-top: -0.5rem;
     margin-right: 1rem;
   }
 }

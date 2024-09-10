@@ -16,7 +16,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#ff000061',
         preFillColor: '#ff000061',
         strokeColor: 'black',
-        coords: [392.5, 692.5, 449.5, 641.25, 506, 663.5, 450, 715],
+        coords: [413, 702.75, 471.625, 648.375, 508.5, 663, 450, 718],
       },
       {
         id: 'house-2',
@@ -24,7 +24,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [335, 670, 393, 619, 449.5, 641.25, 392.5, 692.5],
+        coords: [376, 687.5, 434.75, 633.75, 471.625, 648.375, 413, 702.75],
       },
       {
         id: 'house-3',
@@ -32,7 +32,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [335.5, 596.5, 395.5, 546, 451, 568, 391, 618.5],
+        coords: [397.75, 618.5, 456.75, 566, 493.5, 580, 434.5, 632.5],
       },
       {
         id: 'house-4',
@@ -40,7 +40,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [280, 574.5, 340, 524, 395.5, 546, 335.5, 596.5],
+        coords: [361, 604.5, 420, 552, 456.75, 566, 397.75, 618.5],
       },
       {
         id: 'house-5',
@@ -48,7 +48,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#ff000061',
         preFillColor: '#ff000061',
         strokeColor: 'black',
-        coords: [449.5, 641.25, 506.5, 590, 562, 612, 506, 663.5],
+        coords: [471.625, 648.375, 530.25, 594, 567, 608, 508.5, 663],
       },
       {
         id: 'house-6',
@@ -56,7 +56,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [393, 619, 451, 568, 506.5, 590, 449.5, 641.25],
+        coords: [434.75, 633.75, 493.5, 580, 530.25, 594, 471.625, 648.375],
       },
       {
         id: 'house-7',
@@ -64,7 +64,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [277.5, 647.5, 335.5, 596.5, 391, 618.5, 335, 670],
+        coords: [339, 672.25, 397.75, 618.5, 434.5, 632.5, 376, 687.5],
       },
       {
         id: 'house-8',
@@ -72,15 +72,15 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [220, 625, 280, 574.5, 335.5, 596.5, 277.5, 647.5],
+        coords: [302, 657, 361, 604.5, 397.75, 618.5, 339, 672.25],
       },
       {
         id: 'house-9',
         shape: 'poly',
-        fillColor: '#ff000061',
-        preFillColor: '#ff000061',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [525.75, 570.5, 576.125, 527.375, 632.5, 548, 583, 591],
+        coords: [278, 647.5, 327.5, 592.5, 361, 604.5, 302, 657],
       },
       {
         id: 'house-10',
@@ -88,7 +88,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [468.5, 550, 519.75, 506.75, 576.125, 527.375, 525.75, 570.5],
+        coords: [291.5, 578.5, 335, 522, 384, 540, 327.5, 592.5],
       },
       {
         id: 'house-11',
@@ -96,7 +96,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [462.5, 486.25, 515.5, 442.75, 571, 463.5, 518, 507],
+        coords: [255.5, 564.5, 292, 507, 335, 522, 291.5, 578.5],
       },
       {
         id: 'house-12',
@@ -104,15 +104,15 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [407, 465.5, 460, 422, 515.5, 442.75, 462.5, 486.25],
+        coords: [327.5, 592.5, 384, 540, 420, 552, 361, 604.5],
       },
       {
         id: 'house-13',
         shape: 'poly',
-        fillColor: '#ff000061',
-        preFillColor: '#ff000061',
+        fillColor: '#00800052',
+        preFillColor: '#00800026',
         strokeColor: 'black',
-        coords: [576.125, 527.375, 626.5, 484.25, 682, 505, 632.5, 548],
+        coords: [248.5, 634.75, 291.5, 578.5, 327.5, 592.5, 278, 647.5],
       },
       {
         id: 'house-14',
@@ -120,15 +120,15 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [519.75, 506.75, 571, 463.5, 626.5, 484.25, 576.125, 527.375],
+        coords: [219, 622, 255.5, 564.5, 291.5, 578.5, 248.5, 634.75],
       },
       {
         id: 'house-15',
         shape: 'poly',
-        fillColor: '#00800052',
-        preFillColor: '#00800026',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [411.25, 529.5, 462.5, 486.25, 518, 507, 468.5, 550],
+        coords: [536, 585.25, 589.25, 539, 626.5, 553.5, 573, 600],
       },
       {
         id: 'house-16',
@@ -136,7 +136,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [354, 509, 407, 465.5, 462.5, 486.25, 411.25, 529.5],
+        coords: [499, 570.5, 552, 524.5, 589.25, 539, 536, 585.25],
       },
       {
         id: 'house-17',
@@ -144,7 +144,7 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [411, 403, 350, 446, 407, 465.5, 460, 422],
+        coords: [515, 509.75, 567.5, 464.25, 605, 478.5, 552.5, 524],
       },
       {
         id: 'house-18',
@@ -152,7 +152,103 @@ export const ChooseHouseMock: TChooseHouse = {
         fillColor: '#00800073',
         preFillColor: '#00800073',
         strokeColor: 'black',
-        coords: [337, 438, 364, 387, 411, 403, 350, 446],
+        coords: [477.5, 495.5, 530, 450, 567.5, 464.25, 515, 509.75],
+      },
+      {
+        id: 'house-19',
+        shape: 'poly',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [589.25, 539, 642.5, 492.75, 680, 507, 626.5, 553.5],
+      },
+      {
+        id: 'house-20',
+        shape: 'poly',
+        fillColor: '#00800052',
+        preFillColor: '#00800026',
+        strokeColor: 'black',
+        coords: [552, 524.5, 605, 478.5, 642.5, 492.75, 589.25, 539],
+      },
+      {
+        id: 'house-21',
+        shape: 'poly',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [462, 555.75, 515, 509.75, 552.5, 524, 499, 570.5],
+      },
+      {
+        id: 'house-22',
+        shape: 'poly',
+        fillColor: '#00800052',
+        preFillColor: '#00800026',
+        strokeColor: 'black',
+        coords: [420, 541, 477.5, 495.5, 515, 509.75, 462, 555.75],
+      },
+      {
+        id: 'house-23',
+        shape: 'poly',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [391.5, 532, 438.5, 481.875, 477.5, 495.5, 420, 541],
+      },
+      {
+        id: 'house-24',
+        shape: 'poly',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [360, 520, 403, 468.25, 438.5, 481.875, 391.5, 532],
+      },
+      {
+        id: 'house-25',
+        shape: 'poly',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [371.5, 456.25, 406.5, 401.25, 446, 416.5, 403, 468.25],
+      },
+      {
+        id: 'house-26',
+        shape: 'poly',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [332, 441, 367, 386, 406.5, 401.25, 371.5, 456.25],
+      },
+      {
+        id: 'house-27',
+        shape: 'poly',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [438.5, 481.875, 485.5, 431.75, 530, 450, 477.5, 495.5],
+      },
+      {
+        id: 'house-28',
+        shape: 'poly',
+        fillColor: '#00800052',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [403, 468.25, 446, 416.5, 485.5, 431.75, 438.5, 481.875],
+      },
+      {
+        id: 'house-29',
+        shape: 'poly',
+        fillColor: '#00800073',
+        preFillColor: '#00800073',
+        strokeColor: 'black',
+        coords: [328.5, 508, 371.5, 456.25, 403, 468.25, 360, 520],
+      },
+      {
+        id: 'house-30',
+        shape: 'poly',
+        fillColor: '#00800052',
+        preFillColor: '#00800026',
+        strokeColor: 'black',
+        coords: [297, 496, 332, 441, 371.5, 456.25, 328.5, 508],
       },
     ],
   },
@@ -429,6 +525,235 @@ export const ChooseHouseMock: TChooseHouse = {
       },
     },
     'house-18': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-19': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-20': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-21': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-22': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-23': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-24': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-25': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-26': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+
+    'house-27': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-28': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-29': {
+      type: 'available',
+      linkUrl: '/houses/house3',
+      statusText: 'Доступно',
+      houseId: 'Коттедж №96',
+      imgUrl: '/img/mappedImage/house-2-115m2/main.jpg', // 539x337
+      imgAlt: '',
+      title: 'BRILLIANTE',
+      features: {
+        first: {
+          title: 'Площадь участка',
+          value: '132.05 m2',
+        },
+        second: {
+          title: 'Размер чего-то',
+          value: '6.86 a',
+        },
+      },
+    },
+    'house-30': {
       type: 'available',
       linkUrl: '/houses/house3',
       statusText: 'Доступно',
