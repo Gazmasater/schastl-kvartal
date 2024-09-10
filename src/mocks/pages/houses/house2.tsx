@@ -44,7 +44,75 @@ export const house2PageMock: THousePage = {
     // customFeaturesPrimaryColor: '#ff0000', // optional param
     breadcrumbsColor: '#000', // optional
   },
-  houseTypeInfoData: houseTypeInfoExampleMock,
+  houseTypeInfoData: {
+    heading: 'Спецификация дома',
+    firstTabTitle: '1й этаж',
+    firstTab: {
+      imageUrl: '/img/houseTypeInfo/hause-2-115m2/115-1.jpg', // imageUrl: 1080x1080
+      subtitle: 'Первый этаж',
+      features: [
+        {
+          textInSpan: '1. Кухня',
+          middleText: '2.03 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '2. Гостинная',
+          middleText: '2.21 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '3. Спальня',
+          middleText: '30.78 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '4. Спальня',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '5. Гордиробная',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '6. Санузел',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '7. Холл',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '8. Топочная',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '9. Коридор',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+      ],
+      firstLinkText: 'Контакты',
+      firstLinkUrl: '/contacts',
+      secondLinkText: 'На просмотр',
+      secondLinkUrl: '#callback',
+    },
+    secondTabTitle: '',
+    secondTab: {
+      imageUrl: '',
+      subtitle: '',
+      features: [],
+      firstLinkText: '',
+      firstLinkUrl: '',
+      secondLinkText: '',
+      secondLinkUrl: ''
+    }
+  },
   threeHousesRowData: ThreeHousesRowMock,
   chooseHouseData: ChooseHouseMock,
   bookCallBackData: BookCallbackMock,
