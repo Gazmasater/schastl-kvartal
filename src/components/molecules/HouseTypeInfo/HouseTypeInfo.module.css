@@ -216,6 +216,8 @@
     /* padding-left: 7.5rem; */
     padding-left: 2.5rem;
     padding-right: 1.875rem;
+    display: flex;
+    flex-flow: column;
   }
 
   .featuresItems {
@@ -233,6 +235,9 @@
     margin: 0;
     border-top: none;
     padding-top: 0;
+    flex-grow: 1;
+    align-items: flex-end;
+    padding-bottom: 50px;
   }
 
   .bottomButtonsLink {
