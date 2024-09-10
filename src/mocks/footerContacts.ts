@@ -2,22 +2,14 @@ import { TFooterContacts } from '@localTypes/footerContacts'
 
 export const FooterContactsMock: TFooterContacts = {
   heading: 'Контакты',
-  addrSubheading: 'Адрес офиса продаж',
-  addr: 'Тут адрес',
+  addrSubheading: 'Адрес',
+  addr: 'Липецкая область, Липецкий район, с. Ленино, ул. Перспективная',
   phonesSubheading: 'Телефоны для заявки',
   phones: [
     {
-      url: 'tel:+7111',
-      text: '+7111',
-    },
-    {
-      url: 'tel:+7112',
-      text: '+7112',
-    },
-    {
-      url: 'tel:+7113',
-      text: '+7113',
-    },
+      url: 'tel:8(4742) 39-00-16',
+      text: '8(4742) 39-00-16',
+    }
   ],
   mapProviderLink:
     'https://yandex.ru/maps/9/lipetsk/?ll=39.469925%2C52.514550&mode=routes&rtext=~52.513711%2C39.468675&rtt=auto&ruri=~&z=18',
