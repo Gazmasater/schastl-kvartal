@@ -48,9 +48,9 @@ export const AboutProject: FC<TAboutProjectProps> = ({ data }) => {
           <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 MuiGrid-grid-lg-6">
             <div className={classes.videoContainer}>
               <div className={classes.videoPositioning}>
-                <video playsInline className={classes.video} autoPlay loop muted>
+                {/* <video playsInline className={classes.video} autoPlay loop muted>
                   <source src={data.videoUrl} type="video/mp4" />
-                </video>
+                </video> */}
               </div>
             </div>
             <a href={data.linkToMapProvider} rel="noreferrer" target="_blank" className={classes.link}>

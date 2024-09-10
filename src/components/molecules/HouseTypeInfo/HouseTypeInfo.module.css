@@ -84,6 +84,12 @@
   justify-content: center;
 }
 
+@media (min-width: 1280px) {
+  .imageInner {
+    justify-content: flex-end;
+  }
+}
+
 .imageImage {
   max-width: 100%;
   max-height: 100%;
@@ -136,7 +142,7 @@
   flex-wrap: wrap;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 1.5rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .bottomButtonsLink {
@@ -156,6 +162,7 @@
   margin-bottom: 2.5rem;
   text-decoration: none;
   background-color: transparent;
+  margin-right: 50px !important;
 }
 
 .bottomButtonsLink span {
@@ -206,7 +213,8 @@
   }
 
   .featuresInner {
-    padding-left: 7.5rem;
+    /* padding-left: 7.5rem; */
+    padding-left: 2.5rem;
     padding-right: 1.875rem;
   }
 
