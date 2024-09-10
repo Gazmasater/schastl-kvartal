@@ -53,20 +53,22 @@ export const AboutProject: FC<TAboutProjectProps> = ({ data }) => {
                 </video> */}
               </div>
             </div>
-            <a href={data.linkToMapProvider} rel="noreferrer" target="_blank" className={classes.link}>
-              <svg className={classes.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 67">
-                <path
-                  d="M56.7947 66.7759L8.85997 46.3316L0.0859375 15.8759L27.4725 7.93795L54.8914 1.52588e-05L65.73 37.8105L56.7947 66.7759Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M32.7288 22.8181L43.1326 33.222M43.1326 32.4217L32.7288 42.8256"
-                  stroke="var(--color-arrow)"
-                  strokeWidth="1.13179"
-                />
-              </svg>
-              <span>{data.mapText}</span>
-            </a>
+            {data.linkToMapProvider && data.mapText && (
+              <a href={data.linkToMapProvider} rel="noreferrer" target="_blank" className={classes.link}>
+                <svg className={classes.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 67">
+                  <path
+                    d="M56.7947 66.7759L8.85997 46.3316L0.0859375 15.8759L27.4725 7.93795L54.8914 1.52588e-05L65.73 37.8105L56.7947 66.7759Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M32.7288 22.8181L43.1326 33.222M43.1326 32.4217L32.7288 42.8256"
+                    stroke="var(--color-arrow)"
+                    strokeWidth="1.13179"
+                  />
+                </svg>
+                <span>{data.mapText}</span>
+              </a>
+            )}
           </div>
         </div>
       </div>

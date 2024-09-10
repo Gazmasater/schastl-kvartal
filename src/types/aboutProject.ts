@@ -11,7 +11,7 @@ export type TAboutProject = {
       subtext: string
     }
   }[]
-  linkToMapProvider: string
-  mapText: string
-  videoUrl: string
+  linkToMapProvider?: string
+  mapText?: string
+  videoUrl?: string
 }
