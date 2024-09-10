@@ -1,13 +1,13 @@
 import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
 
-/* imageUrl: 1080x1080 */
+/* imageUrl: 792x1080 */
 
 export const houseTypeInfoExampleMock: THouseTypeInfo = {
   heading: 'Спецификация дома',
   firstTabTitle: '1й этаж',
   secondTabTitle: '2й этаж',
   firstTab: {
-    imageUrl: '/img/houseTypeInfo/house-1-155m2/st1.jpg', // imageUrl: 1080x1080
+    imageUrl: '/img/houseTypeInfo/house-1-155m2/st1.jpg', // imageUrl: 792x1080
     subtitle: 'Первый этаж',
     features: [
       {
@@ -37,7 +37,7 @@ export const houseTypeInfoExampleMock: THouseTypeInfo = {
     secondLinkUrl: '#callback',
   },
   secondTab: {
-    imageUrl: '/img/houseTypeInfo/house-1-155m2/st2.jpg', // imageUrl: 1080x1080
+    imageUrl: '/img/houseTypeInfo/house-1-155m2/st2.jpg', // imageUrl: 792x1080
     subtitle: 'Второй этаж',
     features: [
       {
