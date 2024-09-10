@@ -1,5 +1,6 @@
 export type THouseTypeInfoTab = {
   imageUrl: string
+  imageUrlBig?: string
   subtitle: string
   features: {
     textInSpan: string

@@ -38,6 +38,7 @@ export const houseTypeInfoExampleMock: THouseTypeInfo = {
   },
   secondTab: {
     imageUrl: '/img/houseTypeInfo/house-1-155m2/st2.jpg', // imageUrl: 792x1080
+    // imageUrlBig: '/img/houseTypeInfo/house-1-155m2/st2.jpg', // optional, будет использована обычная, если не указано
     subtitle: 'Второй этаж',
     features: [
       {

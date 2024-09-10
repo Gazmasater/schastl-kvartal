@@ -1,5 +1,7 @@
+/* eslint-disable no-new */
 /* eslint-disable react/no-array-index-key */
 import React, { FC, useState } from 'react'
+import { Fancybox } from '@fancyapps/ui'
 import { clx } from '@utils/clx'
 import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
 import classes from './HouseTypeInfo.module.css'
@@ -9,6 +11,18 @@ type THouseTypeInfoProps = {
 }
 
 export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
+  const createFancyBox = (index: number) => {
+    new Fancybox(
+      [
+        { src: data.firstTab.imageUrlBig || data.firstTab.imageUrl, thumb: data.firstTab.imageUrl },
+        { src: data.secondTab.imageUrlBig || data.secondTab.imageUrl, thumb: data.secondTab.imageUrl },
+      ],
+      {
+        startIndex: index,
+      },
+    )
+  }
+
   const [currentTab, setCurrentTab] = useState<'firstTab' | 'secondTab'>('firstTab')
 
   return (
@@ -58,7 +72,7 @@ export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
             ])}
           >
             <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8 MuiGrid-grid-md-6 MuiGrid-grid-xl-5">
-              <div className={classes.imageContainer}>
+              <div className={classes.imageContainer} onClick={() => createFancyBox(currentTab === 'firstTab' ? 0 : 1)}>
                 <div className={classes.imageInner}>
                   <img className={classes.imageImage} src={data[currentTab].imageUrl} alt="planning" />
                 </div>
