@@ -3,7 +3,7 @@ import { TFooter } from '@localTypes/footer'
 export const FooterMock: TFooter = {
   imageUrl: '/img/logo-default.svg',
   imageAlt: 'Логотип',
-  imageTitle: 'Название',
+  imageTitle: 'Модерн',
   imageLinkUrl: '/',
   copyrightText: 'ИП приладышев',
   socialLinks: {

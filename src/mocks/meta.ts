@@ -6,24 +6,24 @@ type TMetas = {
 
 export const Metas: TMetas = {
   homepage: {
-    title: 'Foo',
+    title: 'Счастливый Квартал',
     description: 'Foo',
   },
   contacts: {
-    title: 'Foo',
+    title: 'Контакты',
     description: 'Foo',
   },
   gallery: {
-    title: 'Foo',
+    title: 'Галерея',
     description: 'Foo',
   },
   house1: {
-    title: 'Foo',
-    description: 'Foo',
+    title: 'Сканди',
+    description: 'Сканди',
   },
   house2: {
-    title: 'Foo',
-    description: 'Foo',
+    title: 'Барнхаус',
+    description: 'Барнхаус',
   },
   house3: {
     title: 'Foo',

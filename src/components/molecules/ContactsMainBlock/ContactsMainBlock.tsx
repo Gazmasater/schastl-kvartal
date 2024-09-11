@@ -11,7 +11,7 @@ export const ContactsMainBlock: FC<TContactsMainBlockProps> = ({ data }) => {
   return (
     <>
       <div className={clx(['MuiContainer-root', classes.headingContainer, 'MuiContainer-maxWidthXl'])}>
-        <h1 className={clx(['MuiTypography-root', classes.headingText, 'MuiTypography-h2'])}>Контакти</h1>
+        <h1 className={clx(['MuiTypography-root', classes.headingText, 'MuiTypography-h2'])}>Контакты</h1>
       </div>
       <div className={clx(['MuiContainer-root', classes.contactsContainer, 'MuiContainer-maxWidthXl'])}>
         <div className={classes.contactsInner}>

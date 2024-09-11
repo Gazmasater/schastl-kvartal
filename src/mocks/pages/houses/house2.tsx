@@ -22,8 +22,8 @@ export const house2PageMock: THousePage = {
     mainPageLink: '/',
     mainPageLabel: 'Главная страница',
     separator: '/',
-    subitemText: 'brilliante',
-    headingFirst: 'BRILLIANTE',
+    subitemText: 'Барнхаус',
+    headingFirst: 'Барнхаус',
     headingSecond: '',
     features: {
       first: {
