@@ -19,7 +19,7 @@ export const Popover: FC<TPopoverProps> = ({ currentHouse }) => {
           </div>
           <div className={classes.soldSubText}>
             <p className="MuiTypography-root classes.fontSize MuiTypography-body2 MuiTypography-colorTextPrimary">
-              {currentHouse.statusText}
+              {currentHouse.text}
             </p>
           </div>
           {/* <div className={classes.orderCallback}>
