@@ -11,46 +11,38 @@ type TPopoverProps = {
 export const Popover: FC<TPopoverProps> = ({ currentHouse }) => {
   return (
     <div className={classes.popover}>
-      {currentHouse.type === 'sold' && (
-        <div className={clx([classes.flexContainer, classes.shadingContainer])}>
-          <div className={clx([classes.mainStyles, classes.red, classes.fontSize])}>
-            <div className={classes.status} />
-            {currentHouse.statusText}
-          </div>
-          <div className={classes.soldSubText}>
-            <p className="MuiTypography-root classes.fontSize MuiTypography-body2 MuiTypography-colorTextPrimary">
-              {currentHouse.text}
-            </p>
-          </div>
-          {/* <div className={classes.orderCallback}>
-            <a
-              className={clx([
-                'MuiTypography-root MuiLink-root MuiLink-underlineHover',
-                classes.orderCallbackLink,
-                classes.fontSize,
-                'MuiTypography-colorPrimary',
-              ])}
-              href={currentHouse.subLinkUrl}
-            >
-              {currentHouse.subLinkText}
-            </a>
-          </div> */}
-        </div>
-      )}
-      {currentHouse.type === 'available' && (
-        <div className={clx([classes.flexContainer, classes.shadingContainer])}>
-          <div className={clx([classes.mainStyles, classes.green])}>
-            <div className={classes.flexJustCenter}>
-              <div className={classes.status} />
+      <div className={clx([classes.flexContainer, classes.shadingContainer])}>
+        {currentHouse.isSoldLayout ? (
+          <>
+            <div className={clx([classes.mainStyles, classes.fontSize])}>
+              <div className={classes.status} style={{ background: currentHouse.statusColor }} />
               {currentHouse.statusText}
             </div>
-            <div className={classes.title}>{currentHouse.houseId}</div>
+            {currentHouse.soldText && (
+              <div className={classes.soldSubText}>
+                <p className="MuiTypography-root classes.fontSize MuiTypography-body2 MuiTypography-colorTextPrimary">
+                  {currentHouse.soldText}
+                </p>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className={clx([classes.mainStyles])}>
+            <div className={classes.flexJustCenter}>
+              <div className={classes.status} style={{ background: currentHouse.statusColor }} />
+              {currentHouse.statusText}
+            </div>
+            {currentHouse.houseId && <div className={classes.title}>{currentHouse.houseId}</div>}
           </div>
+        )}
+        {currentHouse.imgUrl && (
           <div className={classes.imagePositioning}>
             <div className={classes.imageContainer}>
               <img className={classes.imageImage} src={currentHouse.imgUrl} alt={currentHouse.imgAlt} />
             </div>
           </div>
+        )}
+        {currentHouse.features && (
           <div className={classes.descriptionContainer}>
             <div className={classes.descriptionTitle}>{currentHouse.title}</div>
             <div className={classes.features}>
@@ -76,8 +68,21 @@ export const Popover: FC<TPopoverProps> = ({ currentHouse }) => {
               </a>
             </div> */}
           </div>
-        </div>
-      )}
+        )}
+        {/* <div className={classes.orderCallback}>
+            <a
+              className={clx([
+                'MuiTypography-root MuiLink-root MuiLink-underlineHover',
+                classes.orderCallbackLink,
+                classes.fontSize,
+                'MuiTypography-colorPrimary',
+              ])}
+              href={currentHouse.subLinkUrl}
+            >
+              {currentHouse.subLinkText}
+            </a>
+          </div> */}
+      </div>
     </div>
   )
 }

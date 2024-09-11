@@ -59,7 +59,7 @@
 }
 
 .mainStyles {
-  --bg: gray;
+  /* --bg: gray; */
   color: #202020;
   display: flex;
   position: relative;
@@ -70,13 +70,14 @@
   justify-content: space-between;
 }
 
+/*
 .red {
   --bg: #b00020;
 }
 
 .green {
   --bg: #348aa7;
-}
+} */
 
 .title {
   color: #202020;
@@ -85,7 +86,7 @@
 .status {
   width: 1rem;
   height: 1rem;
-  background: var(--bg);
+  /* background: var(--bg); */
   margin-right: 0.75rem;
 }
 
