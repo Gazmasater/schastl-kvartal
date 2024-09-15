@@ -26,7 +26,11 @@ export const Metas: TMetas = {
     description: 'Барнхаус',
   },
   house3: {
-    title: 'Foo',
-    description: 'Foo',
+    title: 'Модерн-140',
+    description: 'Модерн-140',
+  },
+  house4: {
+    title: 'Модерн-100',
+    description: 'Модерн-100',
   },
 }

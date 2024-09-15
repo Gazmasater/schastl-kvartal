@@ -6,20 +6,20 @@ thumb imgUrl: 539x337
 */
 
 const housePolyRed = {
-  fillColor: '#ff000061',
-  preFillColor: '#ff000061',
+  fillColor: 'rgba(255, 0, 0, 0.5)',
+  preFillColor: 'rgba(255, 0, 0, 0.5)',
   strokeColor: 'black',
 }
 
 const housePolyGreen = {
-  fillColor: '#00800073',
-  preFillColor: '#00800073',
+  fillColor: 'rgba(33, 133, 0, 0.5)',
+  preFillColor: 'rgba(33, 133, 0, 0.5)',
   strokeColor: 'black',
 }
 
 const housePolyOrange = {
-  fillColor: '#ffe500ff',
-  preFillColor: '#ffe500ff',
+  fillColor: 'rgba(255, 128, 0, 0.45)',
+  preFillColor: 'rgba(255, 128, 0, 0.45)',
   strokeColor: 'black',
 }
 
@@ -76,13 +76,13 @@ export const ChooseHouseMock: TChooseHouse = {
         id: 'house-7',
         shape: 'poly',
         ...housePolyGreen,
-        coords: [371.5, 456.25, 406.5, 401.25, 446, 416.5, 403, 468.25],
+        coords: [371.5, 456.25, 412.5, 404.25, 446, 416.5, 403, 468.25],
       },
       {
         id: 'house-8',
         shape: 'poly',
         ...housePolyGreen,
-        coords: [332, 441, 367, 386, 406.5, 401.25, 371.5, 456.25],
+        coords: [332, 441, 367, 386, 413, 404.25, 371.5, 456.25],
       },
       {
         id: 'house-9',
@@ -106,13 +106,13 @@ export const ChooseHouseMock: TChooseHouse = {
         id: 'house-12',
         shape: 'poly',
         ...housePolyGreen,
-        coords: [391.5, 532, 438.5, 481.875, 477.5, 495.5, 420, 541],
+        coords: [391.5, 532, 438.5, 481.875, 477.5, 495.5, 425, 543],
       },
       {
         id: 'house-13',
         shape: 'poly',
         ...housePolyGreen,
-        coords: [420, 541, 477.5, 495.5, 515, 509.75, 462, 555.75],
+        coords: [425, 543, 477.5, 495.5, 515, 509.75, 462, 555.75],
       },
       {
         id: 'house-14',
@@ -169,13 +169,13 @@ export const ChooseHouseMock: TChooseHouse = {
         id: 'house-22',
         shape: 'poly',
         ...housePolyOrange,
-        coords: [291.5, 578.5, 335, 522, 384, 540, 327.5, 592.5],
+        coords: [291.5, 578.5, 345, 525, 384, 540, 327.5, 592.5],
       },
       {
         id: 'house-23',
         shape: 'poly',
         ...housePolyOrange,
-        coords: [255.5, 564.5, 292, 507, 335, 522, 291.5, 578.5],
+        coords: [255.5, 564.5, 292, 507, 345, 525, 291.5, 578.5],
       },
       {
         id: 'house-24',
@@ -320,9 +320,9 @@ export const ChooseHouseMock: TChooseHouse = {
       },
     },
     'house-6': {
-      statusColor: '#348aa7',
+      statusColor: 'rgb(255, 111, 0)',
       linkUrl: '/houses/house3',
-      statusText: 'Доступно',
+      statusText: 'Забронировано',
       houseId: 'Коттедж №6',
       imgUrl: '/img/threeHousesRow/house-1-155m2/main.png', // 539x337
       imgAlt: '',
@@ -624,9 +624,9 @@ export const ChooseHouseMock: TChooseHouse = {
       },
     },
     'house-22': {
-      statusColor: '#348aa7',
-      linkUrl: '/houses/house3',
-      statusText: 'Доступно',
+      statusColor: 'rgb(255, 111, 0)',
+      linkUrl: '/',
+      statusText: 'Забронировано',
       houseId: 'Коттедж №22',
       imgUrl: '/img/buildToOrder.jpeg', // 539x337
       imgAlt: '',
@@ -643,9 +643,9 @@ export const ChooseHouseMock: TChooseHouse = {
       },
     },
     'house-23': {
-      statusColor: '#348aa7',
-      linkUrl: '/houses/house3',
-      statusText: 'Доступно',
+      statusColor: 'rgb(255, 111, 0)',
+      linkUrl: '/',
+      statusText: 'Забронировано',
       houseId: 'Коттедж №23',
       imgUrl: '/img/buildToOrder.jpeg', // 539x337
       imgAlt: '',
@@ -662,9 +662,9 @@ export const ChooseHouseMock: TChooseHouse = {
       },
     },
     'house-24': {
-      statusColor: '#348aa7',
-      linkUrl: '/houses/house3',
-      statusText: 'Доступно',
+      statusColor: 'rgb(255, 111, 0)',
+      linkUrl: '/',
+      statusText: 'Забронировано',
       houseId: 'Коттедж №24',
       imgUrl: '/img/buildToOrder.jpeg', // 539x337
       imgAlt: '',
@@ -681,9 +681,9 @@ export const ChooseHouseMock: TChooseHouse = {
       },
     },
     'house-25': {
-      statusColor: '#348aa7',
-      linkUrl: '/houses/house3',
-      statusText: 'Доступно',
+      statusColor: 'rgb(255, 111, 0)',
+      linkUrl: '/',
+      statusText: 'Забронировано',
       houseId: 'Коттедж №25',
       imgUrl: '/img/buildToOrder.jpeg', // 539x337
       imgAlt: '',

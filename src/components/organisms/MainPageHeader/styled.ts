@@ -81,7 +81,7 @@ const Headings = styled.div<THeadingsProps>`
 
 const DarkenContainer = styled.div`
   @media (min-width: 640px) {
-    background: #000000c7;
+    background: rgba(113, 113, 113, 0);
     padding: 23px;
     border-radius: 30px;
   }

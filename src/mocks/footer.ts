@@ -3,7 +3,7 @@ import { TFooter } from '@localTypes/footer'
 export const FooterMock: TFooter = {
   imageUrl: '/img/logo-default.svg',
   imageAlt: 'Логотип',
-  imageTitle: 'Модерн',
+  imageTitle: 'Логотип',
   imageLinkUrl: '/',
   copyrightText: 'ИП приладышев владимир юрьевич (ИНН TODO)',
   socialLinks: {
@@ -25,13 +25,13 @@ export const FooterMock: TFooter = {
       label: 'Главная',
       url: '/',
     },
-    {
-      label: 'Проекты',
-      url: '/',
-    },
+    // {
+    //   label: 'Проекты',
+    //   url: '/',
+    // },
     {
       label: 'Контакты',
-      url: '/',
+      url: '/contacts',
     },
   ],
 }

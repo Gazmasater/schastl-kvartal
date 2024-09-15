@@ -10,7 +10,7 @@ export const AboutProjectMock: TAboutProject = {
   features: [
     {
       first: {
-        label: '8',
+        label: '~8',
         subtext: 'Соток личного пространства',
       },
       second: {
@@ -20,7 +20,7 @@ export const AboutProjectMock: TAboutProject = {
     },
     {
       first: {
-        label: '5',
+        label: '5+',
         subtext: 'Интересных проектов',
       },
       second: {

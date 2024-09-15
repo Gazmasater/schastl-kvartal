@@ -22,27 +22,95 @@ export const house3PageMock: THousePage = {
     mainPageLink: '/',
     mainPageLabel: 'Главная страница',
     separator: '/',
-    subitemText: 'Модерн',
-    headingFirst: 'Модерн',
-    headingSecond: 'Заголовок 2',
+    subitemText: 'Модерн-140',
+    headingFirst: 'Модерн-140',
+    headingSecond: '',
     features: {
       first: {
         label: 'Общая площадь',
-        value: '83.84 m2',
+        value: '140 m2',
       },
       second: {
         label: 'Размер чего-то',
-        value: 'вид 5.3 а',
+        value: '8 соток',
       },
     },
-    mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
-    mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
-    mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
+    mainPageImageXs: '/img/mainPageBanner/house-3-140m2/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
+    mainPageImageMd: '/img/mainPageBanner/house-3-140m2/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
+    mainPageImageLg: '/img/mainPageBanner/house-3-140m2/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
     blackHeadings: true, // optional param
     customHeadingHexColor: '#fff', // optional param
     customFeaturesBaseColor: '#fff', // optional param
   },
-  houseTypeInfoData: houseTypeInfoExampleMock,
+  houseTypeInfoData: {
+    heading: 'Планировка',
+    firstTabTitle: '1й этаж',
+    firstTab: {
+      imageUrl: '/img/houseTypeInfo/hause-3-140m2/140-1.jpg', // imageUrl: 1080x1080
+      subtitle: 'Первый этаж',
+      features: [
+        {
+          textInSpan: '1. Кухня',
+          middleText: '2.03 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '2. Гостинная',
+          middleText: '2.21 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '3. Спальня',
+          middleText: '30.78 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '4. Спальня',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '5. Гордиробная',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '6. Санузел',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '7. Холл',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '8. Топочная',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '9. Коридор',
+          middleText: '1.86 m',
+          supText: '2',
+        },
+      ],
+      firstLinkText: 'Контакты',
+      firstLinkUrl: '/contacts',
+      secondLinkText: 'На просмотр',
+      secondLinkUrl: '#callback',
+    },
+    secondTabTitle: '',
+    secondTab: {
+      imageUrl: '',
+      subtitle: '',
+      features: [],
+      firstLinkText: '',
+      firstLinkUrl: '',
+      secondLinkText: '',
+      secondLinkUrl: ''
+    }
+  },
   threeHousesRowData: ThreeHousesRowMock,
   chooseHouseData: ChooseHouseMock,
   bookCallBackData: BookCallbackMock,

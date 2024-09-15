@@ -38,8 +38,8 @@ export const house1PageMock: THousePage = {
     mainPageImageXs: '/img/mainPageBanner/house-1-155m2/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
     mainPageImageMd: '/img/mainPageBanner/house-1-155m2/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
     mainPageImageLg: '/img/mainPageBanner/house-1-155m2/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
-    customHeadingHexColor: '#fff', // optional param
-    customFeaturesBaseColor: '#fff', // optional param
+    customHeadingHexColor: '#000', // optional param
+    customFeaturesBaseColor: '#000', // optional param
     breadcrumbsColor: '#000', // optional
   },
   houseTypeInfoData:   {
