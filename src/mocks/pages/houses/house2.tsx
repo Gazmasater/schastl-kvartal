@@ -45,7 +45,7 @@ export const house2PageMock: THousePage = {
     breadcrumbsColor: '#000', // optional
   },
   houseTypeInfoData: {
-    heading: 'Спецификация дома',
+    heading: 'Планировка',
     firstTabTitle: '1й этаж',
     firstTab: {
       imageUrl: '/img/houseTypeInfo/hause-2-115m2/115-1.jpg', // imageUrl: 1080x1080

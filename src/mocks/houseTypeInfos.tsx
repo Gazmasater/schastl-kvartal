@@ -3,7 +3,7 @@ import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
 /* imageUrl: 792x1080 */
 
 export const houseTypeInfoExampleMock: THouseTypeInfo = {
-  heading: 'Спецификация дома',
+  heading: 'Планировка',
   firstTabTitle: '1й этаж',
   secondTabTitle: '2й этаж',
   firstTab: {
@@ -31,7 +31,7 @@ export const houseTypeInfoExampleMock: THouseTypeInfo = {
         supText: '2',
       },
     ],
-    firstLinkText: 'Первая ссылка',
+    firstLinkText: 'Контакты',
     firstLinkUrl: '/contacts',
     secondLinkText: 'Записаться на просмотр',
     secondLinkUrl: '#callback',
@@ -71,7 +71,7 @@ export const houseTypeInfoExampleMock: THouseTypeInfo = {
         supText: '2',
       },
     ],
-    firstLinkText: 'Первая ссылка',
+    firstLinkText: 'Контакты',
     firstLinkUrl: '/contacts',
     secondLinkText: 'Записаться на просмотр',
     secondLinkUrl: '#callback',

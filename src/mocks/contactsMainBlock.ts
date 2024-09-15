@@ -5,7 +5,7 @@ imgUrl: 898x677
 */
 
 export const ContactsMainBlockMock: TContactsMainBlock = {
-  mainHeading: 'ЖК Лазурный, Счастливый квартал',
+  mainHeading: 'ЖК "Лазурный", Счастливый квартал',
   addr: 'Адрес : Липецкая область, Липецкий район, с. Ленино, ул. Перспективная',
   phoneHeading: 'Телефон',
   telegramLink: '/',

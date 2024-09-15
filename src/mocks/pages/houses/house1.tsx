@@ -43,7 +43,7 @@ export const house1PageMock: THousePage = {
     breadcrumbsColor: '#000', // optional
   },
   houseTypeInfoData:   {
-    heading: 'Спецификация дома',
+    heading: 'Планировка',
     firstTabTitle: '1й этаж',
     secondTabTitle: '2й этаж',
     firstTab: {

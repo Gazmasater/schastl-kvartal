@@ -11,8 +11,11 @@ export const MainPageHeaderMock: TMainPageHeader = {
   mainPageLabel: 'Главная страница',
   separator: '/',
   subitemText: 'Счастливый квартал',
-  headingFirst: 'ЖК Лазурный',
-  headingSecond: 'Счастливый квартал',
+  headingFirst: 'ЖК "Лазурный"',
+  // TODO красивые курсивные буквы
+  // убрать акцент от ЖК "Лазурный" в пользу текста ниже (другим цветом или как-нибудь еще)
+  // Стройте с нами Счастливый Квартал (убрать апперкейс *оригинал) 
+  headingSecond: 'Стройте с нами Счастливый Квартал!',
   mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
   mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
   mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080

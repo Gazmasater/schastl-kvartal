@@ -5,7 +5,7 @@ export const FooterMock: TFooter = {
   imageAlt: 'Логотип',
   imageTitle: 'Модерн',
   imageLinkUrl: '/',
-  copyrightText: 'ИП приладышев',
+  copyrightText: 'ИП приладышев владимир юрьевич (ИНН TODO)',
   socialLinks: {
     youtube: {
       title: 'Youtube канал',
