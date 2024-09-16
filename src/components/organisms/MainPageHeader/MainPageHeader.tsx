@@ -42,7 +42,18 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
                   {data.headingFirst}
                 </Styled.HeadingFirst>
                 {data.headingSecond && (
-                  <Styled.HeadingSecond className="MuiTypography-root MuiTypography-subtitle1">
+                  <Styled.HeadingSecond
+                    className="MuiTypography-root MuiTypography-subtitle1"
+                    $fontSizeDefault={data.headingSecondProps?.fontSizeDefault}
+                    $fontWeightDefault={data.headingSecondProps?.fontWeightDefault}
+                    $lineHeightDefault={data.headingSecondProps?.lineHeightDefault}
+                    $fontSizeMiddleViewPort={data.headingSecondProps?.fontSizeMiddleViewPort}
+                    $fontWeightMiddleViewPort={data.headingSecondProps?.fontWeightMiddleViewPort}
+                    $lineHeightMiddleViewPort={data.headingSecondProps?.lineHeightMiddleViewPort}
+                    $fontSizeBigViewPort={data.headingSecondProps?.fontSizeBigViewPort}
+                    $fontWeightBigViewPort={data.headingSecondProps?.fontWeightBigViewPort}
+                    $lineHeightBigViewPort={data.headingSecondProps?.lineHeightBigViewPort}
+                  >
                     {data.headingSecond}
                   </Styled.HeadingSecond>
                 )}

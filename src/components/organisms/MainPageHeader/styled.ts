@@ -81,7 +81,7 @@ const Headings = styled.div<THeadingsProps>`
 
 const DarkenContainer = styled.div`
   @media (min-width: 640px) {
-    background: rgba(113, 113, 113, 0);
+    background: #000000c7;
     padding: 23px;
     border-radius: 30px;
   }
@@ -108,7 +108,7 @@ const HeadingFirst = styled.h1`
 
   @media (min-width: 900px) {
     font-size: 2.375rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 
   @media (min-width: 992px) {
@@ -116,21 +116,37 @@ const HeadingFirst = styled.h1`
   }
 `
 
-const HeadingSecond = styled.div`
-  font-size: 1.125rem;
-  max-width: 31.25rem;
+type THeadingSecondProps = {
+  $fontSizeDefault?: string
+  $fontWeightDefault?: string
+  $lineHeightDefault?: string
+  $fontSizeMiddleViewPort?: string
+  $fontWeightMiddleViewPort?: string
+  $lineHeightMiddleViewPort?: string
+  $fontSizeBigViewPort?: string
+  $fontWeightBigViewPort?: string
+  $lineHeightBigViewPort?: string
+}
+
+const HeadingSecond = styled.div<THeadingSecondProps>`
+  font-size: ${({ $fontSizeDefault }) => $fontSizeDefault || '1.125rem'};
+  font-weight: ${({ $fontWeightDefault }) => $fontWeightDefault || '400'};
+  line-height: ${({ $lineHeightDefault }) => $lineHeightDefault || '1.3'};
   margin-top: 0.75rem;
-  font-weight: 400;
-  line-height: 1.3;
-  text-transform: uppercase;
+  max-width: 31.25rem;
+  /* text-transform: uppercase; */
 
   @media (min-width: 640px) and (max-width: 991.95px) {
-    font-size: 1.3125rem;
+    font-size: ${({ $fontSizeMiddleViewPort }) => $fontSizeMiddleViewPort || '1.3125rem'};
+    font-weight: ${({ $fontWeightMiddleViewPort }) => $fontWeightMiddleViewPort};
+    line-height: ${({ $lineHeightMiddleViewPort }) => $lineHeightMiddleViewPort};
     margin-top: 1.125rem;
   }
 
   @media (min-width: 992px) {
-    font-size: 1.5rem;
+    font-size: ${({ $fontSizeBigViewPort }) => $fontSizeBigViewPort || '1.5rem'};
+    font-weight: ${({ $fontWeightBigViewPort }) => $fontWeightBigViewPort};
+    line-height: ${({ $lineHeightBigViewPort }) => $lineHeightBigViewPort};
     margin-top: 1.625rem;
   }
 `
