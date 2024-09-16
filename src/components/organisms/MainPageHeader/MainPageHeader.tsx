@@ -37,7 +37,7 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
             </Styled.BreadcrumbsContainer>
             <Styled.Headings $isBlack={data.blackHeadings} $customHeadingHexColor={data.customHeadingHexColor}>
               <Styled.HeadingsSpacer />
-              <Styled.DarkenContainer>
+              <Styled.DarkenContainer $bgColor={data.darkenBgColor}>
                 <Styled.HeadingFirst className="MuiTypography-root MuiTypography-h1">
                   {data.headingFirst}
                 </Styled.HeadingFirst>

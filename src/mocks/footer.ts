@@ -6,20 +6,20 @@ export const FooterMock: TFooter = {
   imageTitle: 'Логотип',
   imageLinkUrl: '/',
   copyrightText: 'ИП приладышев владимир юрьевич (ИНН TODO)',
-  socialLinks: {
-    youtube: {
-      title: 'Youtube канал',
-      url: '/',
-    },
-    facebook: {
-      title: 'Facebook паблик',
-      url: '/',
-    },
-    insta: {
-      title: 'Instagram канал',
-      url: '/',
-    },
-  },
+  // socialLinks: {
+  //   youtube: {
+  //     title: 'Youtube канал',
+  //     url: '/',
+  //   },
+  //   facebook: {
+  //     title: 'Facebook паблик',
+  //     url: '/',
+  //   },
+  //   insta: {
+  //     title: 'Instagram канал',
+  //     url: '/',
+  //   },
+  // },
   footerLinks: [
     {
       label: 'Главная',

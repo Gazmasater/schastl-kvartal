@@ -23,11 +23,11 @@ const housePolyOrange = {
   strokeColor: 'black',
 }
 
-const housePolyDone = {
-  fillColor: '#00800052',
-  preFillColor: '#00800026',
-  strokeColor: 'black',
-}
+// const housePolyDone = {
+//   fillColor: '#00800052',
+//   preFillColor: '#00800026',
+//   strokeColor: 'black',
+// }
 
 export const ChooseHouseMock: TChooseHouse = {
   imgUrl: '/img/mappedImage/image.png', // imgUrl: 1520x922
@@ -39,14 +39,12 @@ export const ChooseHouseMock: TChooseHouse = {
         shape: 'poly',
         ...housePolyRed,
         coords: [589.25, 539, 642.5, 492.75, 680, 507, 626.5, 553.5],
-        
       },
       {
         id: 'house-2',
         shape: 'poly',
         ...housePolyGreen,
         coords: [552, 524.5, 605, 478.5, 642.5, 492.75, 589.25, 539],
-        
       },
       {
         id: 'house-3',
@@ -131,21 +129,18 @@ export const ChooseHouseMock: TChooseHouse = {
         shape: 'poly',
         ...housePolyGreen,
         coords: [536, 585.25, 589.25, 539, 626.5, 553.5, 573, 600],
-        
       },
       {
         id: 'house-17',
         shape: 'poly',
         ...housePolyGreen,
         coords: [471.625, 648.375, 530.25, 594, 567, 608, 508.5, 663],
-
       },
       {
         id: 'house-18',
         shape: 'poly',
         ...housePolyGreen,
         coords: [434.75, 633.75, 493.5, 580, 530.25, 594, 471.625, 648.375],
-        
       },
       {
         id: 'house-19',
@@ -188,16 +183,14 @@ export const ChooseHouseMock: TChooseHouse = {
         shape: 'poly',
         ...housePolyOrange,
         coords: [248.5, 634.75, 291.5, 578.5, 327.5, 592.5, 278, 647.5],
-        
       },
       {
         id: 'house-26',
         shape: 'poly',
         ...housePolyGreen,
         coords: [278, 647.5, 327.5, 592.5, 361, 604.5, 302, 657],
-        
       },
-      { 
+      {
         id: 'house-27',
         shape: 'poly',
         ...housePolyGreen,

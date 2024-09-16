@@ -63,6 +63,6 @@ export const GalleryMock: TGallery = {
         { full: '/img/gallery/16.09.2024/IMG_3996.JPG', thumb: '/img/gallery/16.09.2024/IMG_3996.JPG' },
         { full: '/img/gallery/16.09.2024/IMG_3997.JPG', thumb: '/img/gallery/16.09.2024/IMG_3997.JPG' },
       ],
-    }
+    },
   ],
 }

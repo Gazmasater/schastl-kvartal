@@ -2,7 +2,7 @@ import { THousePage } from '@localTypes/pageTypes'
 import { Metas } from '@mocks/meta'
 import { NavMock } from '@mocks/nav'
 import { FooterMock } from '@mocks/footer'
-import { houseTypeInfoExampleMock } from '@mocks/houseTypeInfos'
+// import { houseTypeInfoExampleMock } from '@mocks/houseTypeInfos'
 import { ThreeHousesRowMock } from '@mocks/threeHousesRow'
 import { ChooseHouseMock } from '@mocks/chooseHouse'
 import { BookCallbackMock } from '@mocks/bookCallback'
@@ -108,8 +108,8 @@ export const house3PageMock: THousePage = {
       firstLinkText: '',
       firstLinkUrl: '',
       secondLinkText: '',
-      secondLinkUrl: ''
-    }
+      secondLinkUrl: '',
+    },
   },
   threeHousesRowData: ThreeHousesRowMock,
   chooseHouseData: ChooseHouseMock,

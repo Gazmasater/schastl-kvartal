@@ -22,18 +22,18 @@ export const NavMock: TNav = {
       url: '/contacts',
     },
   ],
-  socialLinks: {
-    youtube: {
-      title: 'Youtube канал',
-      url: '/',
-    },
-    facebook: {
-      title: 'Facebook паблик',
-      url: '/',
-    },
-    insta: {
-      title: 'Instagram канал',
-      url: '/',
-    },
-  },
+  // socialLinks: {
+  //   youtube: {
+  //     title: 'Youtube канал',
+  //     url: '/',
+  //   },
+  //   facebook: {
+  //     title: 'Facebook паблик',
+  //     url: '/',
+  //   },
+  //   insta: {
+  //     title: 'Instagram канал',
+  //     url: '/',
+  //   },
+  // },
 }

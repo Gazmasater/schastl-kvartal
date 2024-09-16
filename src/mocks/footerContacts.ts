@@ -9,7 +9,7 @@ export const FooterContactsMock: TFooterContacts = {
     {
       url: 'tel:8(4742) 39-00-16',
       text: '8(4742) 39-00-16',
-    }
+    },
   ],
   mapProviderLink:
     'https://yandex.ru/maps/9/lipetsk/?ll=39.469925%2C52.514550&mode=routes&rtext=~52.513711%2C39.468675&rtt=auto&ruri=~&z=18',
