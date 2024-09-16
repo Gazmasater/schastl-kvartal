@@ -419,7 +419,7 @@ export const ChooseHouseMock: TChooseHouse = {
       linkUrl: '/houses/house3',
       statusText: 'Доступно',
       houseId: 'Коттедж №11',
-      imgUrl: '/img/threeHousesRow/house-3-140m2/main.png', // 539x337
+      imgUrl: '/img/threeHousesRow/house-3-140m2/main.jpg', // 539x337
       imgAlt: '',
       title: 'Модерн-140',
       features: {

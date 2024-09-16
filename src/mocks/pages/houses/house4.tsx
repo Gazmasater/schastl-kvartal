@@ -65,7 +65,7 @@ export const house4PageMock: THousePage = {
           supText: '2',
         },
         {
-          textInSpan: '4. Гостинная',
+          textInSpan: '4. Гостиная',
           middleText: '1.86 m',
           supText: '2',
         },

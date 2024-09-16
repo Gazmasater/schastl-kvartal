@@ -52,27 +52,27 @@ export const house1PageMock: THousePage = {
       features: [
         {
           textInSpan: '1. Холл',
-          middleText: '2.03 m',
+          middleText: '2.03 m2',
           supText: '2',
         },
         {
           textInSpan: '2. Гардеробная',
-          middleText: '2.21 m',
+          middleText: '4 m2',
           supText: '2',
         },
         {
           textInSpan: '3. Санузел',
-          middleText: '30.78 m',
+          middleText: '4 m2',
           supText: '2',
         },
         {
           textInSpan: '4. Кухня',
-          middleText: '1.86 m',
+          middleText: '20 m2',
           supText: '2',
         },
         {
-          textInSpan: '5. Гостинная',
-          middleText: '1.86 m',
+          textInSpan: '5. Гостиная',
+          middleText: '36,5 m2',
           supText: '2',
         },
       ],
@@ -87,32 +87,32 @@ export const house1PageMock: THousePage = {
       features: [
         {
           textInSpan: '6. Коридор',
-          middleText: '4.18 m',
+          middleText: '5.5 m2',
           supText: '2',
         },
         {
           textInSpan: '7. Спальня',
-          middleText: '6.96 m',
+          middleText: '6.96 m2',
           supText: '2',
         },
         {
           textInSpan: '8. Спальня',
-          middleText: '14.18 m',
+          middleText: '14.18 m2',
           supText: '2',
         },
         {
           textInSpan: '9. Спальня',
-          middleText: '9.55 m',
+          middleText: '9.55 m2',
           supText: '2',
         },
         {
           textInSpan: '10. Гардеробная',
-          middleText: '4.92 m',
+          middleText: '4.92 m2',
           supText: '2',
         },
         {
           textInSpan: '11. Санузел',
-          middleText: '4.92 m',
+          middleText: '4.92 m2',
           supText: '2',
         },
       ],

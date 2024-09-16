@@ -35,9 +35,9 @@ export const house3PageMock: THousePage = {
         value: '8 соток',
       },
     },
-    mainPageImageXs: '/img/mainPageBanner/house-3-140m2/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
-    mainPageImageMd: '/img/mainPageBanner/house-3-140m2/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
-    mainPageImageLg: '/img/mainPageBanner/house-3-140m2/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
+    mainPageImageXs: '/img/mainPageBanner/house-3-140m2/main.jpg', // mainPageImageXs: 521x521
+    mainPageImageMd: '/img/mainPageBanner/house-3-140m2/main.jpg', // mainPageImageMd: 1280x720
+    mainPageImageLg: '/img/mainPageBanner/house-3-140m2/main.jpg', // mainPageImageLg: 2160x1080
     blackHeadings: true, // optional param
     customHeadingHexColor: '#fff', // optional param
     customFeaturesBaseColor: '#fff', // optional param
@@ -55,7 +55,7 @@ export const house3PageMock: THousePage = {
           supText: '2',
         },
         {
-          textInSpan: '2. Гостинная',
+          textInSpan: '2. Гостиная',
           middleText: '2.21 m',
           supText: '2',
         },
