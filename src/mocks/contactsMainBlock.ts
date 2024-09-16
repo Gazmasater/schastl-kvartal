@@ -13,7 +13,7 @@ export const ContactsMainBlockMock: TContactsMainBlock = {
     {
       url: 'tel:8(4742) 39-00-16',
       tel: '8(4742) 39-00-16',
-    }
+    },
   ],
   workHours: 'Ежедневно 10:00 - 19:00',
   mailtoLink: 'mail:sw_putilina@mail.ru',

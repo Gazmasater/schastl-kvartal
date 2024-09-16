@@ -6,7 +6,7 @@ export type TFooter = {
   imageTitle: string
   imageLinkUrl: string
   copyrightText: string
-  socialLinks: TNavSocialLinks
+  socialLinks?: TNavSocialLinks
   footerLinks: {
     url: string
     label: string

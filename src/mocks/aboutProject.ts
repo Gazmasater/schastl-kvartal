@@ -27,7 +27,7 @@ export const AboutProjectMock: TAboutProject = {
         label: '0',
         subtext: 'Причин для сомнений',
       },
-    }
+    },
   ],
   // linkToMapProvider: 'https://maps.google.com/?saddr=My%20Location&amp;daddr=50.4142289254263,30.278142662692854',
   // mapText: 'Проложить маршрут',

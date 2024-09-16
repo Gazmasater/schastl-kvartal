@@ -34,4 +34,5 @@ export type TMainPageHeader = {
   customFeaturesBaseColor?: string
   customFeaturesPrimaryColor?: string
   breadcrumbsColor?: string
+  darkenBgColor?: string
 }

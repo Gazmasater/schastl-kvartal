@@ -79,9 +79,13 @@ const Headings = styled.div<THeadingsProps>`
   }
 `
 
-const DarkenContainer = styled.div`
+type TDarkenContainerProps = {
+  $bgColor?: string
+}
+
+const DarkenContainer = styled.div<TDarkenContainerProps>`
   @media (min-width: 640px) {
-    background: #000000c7;
+    background: ${({ $bgColor }) => $bgColor || '#000000c7'};
     padding: 23px;
     border-radius: 30px;
   }

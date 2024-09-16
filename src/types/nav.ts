@@ -4,15 +4,15 @@ export type TNavLinks = {
 }[]
 
 export type TNavSocialLinks = {
-  youtube: {
+  youtube?: {
     title: string
     url: string
   }
-  facebook: {
+  facebook?: {
     title: string
     url: string
   }
-  insta: {
+  insta?: {
     title: string
     url: string
   }
@@ -27,5 +27,5 @@ export type TNav = {
   phone: string
   phoneLink: string
   navLinks: TNavLinks
-  socialLinks: TNavSocialLinks
+  socialLinks?: TNavSocialLinks
 }
