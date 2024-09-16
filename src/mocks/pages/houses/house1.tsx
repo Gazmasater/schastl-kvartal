@@ -2,7 +2,7 @@ import { THousePage } from '@localTypes/pageTypes'
 import { Metas } from '@mocks/meta'
 import { NavMock } from '@mocks/nav'
 import { FooterMock } from '@mocks/footer'
-import { houseTypeInfoExampleMock } from '@mocks/houseTypeInfos'
+// import { houseTypeInfoExampleMock } from '@mocks/houseTypeInfos'
 import { ThreeHousesRowMock } from '@mocks/threeHousesRow'
 import { ChooseHouseMock } from '@mocks/chooseHouse'
 import { BookCallbackMock } from '@mocks/bookCallback'
@@ -42,7 +42,7 @@ export const house1PageMock: THousePage = {
     customFeaturesBaseColor: '#000', // optional param
     breadcrumbsColor: '#000', // optional
   },
-  houseTypeInfoData:   {
+  houseTypeInfoData: {
     heading: 'Планировка',
     firstTabTitle: '1й этаж',
     secondTabTitle: '2й этаж',
@@ -121,8 +121,7 @@ export const house1PageMock: THousePage = {
       secondLinkText: 'На просмотр',
       secondLinkUrl: '#callback',
     },
-  }
-,
+  },
   threeHousesRowData: ThreeHousesRowMock,
   chooseHouseData: ChooseHouseMock,
   bookCallBackData: BookCallbackMock,

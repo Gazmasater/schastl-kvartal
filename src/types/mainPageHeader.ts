@@ -5,6 +5,17 @@ export type TMainPageHeader = {
   subitemText: string
   headingFirst: string
   headingSecond?: string
+  headingSecondProps?: {
+    fontSizeDefault?: string
+    fontWeightDefault?: string
+    lineHeightDefault?: string
+    fontSizeMiddleViewPort?: string
+    fontWeightMiddleViewPort?: string
+    lineHeightMiddleViewPort?: string
+    fontSizeBigViewPort?: string
+    fontWeightBigViewPort?: string
+    lineHeightBigViewPort?: string
+  }
   mainPageImageXs: string
   mainPageImageMd: string
   mainPageImageLg: string
