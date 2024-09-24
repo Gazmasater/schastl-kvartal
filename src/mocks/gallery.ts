@@ -9,6 +9,25 @@ export const GalleryMock: TGallery = {
   title: 'Ход строительства',
   gallery: [
     {
+      date: '20 сентября 2024',
+      // text: ['блаблабла', 'блаблабла', 'блаблабла'],
+      imgUrls: [
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181346.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181346.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181422.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181422.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181457.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181457.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181538.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181538.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181609.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181609.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181658.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181658.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181715.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181715.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181733.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181733.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181805.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181805.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181816.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181816.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181857.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181857.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181904.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181904.jpg' },
+        { full: '/img/gallery/20.09.2024/IMG_20240916_181956.jpg',    thumb: '/img/gallery/20.09.2024/IMG_20240916_181956.jpg' },
+      ]
+    },
+    {
       date: '16 сентября 2024',
       // text: ['блаблабла', 'блаблабла', 'блаблабла'],
       imgUrls: [
@@ -55,5 +74,37 @@ export const GalleryMock: TGallery = {
         { full: '/img/gallery/16.09.2024/IMG_3997.JPG', thumb: '/img/gallery/16.09.2024/IMG_3997.JPG' },
       ],
     },
+    {
+      date: '23 марта 2024',
+      // text: ['блаблабла', 'блаблабла', 'блаблабла'],
+      imgUrls: [
+        { full: '/img/gallery/24.03.2024/IMG_20240324_121247_406.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_121247_406.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_121350_663.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_121350_663.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_121409_064.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_121409_064.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_121553_297.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_121553_297.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_122306_157.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_122306_157.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_122408_411.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_122408_411.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_122414_117.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_122414_117.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_122428_671.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_122428_671.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_122815_479.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_122815_479.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_122929_440.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_122929_440.jpg' },
+        { full: '/img/gallery/24.03.2024/IMG_20240324_122954_202.jpg', thumb: '/img/gallery/24.03.2024/IMG_20240324_122954_202.jpg' },
+      ],
+    },
+    {
+      date: '18 Авгста 2023',
+      // text: ['блаблабла', 'блаблабла', 'блаблабла'],
+      imgUrls: [
+        { full: '/img/gallery/18.08.2023/IMG_20230818_125523_230.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_125523_230.jpg' },
+        { full: '/img/gallery/18.08.2023/IMG_20230818_125533_458.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_125533_458.jpg' },
+        { full: '/img/gallery/18.08.2023/IMG_20230818_125622_052.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_125622_052.jpg' },
+        { full: '/img/gallery/18.08.2023/IMG_20230818_131636_724.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_131636_724.jpg' },
+        { full: '/img/gallery/18.08.2023/IMG_20230818_131650_574.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_131650_574.jpg' },
+        { full: '/img/gallery/18.08.2023/IMG_20230818_161017_976.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_161017_976.jpg' },
+        { full: '/img/gallery/18.08.2023/IMG_20230818_163701_550.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_163701_550.jpg' },
+        { full: '/img/gallery/18.08.2023/IMG_20230818_175543_772.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_175543_772.jpg' },
+        { full: '/img/gallery/18.08.2023/IMG_20230818_175620_409.jpg', thumb: '/img/gallery/18.08.2023/IMG_20230818_175620_409.jpg' },
+      ],
+    }
   ],
 }

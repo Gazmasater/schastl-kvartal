@@ -28,7 +28,7 @@ export const house2PageMock: THousePage = {
     features: {
       first: {
         label: 'Общая площадь',
-        value: '115 m2',
+        value: '115 m',
       },
       second: {
         label: 'Размер участка',
@@ -48,52 +48,57 @@ export const house2PageMock: THousePage = {
     heading: 'Планировка',
     firstTabTitle: '1й этаж',
     firstTab: {
-      imageUrl: '/img/houseTypeInfo/hause-2-115m2/115-1.jpg', // imageUrl: 1080x1080
+      imageUrl: '/img/houseTypeInfo/house-2-115m2/115-1.jpg', // imageUrl: 1080x1080
       subtitle: 'Первый этаж',
       features: [
         {
           textInSpan: '1. Кухня',
-          middleText: '2.03 m',
+          middleText: '15 m',
           supText: '2',
         },
         {
           textInSpan: '2. Гостиная',
-          middleText: '2.21 m',
+          middleText: '32 m',
           supText: '2',
         },
         {
           textInSpan: '3. Спальня',
-          middleText: '30.78 m',
+          middleText: '14 m',
           supText: '2',
         },
         {
           textInSpan: '4. Спальня',
-          middleText: '1.86 m',
+          middleText: '17 m',
           supText: '2',
         },
         {
           textInSpan: '5. Гордиробная',
-          middleText: '1.86 m',
+          middleText: '8 m',
           supText: '2',
         },
         {
           textInSpan: '6. Санузел',
-          middleText: '1.86 m',
+          middleText: '6.5 m',
           supText: '2',
         },
         {
           textInSpan: '7. Холл',
-          middleText: '1.86 m',
+          middleText: '5.1 m',
           supText: '2',
         },
         {
           textInSpan: '8. Топочная',
-          middleText: '1.86 m',
+          middleText: '5.7 m',
           supText: '2',
         },
         {
           textInSpan: '9. Коридор',
-          middleText: '1.86 m',
+          middleText: '8.7 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '10. Терраса',
+          middleText: '16 m',
           supText: '2',
         },
       ],

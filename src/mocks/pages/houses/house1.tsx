@@ -28,7 +28,7 @@ export const house1PageMock: THousePage = {
     features: {
       first: {
         label: 'Общая площадь',
-        value: '155 m2',
+        value: '155 m',
       },
       second: {
         label: 'Размер участка',
@@ -52,27 +52,27 @@ export const house1PageMock: THousePage = {
       features: [
         {
           textInSpan: '1. Холл',
-          middleText: '2.03 m2',
+          middleText: '2.03 m',
           supText: '2',
         },
         {
           textInSpan: '2. Гардеробная',
-          middleText: '4 m2',
+          middleText: '4 m',
           supText: '2',
         },
         {
           textInSpan: '3. Санузел',
-          middleText: '4 m2',
+          middleText: '4 m',
           supText: '2',
         },
         {
           textInSpan: '4. Кухня',
-          middleText: '20 m2',
+          middleText: '20 m',
           supText: '2',
         },
         {
           textInSpan: '5. Гостиная',
-          middleText: '36,5 m2',
+          middleText: '36,5 m',
           supText: '2',
         },
       ],
@@ -87,32 +87,32 @@ export const house1PageMock: THousePage = {
       features: [
         {
           textInSpan: '6. Коридор',
-          middleText: '5.5 m2',
+          middleText: '5.5 m',
           supText: '2',
         },
         {
           textInSpan: '7. Спальня',
-          middleText: '6.96 m2',
+          middleText: '6.96 m',
           supText: '2',
         },
         {
           textInSpan: '8. Спальня',
-          middleText: '14.18 m2',
+          middleText: '14.18 m',
           supText: '2',
         },
         {
           textInSpan: '9. Спальня',
-          middleText: '9.55 m2',
+          middleText: '9.55 m',
           supText: '2',
         },
         {
           textInSpan: '10. Гардеробная',
-          middleText: '4.92 m2',
+          middleText: '4.92 m',
           supText: '2',
         },
         {
           textInSpan: '11. Санузел',
-          middleText: '4.92 m2',
+          middleText: '4.92 m',
           supText: '2',
         },
       ],

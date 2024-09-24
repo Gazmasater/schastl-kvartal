@@ -28,7 +28,7 @@ export const house4PageMock: THousePage = {
     features: {
       first: {
         label: 'Общая площадь',
-        value: '97 m2',
+        value: '97 m',
       },
       second: {
         label: 'Размер чего-то',
@@ -44,49 +44,49 @@ export const house4PageMock: THousePage = {
   },
   houseTypeInfoData: {
     heading: 'Планировка',
-    firstTabTitle: '1й этаж',
+    firstTabTitle: '1й вариант',
     firstTab: {
-      imageUrl: '/img/houseTypeInfo/hause-4-97m2/97-1.jpg', // imageUrl: 1080x1080
+      imageUrl: '/img/houseTypeInfo/house-4-97m2/97-1.jpg', // imageUrl: 1080x1080
       subtitle: 'Первый этаж',
       features: [
         {
           textInSpan: '1. Холл',
-          middleText: '2.03 m',
+          middleText: '5 m',
           supText: '2',
         },
         {
           textInSpan: '2. Топочная',
-          middleText: '2.21 m',
+          middleText: '8 m',
           supText: '2',
         },
         {
           textInSpan: '3. Кухня',
-          middleText: '30.78 m',
+          middleText: '10 m',
           supText: '2',
         },
         {
           textInSpan: '4. Гостиная',
-          middleText: '1.86 m',
+          middleText: '34 m',
           supText: '2',
         },
         {
           textInSpan: '5. Коридор',
-          middleText: '1.86 m',
+          middleText: '8 m',
           supText: '2',
         },
         {
           textInSpan: '6. Спальня',
-          middleText: '1.86 m',
+          middleText: '13 m',
           supText: '2',
         },
         {
           textInSpan: '7. Санузел',
-          middleText: '1.86 m',
+          middleText: '6 m',
           supText: '2',
         },
         {
           textInSpan: '8. Спальня',
-          middleText: '1.86 m',
+          middleText: '16 m',
           supText: '2',
         },
       ],
@@ -95,15 +95,61 @@ export const house4PageMock: THousePage = {
       secondLinkText: 'На просмотр',
       secondLinkUrl: '#callback',
     },
-    secondTabTitle: '',
+    secondTabTitle: '2й вариант',
     secondTab: {
-      imageUrl: '',
-      subtitle: '',
-      features: [],
-      firstLinkText: '',
-      firstLinkUrl: '',
-      secondLinkText: '',
-      secondLinkUrl: '',
+      imageUrl: '/img/houseTypeInfo/house-4-97m2/97-2.jpg', // imageUrl: 1080x1080
+      subtitle: 'Первый этаж',
+      features: [
+        {
+          textInSpan: '1. Холл',
+          middleText: '8 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '2. Топочная',
+          middleText: '4 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '3. Спальня',
+          middleText: '11 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '4. Санузел',
+          middleText: '2 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '5. Кухня-Гостиная',
+          middleText: '32 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '6. Спальня',
+          middleText: '13 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '7. Санузел',
+          middleText: '6 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '8. Спальня',
+          middleText: '16 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '9. Коридор',
+          middleText: '8 m',
+          supText: '2',
+        },
+      ],
+      firstLinkText: 'Контакты',
+      firstLinkUrl: '/contacts',
+      secondLinkText: 'На просмотр',
+      secondLinkUrl: '#callback',
     },
   },
   threeHousesRowData: ThreeHousesRowMock,

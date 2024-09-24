@@ -28,7 +28,7 @@ export const ThreeHousesRowMock: TThreeHousesRow = {
     },
     {
       linkUrl: '/houses/house3',
-      imgUrl: '/img/threeHousesRow/house-3-140m2/main.png', // imgUrl: 539x337
+      imgUrl: '/img/threeHousesRow/house-3-140m2/main.jpg', // imgUrl: 539x337
       imgAlt: '',
       title: 'Модерн 140',
       feautureFirstTitle: 'Площадь общая:',

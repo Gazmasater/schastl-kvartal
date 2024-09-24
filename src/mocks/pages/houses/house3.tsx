@@ -28,7 +28,7 @@ export const house3PageMock: THousePage = {
     features: {
       first: {
         label: 'Общая площадь',
-        value: '140 m2',
+        value: '140 m',
       },
       second: {
         label: 'Размер чего-то',
@@ -40,58 +40,63 @@ export const house3PageMock: THousePage = {
     mainPageImageLg: '/img/mainPageBanner/house-3-140m2/main.jpg', // mainPageImageLg: 2160x1080
     blackHeadings: true, // optional param
     customHeadingHexColor: '#fff', // optional param
-    customFeaturesBaseColor: '#fff', // optional param
+    customFeaturesBaseColor: '#0000', // optional param
   },
   houseTypeInfoData: {
     heading: 'Планировка',
     firstTabTitle: '1й этаж',
     firstTab: {
-      imageUrl: '/img/houseTypeInfo/hause-3-140m2/140-1.jpg', // imageUrl: 1080x1080
+      imageUrl: '/img/houseTypeInfo/house-3-140m2/140-1.jpg', // imageUrl: 1080x1080
       subtitle: 'Первый этаж',
       features: [
         {
-          textInSpan: '1. Кухня',
-          middleText: '2.03 m',
+          textInSpan: '1. Спальня',
+          middleText: '18 m',
           supText: '2',
         },
         {
-          textInSpan: '2. Гостиная',
-          middleText: '2.21 m',
+          textInSpan: '2. Санузел',
+          middleText: '6 m',
           supText: '2',
         },
         {
           textInSpan: '3. Спальня',
-          middleText: '30.78 m',
+          middleText: '16 m',
           supText: '2',
         },
         {
-          textInSpan: '4. Спальня',
-          middleText: '1.86 m',
+          textInSpan: '4. Топочная',
+          middleText: '6 m',
           supText: '2',
         },
         {
-          textInSpan: '5. Гордиробная',
-          middleText: '1.86 m',
+          textInSpan: '5. Санузел',
+          middleText: '3 m',
           supText: '2',
         },
         {
-          textInSpan: '6. Санузел',
-          middleText: '1.86 m',
+          textInSpan: '6. Коридор',
+          middleText: '10 m',
           supText: '2',
         },
         {
-          textInSpan: '7. Холл',
-          middleText: '1.86 m',
+          textInSpan: '7. Спальня',
+          middleText: '16 m',
           supText: '2',
         },
         {
-          textInSpan: '8. Топочная',
-          middleText: '1.86 m',
+          textInSpan: '8. Холл',
+          middleText: '10 m',
           supText: '2',
         },
         {
-          textInSpan: '9. Коридор',
-          middleText: '1.86 m',
+          textInSpan: '9. Кухня',
+          middleText: '20 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '10. Гостинная',
+          middleText: '25 m',
           supText: '2',
         },
       ],
