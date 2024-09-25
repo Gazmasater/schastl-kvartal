@@ -6,6 +6,7 @@ export type TMainPageHeader = {
   headingFirst: string
   headingSecond?: string
   headingSecondProps?: {
+    fontFamily?: string
     fontSizeDefault?: string
     fontWeightDefault?: string
     lineHeightDefault?: string

@@ -121,6 +121,7 @@ const HeadingFirst = styled.h1`
 `
 
 type THeadingSecondProps = {
+  $fontFamily?: string
   $fontSizeDefault?: string
   $fontWeightDefault?: string
   $lineHeightDefault?: string
@@ -133,6 +134,7 @@ type THeadingSecondProps = {
 }
 
 const HeadingSecond = styled.div<THeadingSecondProps>`
+  font-family: ${({ $fontFamily }) => $fontFamily};
   font-size: ${({ $fontSizeDefault }) => $fontSizeDefault || '1.125rem'};
   font-weight: ${({ $fontWeightDefault }) => $fontWeightDefault || '400'};
   line-height: ${({ $lineHeightDefault }) => $lineHeightDefault || '1.3'};

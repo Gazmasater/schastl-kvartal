@@ -17,6 +17,7 @@ export const MainPageHeaderMock: TMainPageHeader = {
   // Стройте с нами Счастливый Квартал (убрать апперкейс *оригинал)
   headingSecond: 'Стройте с нами Счастливый Квартал!',
   headingSecondProps: {
+    fontFamily: 'Arial',
     fontWeightDefault: 'bold',
   },
   mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521

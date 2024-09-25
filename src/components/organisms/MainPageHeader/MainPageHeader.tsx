@@ -44,6 +44,7 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
                 {data.headingSecond && (
                   <Styled.HeadingSecond
                     className="MuiTypography-root MuiTypography-subtitle1"
+                    $fontFamily={data.headingSecondProps?.fontFamily}
                     $fontSizeDefault={data.headingSecondProps?.fontSizeDefault}
                     $fontWeightDefault={data.headingSecondProps?.fontWeightDefault}
                     $lineHeightDefault={data.headingSecondProps?.lineHeightDefault}
