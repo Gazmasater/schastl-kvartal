@@ -38,9 +38,11 @@ export const house1PageMock: THousePage = {
     mainPageImageXs: '/img/mainPageBanner/house-1-155m2/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
     mainPageImageMd: '/img/mainPageBanner/house-1-155m2/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
     mainPageImageLg: '/img/mainPageBanner/house-1-155m2/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
-    customHeadingHexColor: '#000', // optional param
-    customFeaturesBaseColor: '#000', // optional param
-    breadcrumbsColor: '#000', // optional
+    customHeadingHexColor: 'rgba(132, 80, 100)', // цвет заголовка
+    customFeaturesBaseColor: 'rgba(132, 80, 100)', // optional param
+    breadcrumbsColor: 'rgba(10, 0, 0)', // цвет хл крошек
+    customFeaturesPrimaryColor: 'rgba(132, 80, 100)' ,
+    darkenBgColor: 'rgba(255, 255, 255, 0)'
   },
   houseTypeInfoData: {
     heading: 'Планировка',
@@ -72,7 +74,17 @@ export const house1PageMock: THousePage = {
         },
         {
           textInSpan: '5. Гостиная',
-          middleText: '36,5 m',
+          middleText: '36.5 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '6. Коридор',
+          middleText: '5.5 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '7. Лестница',
+          middleText: '5.5 m',
           supText: '2',
         },
       ],
@@ -86,33 +98,33 @@ export const house1PageMock: THousePage = {
       subtitle: 'Второй этаж',
       features: [
         {
-          textInSpan: '6. Коридор',
-          middleText: '5.5 m',
-          supText: '2',
-        },
-        {
-          textInSpan: '7. Спальня',
-          middleText: '6.96 m',
-          supText: '2',
-        },
-        {
-          textInSpan: '8. Спальня',
-          middleText: '14.18 m',
+          textInSpan: '8. Холл',
+          middleText: '11 m',
           supText: '2',
         },
         {
           textInSpan: '9. Спальня',
-          middleText: '9.55 m',
+          middleText: '13.5 m',
           supText: '2',
         },
         {
-          textInSpan: '10. Гардеробная',
-          middleText: '4.92 m',
+          textInSpan: '10. Спальня',
+          middleText: '17 m',
           supText: '2',
         },
         {
-          textInSpan: '11. Санузел',
-          middleText: '4.92 m',
+          textInSpan: '11. Спальня',
+          middleText: '24 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '12. Санузел',
+          middleText: '7 m',
+          supText: '2',
+        },
+        {
+          textInSpan: '13. Гардеробная',
+          middleText: '7 m',
           supText: '2',
         },
       ],

@@ -23,4 +23,9 @@ export const MainPageHeaderMock: TMainPageHeader = {
   mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
   mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
   mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
+  customHeadingHexColor: 'rgba(132, 80, 100)', // цвет заголовка
+  customFeaturesBaseColor: '#ffffff', // optional param
+  breadcrumbsColor: 'rgba(10, 0, 0)', // цвет хл крошек
+  customFeaturesPrimaryColor: '#0000000' ,
+  darkenBgColor: 'rgba(255, 255, 255, 0)'
 }
