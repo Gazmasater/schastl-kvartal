@@ -41,8 +41,8 @@ export const house1PageMock: THousePage = {
     customHeadingHexColor: 'rgba(132, 80, 100)', // цвет заголовка
     customFeaturesBaseColor: 'rgba(132, 80, 100)', // optional param
     breadcrumbsColor: 'rgba(10, 0, 0)', // цвет хл крошек
-    customFeaturesPrimaryColor: 'rgba(132, 80, 100)' ,
-    darkenBgColor: 'rgba(255, 255, 255, 0)'
+    customFeaturesPrimaryColor: 'rgba(132, 80, 100)',
+    darkenBgColor: 'rgba(255, 255, 255, 0)',
   },
   houseTypeInfoData: {
     heading: 'Планировка',
