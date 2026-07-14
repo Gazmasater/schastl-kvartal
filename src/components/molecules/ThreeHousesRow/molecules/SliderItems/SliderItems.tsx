@@ -43,53 +43,67 @@ export const SliderItems: FC<TSliderItemsProps> = ({ data }) => {
   }
 
   return (
-    <div className={classes.gallery}>
-      <div className="slider-container">
-        <Slider {...settings}>
-          {data.map(
-            ({
-              linkUrl,
-              imgUrl,
-              imgAlt,
-              title,
-              feautureFirstTitle,
-              featureFirstValue,
-              featureSecondTitle,
-              featureSecondValue,
-            }) => (
-              <div key={title} className={classes.slideContainer}>
-                <a
-                  href={linkUrl}
-                  className={clx(['MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary'])}
-                >
-                  <div className={clx([classes.imageClipContainer, classes.imageClipFirst])}>
-                    <div className={classes.imageClipInner}>
-                      <img className={classes.imageInClip} src={imgUrl} alt={imgAlt} loading="lazy" decoding="async" />
-                    </div>
-                  </div>
-                  <div className={classes.underImageContainer}>
-                    <div className={classes.descriptionTitle}>{title}</div>
-                    <div className={classes.descriptionFlex}>
-                      <div className={classes.descriptionText}>
-                        <div>
-                          <div>{feautureFirstTitle}</div>
-                          <b>{featureFirstValue}</b>
-                        </div>
-                      </div>
-                      <div className={classes.descriptionText}>
-                        <div>
-                          <div>{featureSecondTitle}</div>
-                          <b>{featureSecondValue}</b>
-                        </div>
+    <>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
+      <div className={classes.gallery}>
+        <div className="slider-container">
+          <Slider {...settings}>
+            {data.map(
+              ({
+                linkUrl,
+                imgUrl,
+                imgAlt,
+                title,
+                feautureFirstTitle,
+                featureFirstValue,
+                featureSecondTitle,
+                featureSecondValue,
+              }) => (
+                <div key={title} className={classes.slideContainer}>
+                  <a
+                    href={linkUrl}
+                    className={clx([
+                      'MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary',
+                    ])}
+                  >
+                    <div className={clx([classes.imageClipContainer, classes.imageClipFirst])}>
+                      <div className={classes.imageClipInner}>
+                        <img className={classes.imageInClip} src={imgUrl} alt={imgAlt} />
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-            ),
-          )}
-        </Slider>
+                    <div className={classes.underImageContainer}>
+                      <div className={classes.descriptionTitle}>{title}</div>
+                      <div className={classes.descriptionFlex}>
+                        <div className={classes.descriptionText}>
+                          <div>
+                            <div>{feautureFirstTitle}</div>
+                            <b>{featureFirstValue}</b>
+                          </div>
+                        </div>
+                        <div className={classes.descriptionText}>
+                          <div>
+                            <div>{featureSecondTitle}</div>
+                            <b>{featureSecondValue}</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              ),
+            )}
+          </Slider>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
