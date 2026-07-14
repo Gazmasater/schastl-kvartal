@@ -20,8 +20,8 @@ export const MainPageHeaderMock: TMainPageHeader = {
     fontFamily: 'Arial',
     fontWeightDefault: 'bold',
   },
-  mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
-  mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
+  mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.webp', // mainPageImageXs: 720x720
+  mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.webp', // mainPageImageMd: 1280x721
   mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
   customHeadingHexColor: 'rgba(132, 80, 100)', // цвет заголовка
   customFeaturesBaseColor: '#ffffff', // optional param

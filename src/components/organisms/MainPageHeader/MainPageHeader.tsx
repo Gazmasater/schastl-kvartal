@@ -90,7 +90,7 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
           <picture>
             <source media="(max-width: 456px)" srcSet={data.mainPageImageXs} />
             <source media="(max-width: 1080px)" srcSet={data.mainPageImageMd} />
-            <img alt="" draggable="false" src={data.mainPageImageLg} loading="lazy" />
+            <img alt="" draggable="false" src={data.mainPageImageLg} loading="eager" decoding="async" />
           </picture>
         </Styled.ImageContainer>
       </Styled.ImageWrapper>
