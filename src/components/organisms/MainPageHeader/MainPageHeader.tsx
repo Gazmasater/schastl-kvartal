@@ -90,18 +90,7 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
           <picture>
             <source media="(max-width: 456px)" srcSet={data.mainPageImageXs} />
             <source media="(max-width: 1080px)" srcSet={data.mainPageImageMd} />
-            <img
-              alt=""
-              draggable="false"
-              src={data.mainPageImageLg}
-              width="1600"
-              height="901"
-              loading="eager"
-              // The installed eslint-plugin-react predates this standard React property.
-              // eslint-disable-next-line react/no-unknown-property
-              fetchPriority="high"
-              decoding="async"
-            />
+            <img alt="" draggable="false" src={data.mainPageImageLg} loading="lazy" />
           </picture>
         </Styled.ImageContainer>
       </Styled.ImageWrapper>

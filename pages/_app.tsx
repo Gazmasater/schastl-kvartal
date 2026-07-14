@@ -5,6 +5,7 @@ import StyledComponentsRegistry from '../src/lib/registry'
 import 'normalize.css/normalize.css'
 import './styles.css'
 import './miui.css'
+import './fonts.css'
 
 const MyApp: FC<any> = ({ Component, pageProps }: AppProps) => (
   <StyledComponentsRegistry>
