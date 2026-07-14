@@ -28,7 +28,7 @@ export const SimpleThreeItems: FC<TSimpleThreeItemsProps> = ({ data }) => {
             >
               <div className={clx([classes.imageClipContainer, classes.imageClipFirst])}>
                 <div className={classes.imageClipInner}>
-                  <img className={classes.imageInClip} src={imgUrl} alt={imgAlt} decoding="async" />
+                  <img className={classes.imageInClip} src={imgUrl} alt={imgAlt} />
                 </div>
               </div>
               <div className={classes.underImageContainer}>

@@ -235,11 +235,6 @@ const FeaturesItem = styled.div<TFeaturesItem>`
 const ImageWrapper = styled.div`
   position: relative;
 
-  @media (max-width: 639.95px) {
-    aspect-ratio: 1600 / 901;
-    min-height: 18rem;
-  }
-
   @media (min-width: 640px) {
     height: calc(var(--screen-vh, 100) * 1vh - var(--header-height, 0));
     padding-top: calc(var(--ratio-height, 1080) / var(--ratio-width, 1920) * 100%);
@@ -290,7 +285,7 @@ const ImageContainer = styled.div`
 
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
   }
 

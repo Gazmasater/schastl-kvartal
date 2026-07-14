@@ -20,10 +20,8 @@ export const MainPageHeaderMock: TMainPageHeader = {
     fontFamily: 'Arial',
     fontWeightDefault: 'bold',
   },
-  // Пока используем существующий оптимизированный баннер для всех размеров экрана.
-  // Предыдущие xs/md URL возвращали 404 и задерживали отрисовку первого экрана.
-  mainPageImageXs: '/img/mainPageBanner/mainPageBanner-lg.jpg',
-  mainPageImageMd: '/img/mainPageBanner/mainPageBanner-lg.jpg',
+  mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
+  mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
   mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
   customHeadingHexColor: 'rgba(132, 80, 100)', // цвет заголовка
   customFeaturesBaseColor: '#ffffff', // optional param
