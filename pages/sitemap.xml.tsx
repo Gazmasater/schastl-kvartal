@@ -4,6 +4,7 @@ const siteUrl = 'https://kvartal-lipetsk.ru'
 const lastModified = '2026-07-15'
 const urls = [
   '/',
+  '/doma-v-lipetskom-rayone',
   '/doma-ryadom-s-parkovymi-kvartalami',
   '/galereya-stroitelstva',
   '/kontakty',
