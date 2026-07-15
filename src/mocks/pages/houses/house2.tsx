@@ -23,7 +23,7 @@ export const house2PageMock: THousePage = {
     mainPageLabel: 'Главная страница',
     separator: '/',
     subitemText: 'Барнхаус',
-    headingFirst: 'Барнхаус',
+    headingFirst: 'Дом «Барнхаус» 115 м² в Липецком районе',
     headingSecond: '',
     features: {
       first: {
@@ -35,9 +35,9 @@ export const house2PageMock: THousePage = {
         value: '8 соток',
       },
     },
-    mainPageImageXs: '/img/mainPageBanner/house-2-115m2/main.jpg', // mainPageImageXs: 521x521
-    mainPageImageMd: '/img/mainPageBanner/house-2-115m2/main.jpg', // mainPageImageMd: 1280x720
-    mainPageImageLg: '/img/mainPageBanner/house-2-115m2/main.jpg', // mainPageImageLg: 2160x1080
+    mainPageImageXs: '/img/mainPageBanner/house-2-115m2/mainPageBanner-xs.webp', // mainPageImageXs: 521x521
+    mainPageImageMd: '/img/mainPageBanner/house-2-115m2/mainPageBanner-md.webp', // mainPageImageMd: 1280x720
+    mainPageImageLg: '/img/mainPageBanner/house-2-115m2/mainPageBanner-lg.webp', // mainPageImageLg: 2160x1080
     blackHeadings: false,
     customHeadingHexColor: '#fff', // optional param
     customFeaturesBaseColor: '#fff', // optional param

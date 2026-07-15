@@ -72,6 +72,44 @@
   color: #ab7b6b;
 }
 
+.submitButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.submitButton:disabled:hover {
+  color: #202020;
+}
+
+.submitButton:disabled:hover .svg {
+  color: #5c2a26;
+}
+
+.consent {
+  display: flex;
+  gap: 0.625rem;
+  align-items: flex-start;
+  max-width: 48rem;
+  margin-top: 0.5rem;
+  color: #202020;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+
+.consent input {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  margin: 0.125rem 0 0;
+  accent-color: #5c2a26;
+}
+
+.consent a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .svg {
   font-size: inherit;
   margin-right: 0.75em;

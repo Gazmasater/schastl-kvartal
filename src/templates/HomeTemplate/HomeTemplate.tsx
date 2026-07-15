@@ -12,7 +12,7 @@ type THomeTemplateProps = {
 export const HomeTemplate: FC<THomeTemplateProps & PropsWithChildren> = ({ children, navData, footerData }) => (
   <>
     <Nav navData={navData} />
-    <Styled.MainContainer>{children}</Styled.MainContainer>
+    <Styled.MainContainer as="main">{children}</Styled.MainContainer>
     <Footer data={footerData} />
   </>
 )

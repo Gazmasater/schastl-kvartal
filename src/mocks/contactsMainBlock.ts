@@ -21,6 +21,6 @@ export const ContactsMainBlockMock: TContactsMainBlock = {
   mapProviderLink:
     'https://yandex.ru/maps/9/lipetsk/?ll=39.469925%2C52.514550&mode=routes&rtext=~52.513711%2C39.468675&rtt=auto&ruri=~&z=18',
   mapProviderText: 'Проложить маршрут',
-  imgUrl: '/img/bigContacts/image.png', // 898x677
-  imgAlt: '',
+  imgUrl: '/img/bigContacts/image.webp', // 1000x784
+  imgAlt: '3D-иллюстрация строительства дома по проекту',
 }

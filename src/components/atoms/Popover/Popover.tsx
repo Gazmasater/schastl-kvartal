@@ -42,7 +42,7 @@ export const Popover: FC<TPopoverProps> = ({ onClose, isSuccess }) => {
           <button
             className={clx(['MuiButtonBase-root MuiIconButton-root', classes.buttonContainer])}
             type="button"
-            aria-label="close"
+            aria-label="Закрыть окно"
             onClick={() => onClose()}
           >
             <span className="MuiIconButton-label">

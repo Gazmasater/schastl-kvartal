@@ -8,6 +8,7 @@ export type TGallery = {
   gallery: {
     date: string
     text?: string[]
+    altDescription?: string
     imgUrls: TGalleryImgUrls
   }[]
 }

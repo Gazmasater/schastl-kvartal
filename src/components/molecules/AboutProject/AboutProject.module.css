@@ -49,6 +49,19 @@
   margin-bottom: 0;
 }
 
+.smallText .nearbyProject {
+  margin-top: 1.25rem;
+}
+
+.nearbyProject a {
+  color: #5c2a26;
+  font-weight: 500;
+}
+
+.nearbyProject a:hover {
+  color: #965a46;
+}
+
 .description {
   display: flex;
   flex-wrap: wrap;

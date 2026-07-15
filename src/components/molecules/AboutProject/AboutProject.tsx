@@ -26,6 +26,11 @@ export const AboutProject: FC<TAboutProjectProps> = ({ data }) => {
                 {data.smallText.map(el => (
                   <p key={el}>{el}</p>
                 ))}
+                {data.nearbyProject && (
+                  <p className={classes.nearbyProject}>
+                    {data.nearbyProject.text} <a href={data.nearbyProject.linkUrl}>{data.nearbyProject.linkLabel}</a>
+                  </p>
+                )}
               </div>
             </div>
             {data.features.map(({ first, second }) => (

@@ -4,11 +4,16 @@ import { house2PageMock } from './houses/house2'
 import { house3PageMock } from './houses/house3'
 import { house4PageMock } from './houses/house4'
 
-export const housesAvailableUrls: string[] = ['house1', 'house2', 'house3', 'house4']
+export const housesAvailableUrls: string[] = [
+  'dom-skandi-155-m2',
+  'barnhaus-115-m2',
+  'dom-modern-140-m2',
+  'dom-modern-100-m2',
+]
 
 export const housesContent: { [key: string]: THousePage } = {
-  house1: house1PageMock,
-  house2: house2PageMock,
-  house3: house3PageMock,
-  house4: house4PageMock,
+  'dom-skandi-155-m2': house1PageMock,
+  'barnhaus-115-m2': house2PageMock,
+  'dom-modern-140-m2': house3PageMock,
+  'dom-modern-100-m2': house4PageMock,
 }

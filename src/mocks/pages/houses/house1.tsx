@@ -23,7 +23,7 @@ export const house1PageMock: THousePage = {
     mainPageLabel: 'Главная страница',
     separator: '/',
     subitemText: 'Сканди',
-    headingFirst: 'Сканди',
+    headingFirst: 'Дом «Сканди» 155 м² в Липецком районе',
     headingSecond: '',
     features: {
       first: {
@@ -35,9 +35,9 @@ export const house1PageMock: THousePage = {
         value: '8 соток',
       },
     },
-    mainPageImageXs: '/img/mainPageBanner/house-1-155m2/mainPageBanner-xs.jpg', // mainPageImageXs: 521x521
-    mainPageImageMd: '/img/mainPageBanner/house-1-155m2/mainPageBanner-md.jpg', // mainPageImageMd: 1280x720
-    mainPageImageLg: '/img/mainPageBanner/house-1-155m2/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
+    mainPageImageXs: '/img/mainPageBanner/house-1-155m2/mainPageBanner-xs.webp', // mainPageImageXs: 521x521
+    mainPageImageMd: '/img/mainPageBanner/house-1-155m2/mainPageBanner-md.webp', // mainPageImageMd: 1280x720
+    mainPageImageLg: '/img/mainPageBanner/house-1-155m2/mainPageBanner-lg.webp', // mainPageImageLg: 2160x1080
     customHeadingHexColor: 'rgba(132, 80, 100)', // цвет заголовка
     customFeaturesBaseColor: 'rgba(132, 80, 100)', // optional param
     breadcrumbsColor: 'rgba(10, 0, 0)', // цвет хл крошек

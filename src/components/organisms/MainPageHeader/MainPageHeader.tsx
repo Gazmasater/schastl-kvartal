@@ -1,4 +1,6 @@
+/* eslint-disable react/no-unknown-property */
 import React, { FC } from 'react'
+import Head from 'next/head'
 import { TMainPageHeader } from '@localTypes/mainPageHeader'
 import { Styled } from './styled'
 
@@ -9,6 +11,23 @@ type TMainPageHeaderProps = {
 export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
   return (
     <Styled.Wrapper>
+      <Head>
+        <link rel="preload" as="image" href={data.mainPageImageXs} media="(max-width: 456px)" fetchPriority="high" />
+        <link
+          rel="preload"
+          as="image"
+          href={data.mainPageImageMd}
+          media="(min-width: 456.01px) and (max-width: 1080px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href={data.mainPageImageLg}
+          media="(min-width: 1080.01px)"
+          fetchPriority="high"
+        />
+      </Head>
       <Styled.Container>
         <Styled.Padding className="MuiContainer-root MuiContainer-maxWidthXl">
           <Styled.FlexWrapper>
@@ -90,7 +109,14 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
           <picture>
             <source media="(max-width: 456px)" srcSet={data.mainPageImageXs} />
             <source media="(max-width: 1080px)" srcSet={data.mainPageImageMd} />
-            <img alt="" draggable="false" src={data.mainPageImageLg} loading="eager" decoding="async" />
+            <img
+              alt=""
+              draggable="false"
+              src={data.mainPageImageLg}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
           </picture>
         </Styled.ImageContainer>
       </Styled.ImageWrapper>

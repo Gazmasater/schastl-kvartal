@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { TNavLinks, TNavSocialLinks } from '@localTypes/nav'
+import { getPublicUrl } from '@utils/getPublicUrl'
 import { Styled } from './styled'
 
 type TBlurContainerProps = {
@@ -10,7 +11,7 @@ type TBlurContainerProps = {
 
 export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen, navLinks, socialLinks }) => {
   return (
-    <Styled.BlurContainer $isNavOpen={isNavOpen}>
+    <Styled.BlurContainer id="site-navigation" $isNavOpen={isNavOpen}>
       <Styled.PaddingContainer>
         <Styled.FlexContainer>
           <Styled.MenuContainer>
@@ -19,7 +20,7 @@ export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen, navLinks, so
                 <div key={label}>
                   <Styled.MenuLink
                     className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                    href={url}
+                    href={getPublicUrl(url)}
                   >
                     {label}
                   </Styled.MenuLink>
@@ -40,6 +41,7 @@ export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen, navLinks, so
                       <a
                         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                         aria-disabled="false"
+                        aria-label={socialLinks.youtube.title}
                         title={socialLinks.youtube.title}
                         href={socialLinks.youtube.url}
                         target="_blank"
@@ -71,6 +73,7 @@ export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen, navLinks, so
                       <a
                         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                         aria-disabled="false"
+                        aria-label={socialLinks.facebook.title}
                         title={socialLinks.facebook.title}
                         href={socialLinks.facebook.url}
                         target="_blank"
@@ -98,6 +101,7 @@ export const BlurContainer: FC<TBlurContainerProps> = ({ isNavOpen, navLinks, so
                       <a
                         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                         aria-disabled="false"
+                        aria-label={socialLinks.insta.title}
                         title={socialLinks.insta.title}
                         href={socialLinks.insta.url}
                         target="_blank"

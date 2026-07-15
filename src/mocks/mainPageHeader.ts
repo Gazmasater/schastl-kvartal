@@ -11,11 +11,11 @@ export const MainPageHeaderMock: TMainPageHeader = {
   mainPageLabel: 'Главная страница',
   separator: '/',
   subitemText: 'Счастливый квартал',
-  headingFirst: 'СК "Лазурный"',
+  headingFirst: 'Купить дом в Липецком районе',
   // TODO красивые курсивные буквы
   // убрать акцент от СК "Лазурный" в пользу текста ниже (другим цветом или как-нибудь еще)
   // Стройте с нами Счастливый Квартал (убрать апперкейс *оригинал)
-  headingSecond: 'Стройте с нами Счастливый Квартал!',
+  headingSecond: 'Коттеджный посёлок «Счастливый Квартал» — с. Ленино, 6 км от Липецка',
   headingSecondProps: {
     fontFamily: 'Arial',
     fontWeightDefault: 'bold',

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React, { FC } from 'react'
 import { clx } from '@utils/clx'
 import { TContactsMainBlock } from '@localTypes/contactsMainBlock'
@@ -24,7 +25,7 @@ export const ContactsMainBlock: FC<TContactsMainBlockProps> = ({ data }) => {
                 <a className={classes.phonesItemLink} href={url}>
                   {tel}
                 </a>
-                <a href={data.telegramLink} rel="noopener noreferrer" target="_blank">
+                <a href={data.telegramLink} rel="noopener noreferrer" target="_blank" aria-label="Написать в Telegram">
                   <svg
                     className={classes.phonesItemSvg}
                     width="18"
@@ -61,7 +62,19 @@ export const ContactsMainBlock: FC<TContactsMainBlockProps> = ({ data }) => {
           </a>
         </div>
         <div className={classes.imageContainer}>
-          <img className={classes.imageImage} src={data.imgUrl} alt={data.imgAlt} />
+          <picture>
+            <source media="(max-width: 899px)" srcSet={data.imgUrl.replace('.webp', '-mobile.webp')} />
+            <img
+              className={classes.imageImage}
+              src={data.imgUrl}
+              alt={data.imgAlt}
+              width="1000"
+              height="784"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
       </div>
     </>

@@ -38,6 +38,12 @@ a.noDecoration,
   position: absolute;
 }
 
+.imageClipInner picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
 .imageInClip {
   width: 100%;
   height: 100%;
