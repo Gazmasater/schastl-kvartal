@@ -28,44 +28,51 @@ const ArticlePage: NextPage<TArticlePageProps> = ({ article }) => (
     <HomeTemplate navData={NavMock} footerData={FooterMock}>
       <article className={classes.page}>
         <div className="MuiContainer-root MuiContainer-maxWidthXl">
-          <div className={classes.content}>
-            <p className={classes.eyebrow}>{article.eyebrow}</p>
-            <h1>{article.title}</h1>
-            <p className={classes.lead}>{article.lead}</p>
+          <div className={classes.articleLayout}>
+            <div className={classes.content}>
+              <p className={classes.eyebrow}>{article.eyebrow}</p>
+              <h1>{article.title}</h1>
+              <p className={classes.lead}>{article.lead}</p>
 
-            {article.sections.map(section => (
-              <section key={section.heading}>
-                <h2>{section.heading}</h2>
-                {section.paragraphs.map(paragraph => (
-                  <p className={classes.text} key={paragraph}>
-                    {paragraph}
-                  </p>
-                ))}
-                {section.list && (
-                  <ul className={classes.features}>
-                    {section.list.map(item => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                )}
-              </section>
-            ))}
+              {article.sections.map(section => (
+                <section key={section.heading}>
+                  <h2>{section.heading}</h2>
+                  {section.paragraphs.map(paragraph => (
+                    <p className={classes.text} key={paragraph}>
+                      {paragraph}
+                    </p>
+                  ))}
+                  {section.list && (
+                    <ul className={classes.features}>
+                      {section.list.map(item => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </section>
+              ))}
 
-            {article.faq && (
-              <section className={classes.faq}>
-                <h2>Частые вопросы</h2>
-                {article.faq.map(item => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </section>
-            )}
+              {article.faq && (
+                <section className={classes.faq}>
+                  <h2>Частые вопросы</h2>
+                  {article.faq.map(item => (
+                    <details key={item.question}>
+                      <summary>{item.question}</summary>
+                      <p>{item.answer}</p>
+                    </details>
+                  ))}
+                </section>
+              )}
 
-            <a className={classes.cta} href="/doma-v-lipetskom-rayone">
-              Посмотреть готовые дома
-            </a>
+              <a className={classes.cta} href="/doma-v-lipetskom-rayone">
+                Посмотреть готовые дома
+              </a>
+            </div>
+            <div
+              aria-label="Готовый дом в коттеджном посёлке «Счастливый Квартал»"
+              className={classes.articlePhoto}
+              role="img"
+            />
           </div>
         </div>
       </article>
