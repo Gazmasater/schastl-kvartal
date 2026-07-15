@@ -7,6 +7,18 @@
   max-width: 48rem;
 }
 
+.articleLayout {
+  align-items: start;
+}
+
+.articlePhoto {
+  background-image: linear-gradient(rgba(32, 32, 32, 0.12), rgba(32, 32, 32, 0.12)),
+    url('/img/mainPageBanner/house-1-155m2/mainPageBanner-lg.webp');
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+
 .eyebrow {
   color: #965a46;
   font-size: 0.875rem;
@@ -153,5 +165,20 @@
 @media (min-width: 640px) {
   .page {
     padding: 5.5rem 0 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .articleLayout {
+    display: grid;
+    gap: clamp(2.5rem, 6vw, 7rem);
+    grid-template-columns: minmax(0, 48rem) minmax(16rem, 1fr);
+  }
+
+  .articlePhoto {
+    display: block;
+    height: 34rem;
+    position: sticky;
+    top: 2rem;
   }
 }
