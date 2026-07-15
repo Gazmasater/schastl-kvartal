@@ -33,7 +33,9 @@
 
 .lead,
 .content li,
-.faq p {
+.faq p,
+.text,
+.articleCard p {
   color: rgba(32, 32, 32, 0.75);
   font-size: 1.125rem;
   line-height: 1.55;
@@ -41,6 +43,10 @@
 
 .lead {
   margin: 1.5rem 0 0;
+}
+
+.text {
+  margin: 1rem 0 0;
 }
 
 .features {
@@ -69,6 +75,47 @@
 .cards a:hover {
   border-color: #965a46;
   color: #5c2a26;
+}
+
+.articles {
+  display: grid;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.articleCard {
+  border: 1px solid rgba(32, 32, 32, 0.15);
+  color: #202020;
+  display: block;
+  padding: 1.5rem;
+  text-decoration: none;
+}
+
+.articleCard:hover {
+  border-color: #965a46;
+}
+
+.articleCard span {
+  color: #965a46;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.articleCard h2 {
+  font-size: clamp(1.25rem, 3vw, 1.625rem);
+  margin: 0.75rem 0;
+}
+
+.articleCard p {
+  margin: 0;
+}
+
+.articleCard b {
+  color: #965a46;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .faq details {

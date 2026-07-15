@@ -18,6 +18,10 @@ export const NavMock: TNav = {
       url: '/doma-v-lipetskom-rayone',
     },
     {
+      label: 'Статьи',
+      url: '/stati',
+    },
+    {
       label: 'Галерея',
       url: '/gallery',
     },

@@ -38,6 +38,10 @@ export const FooterMock: TFooter = {
       url: '/doma-ryadom-s-parkovymi-kvartalami',
     },
     {
+      label: 'Статьи о покупке дома',
+      url: '/stati',
+    },
+    {
       label: 'Политика обработки персональных данных',
       url: '/pdn',
     },
