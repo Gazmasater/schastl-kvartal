@@ -27,11 +27,11 @@ export const house3PageMock: THousePage = {
     headingSecond: '',
     features: {
       first: {
-        label: 'Общая площадь',
-        value: '140 m',
+        label: 'Площадь дома',
+        value: '140 м²',
       },
       second: {
-        label: 'Размер чего-то',
+        label: 'Участок',
         value: '8 соток',
       },
     },
