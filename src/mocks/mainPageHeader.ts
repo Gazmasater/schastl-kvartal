@@ -20,12 +20,22 @@ export const MainPageHeaderMock: TMainPageHeader = {
     fontFamily: 'Arial',
     fontWeightDefault: 'bold',
   },
+  features: {
+    first: {
+      label: 'Готовые дома',
+      value: 'от 8,5 млн ₽',
+    },
+    second: {
+      label: 'Участки',
+      value: 'от 8 соток',
+    },
+  },
   mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.webp', // mainPageImageXs: 720x720
   mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.webp', // mainPageImageMd: 1280x721
   mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
   customHeadingHexColor: 'rgba(132, 80, 100)', // цвет заголовка
   customFeaturesBaseColor: '#ffffff', // optional param
   breadcrumbsColor: 'rgba(10, 0, 0)', // цвет хл крошек
-  customFeaturesPrimaryColor: '#0000000',
+  customFeaturesPrimaryColor: '#79483c',
   darkenBgColor: 'rgba(255, 255, 255, 0)',
 }
