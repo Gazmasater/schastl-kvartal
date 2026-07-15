@@ -14,6 +14,10 @@ export const NavMock: TNav = {
       url: '/',
     },
     {
+      label: 'Дома',
+      url: '/doma-v-lipetskom-rayone',
+    },
+    {
       label: 'Галерея',
       url: '/gallery',
     },
