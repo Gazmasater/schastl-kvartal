@@ -8,6 +8,10 @@ type TPopoverProps = {
   currentHouse: THouseMetadata
 }
 
+const formatFeatureTitle = (title: string) => (title === 'Размер участка' ? 'Участок' : title)
+
+const formatFeatureValue = (value: string) => value.replace(/\bm2\b/g, 'м²')
+
 export const Popover: FC<TPopoverProps> = ({ currentHouse }) => {
   return (
     <div className={classes.popover}>
@@ -54,14 +58,14 @@ export const Popover: FC<TPopoverProps> = ({ currentHouse }) => {
             <div className={classes.features}>
               <div className={classes.featuresItem}>
                 <div>
-                  <div>{currentHouse.features.first.title}</div>
-                  <b>{currentHouse.features.first.value}</b>
+                  <div>{formatFeatureTitle(currentHouse.features.first.title)}</div>
+                  <b>{formatFeatureValue(currentHouse.features.first.value)}</b>
                 </div>
               </div>
               <div className={classes.featuresItem}>
                 <div>
-                  <div>{currentHouse.features.second.title}</div>
-                  <b>{currentHouse.features.second.value}</b>
+                  <div>{formatFeatureTitle(currentHouse.features.second.title)}</div>
+                  <b>{formatFeatureValue(currentHouse.features.second.value)}</b>
                 </div>
               </div>
             </div>
