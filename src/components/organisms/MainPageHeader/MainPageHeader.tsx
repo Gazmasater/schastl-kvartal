@@ -31,29 +31,25 @@ export const MainPageHeader: FC<TMainPageHeaderProps> = ({ data }) => {
       <Styled.Container>
         <Styled.Padding className="MuiContainer-root MuiContainer-maxWidthXl">
           <Styled.FlexWrapper>
-            <Styled.BreadcrumbsContainer $color={data.breadcrumbsColor}>
-              {/* <nav className="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"> */}
-              <nav className="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1">
-                <ol className="MuiBreadcrumbs-ol">
-                  <li className="MuiBreadcrumbs-li">
-                    <a
-                      // className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
-                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover"
-                      href={data.mainPageLink}
-                    >
-                      {data.mainPageLabel}
-                    </a>
-                  </li>
-                  <li aria-hidden="true" className="MuiBreadcrumbs-separator">
-                    {data.separator}
-                  </li>
-                  <li className="MuiBreadcrumbs-li">
-                    {/* <span className="MuiTypography-root MuiTypography-colorTextSecondary">{data.subitemText}</span> */}
-                    <span className="MuiTypography-root">{data.subitemText}</span>
-                  </li>
-                </ol>
-              </nav>
-            </Styled.BreadcrumbsContainer>
+            {data.showBreadcrumbs !== false && (
+              <Styled.BreadcrumbsContainer $color={data.breadcrumbsColor}>
+                <nav className="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1">
+                  <ol className="MuiBreadcrumbs-ol">
+                    <li className="MuiBreadcrumbs-li">
+                      <a className="MuiTypography-root MuiLink-root MuiLink-underlineHover" href={data.mainPageLink}>
+                        {data.mainPageLabel}
+                      </a>
+                    </li>
+                    <li aria-hidden="true" className="MuiBreadcrumbs-separator">
+                      {data.separator}
+                    </li>
+                    <li className="MuiBreadcrumbs-li">
+                      <span className="MuiTypography-root">{data.subitemText}</span>
+                    </li>
+                  </ol>
+                </nav>
+              </Styled.BreadcrumbsContainer>
+            )}
             <Styled.Headings $isBlack={data.blackHeadings} $customHeadingHexColor={data.customHeadingHexColor}>
               <Styled.HeadingsSpacer />
               <Styled.DarkenContainer $bgColor={data.darkenBgColor}>
