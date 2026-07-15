@@ -12,6 +12,7 @@ const urls = [
   '/stati/zhizn-za-gorodom-v-lenino',
   '/stati/kak-vybrat-uchastok-dlya-doma',
   '/stati/kak-vybrat-ploshchad-doma',
+  '/stati/kak-podgotovitsya-k-prosmotru-doma',
   '/galereya-stroitelstva',
   '/kontakty',
   '/doma-v-lipetskom-rayone/dom-skandi-155-m2',

@@ -29,28 +29,31 @@ const ArticlePage: NextPage<TArticlePageProps> = ({ article }) => (
       <article className={classes.page}>
         <div className="MuiContainer-root MuiContainer-maxWidthXl">
           <div className={classes.articleLayout}>
-            <div className={classes.content}>
+            <header className={classes.articleHeader}>
               <p className={classes.eyebrow}>{article.eyebrow}</p>
               <h1>{article.title}</h1>
               <p className={classes.lead}>{article.lead}</p>
-
-              {article.sections.map(section => (
-                <section key={section.heading}>
-                  <h2>{section.heading}</h2>
-                  {section.paragraphs.map(paragraph => (
-                    <p className={classes.text} key={paragraph}>
-                      {paragraph}
-                    </p>
-                  ))}
-                  {section.list && (
-                    <ul className={classes.features}>
-                      {section.list.map(item => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  )}
-                </section>
-              ))}
+            </header>
+            <div className={classes.articleBody}>
+              <div className={classes.articleSections}>
+                {article.sections.map(section => (
+                  <section key={section.heading}>
+                    <h2>{section.heading}</h2>
+                    {section.paragraphs.map(paragraph => (
+                      <p className={classes.text} key={paragraph}>
+                        {paragraph}
+                      </p>
+                    ))}
+                    {section.list && (
+                      <ul className={classes.features}>
+                        {section.list.map(item => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </section>
+                ))}
+              </div>
 
               {article.faq && (
                 <section className={classes.faq}>
@@ -68,11 +71,6 @@ const ArticlePage: NextPage<TArticlePageProps> = ({ article }) => (
                 Посмотреть готовые дома
               </a>
             </div>
-            <div
-              aria-label="Готовый дом в коттеджном посёлке «Счастливый Квартал»"
-              className={classes.articlePhoto}
-              role="img"
-            />
           </div>
         </div>
       </article>
