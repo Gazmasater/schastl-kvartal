@@ -37,6 +37,17 @@
   display: flex;
 }
 
+.imageContainer picture {
+  display: flex;
+  min-width: 0;
+}
+
+.imageImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .contactsInner {
   color: #ffffff;
   height: auto;
@@ -157,6 +168,10 @@
 
   .contactsInner {
     padding: 3.75rem 2.5rem;
+  }
+
+  .imageContainer {
+    width: 100%;
   }
 
   .addrFirstRow {

@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { TFooter } from '@localTypes/footer'
+import { getPublicUrl } from '@utils/getPublicUrl'
 import { Styled } from './styled'
 
 type TFooterProps = {
@@ -29,6 +30,7 @@ export const Footer: FC<TFooterProps> = ({ data }) => {
                         <a
                           className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                           aria-disabled="false"
+                          aria-label={data.socialLinks.youtube.title}
                           title={data.socialLinks.youtube.title}
                           href={data.socialLinks.youtube.url}
                           target="_blank"
@@ -54,6 +56,7 @@ export const Footer: FC<TFooterProps> = ({ data }) => {
                         <a
                           className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                           aria-disabled="false"
+                          aria-label={data.socialLinks.facebook.title}
                           title={data.socialLinks.facebook.title}
                           href={data.socialLinks.facebook.url}
                           target="_blank"
@@ -75,6 +78,7 @@ export const Footer: FC<TFooterProps> = ({ data }) => {
                         <a
                           className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
                           aria-disabled="false"
+                          aria-label={data.socialLinks.insta.title}
                           title={data.socialLinks.insta.title}
                           href={data.socialLinks.insta.url}
                           target="_blank"
@@ -108,7 +112,7 @@ export const Footer: FC<TFooterProps> = ({ data }) => {
                   >
                     <Styled.FooterMenuItemLink
                       className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                      href={url}
+                      href={getPublicUrl(url)}
                     >
                       {label}
                     </Styled.FooterMenuItemLink>

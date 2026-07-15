@@ -23,7 +23,7 @@ export const house4PageMock: THousePage = {
     mainPageLabel: 'Главная страница',
     separator: '/',
     subitemText: 'Модерн-100',
-    headingFirst: 'Модерн-100',
+    headingFirst: 'Дом «Модерн-100» 97 м² в Липецком районе',
     headingSecond: '',
     features: {
       first: {
@@ -35,9 +35,9 @@ export const house4PageMock: THousePage = {
         value: '8 соток',
       },
     },
-    mainPageImageXs: '/img/mainPageBanner/house-4-97m2/image.png', // mainPageImageXs: 521x521
-    mainPageImageMd: '/img/mainPageBanner/house-4-97m2/image.png', // mainPageImageMd: 1280x720
-    mainPageImageLg: '/img/mainPageBanner/house-4-97m2/image.png', // mainPageImageLg: 2160x1080
+    mainPageImageXs: '/img/mainPageBanner/house-4-97m2/mainPageBanner-xs.webp', // mainPageImageXs: 521x521
+    mainPageImageMd: '/img/mainPageBanner/house-4-97m2/mainPageBanner-md.webp', // mainPageImageMd: 1280x720
+    mainPageImageLg: '/img/mainPageBanner/house-4-97m2/mainPageBanner-lg.webp', // mainPageImageLg: 2160x1080
     blackHeadings: true, // optional param
     customHeadingHexColor: '#fff', // optional param
     customFeaturesBaseColor: '#fff', // optional param

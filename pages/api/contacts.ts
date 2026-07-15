@@ -7,6 +7,11 @@ type ResponseData = {
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
+  if (!req.body?.consent) {
+    res.status(400).json({ message: 'consent is required' })
+    return
+  }
+
   axios
     .post(
       `https://api.telegram.org/bot${process.env.TELEGRAM_API_TOKEN}/sendMessage`,

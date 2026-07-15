@@ -8,7 +8,7 @@ export const ThreeHousesRowMock: TThreeHousesRow = {
   houses: [
     {
       linkUrl: '/houses/house1',
-      imgUrl: '/img/threeHousesRow/house-1-155m2/main.png', // imgUrl: 539x337
+      imgUrl: '/img/threeHousesRow/house-1-155m2/main.webp', // imgUrl: 1078x674
       imgAlt: '',
       title: 'Сканди',
       feautureFirstTitle: 'Площадь общая:',
@@ -18,7 +18,7 @@ export const ThreeHousesRowMock: TThreeHousesRow = {
     },
     {
       linkUrl: '/houses/house2',
-      imgUrl: '/img/threeHousesRow/house-2-115m2/main.jpg', // imgUrl: 539x337
+      imgUrl: '/img/threeHousesRow/house-2-115m2/main.webp', // imgUrl: 1078x607
       imgAlt: '',
       title: 'Барнхаус',
       feautureFirstTitle: 'Площадь общая:',
@@ -28,7 +28,7 @@ export const ThreeHousesRowMock: TThreeHousesRow = {
     },
     {
       linkUrl: '/houses/house3',
-      imgUrl: '/img/threeHousesRow/house-3-140m2/main.jpg', // imgUrl: 539x337
+      imgUrl: '/img/threeHousesRow/house-3-140m2/main.webp', // imgUrl: 1078x607
       imgAlt: '',
       title: 'Модерн 140',
       feautureFirstTitle: 'Площадь общая:',
@@ -38,7 +38,7 @@ export const ThreeHousesRowMock: TThreeHousesRow = {
     },
     {
       linkUrl: '/houses/house4',
-      imgUrl: '/img/threeHousesRow/house-4-97m2/main.png', // imgUrl: 539x337
+      imgUrl: '/img/threeHousesRow/house-4-97m2/main.webp', // imgUrl: 1078x763
       imgAlt: '',
       title: 'Модерн 100',
       feautureFirstTitle: 'Площадь общая:',

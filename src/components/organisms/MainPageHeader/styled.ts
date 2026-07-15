@@ -235,6 +235,14 @@ const FeaturesItem = styled.div<TFeaturesItem>`
 const ImageWrapper = styled.div`
   position: relative;
 
+  @media (max-width: 456px) {
+    aspect-ratio: 1;
+  }
+
+  @media (min-width: 456.01px) and (max-width: 639.95px) {
+    aspect-ratio: 1280 / 721;
+  }
+
   @media (min-width: 640px) {
     height: calc(var(--screen-vh, 100) * 1vh - var(--header-height, 0));
     padding-top: calc(var(--ratio-height, 1080) / var(--ratio-width, 1920) * 100%);

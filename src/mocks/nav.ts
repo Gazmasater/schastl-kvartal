@@ -6,8 +6,8 @@ export const NavMock: TNav = {
   logoUrl: '/img/logo-default.svg',
   logoUrlWhite: '/img/logo-white.svg',
   altText: 'Логотип',
-  phone: '+7 1112223344',
-  phoneLink: 'tel:+71112223344',
+  phone: '8 (4742) 39-00-16',
+  phoneLink: 'tel:+74742390016',
   navLinks: [
     {
       label: 'Главная',

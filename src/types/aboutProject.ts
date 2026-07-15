@@ -11,6 +11,11 @@ export type TAboutProject = {
       subtext: string
     }
   }[]
+  nearbyProject?: {
+    text: string
+    linkLabel: string
+    linkUrl: string
+  }
   linkToMapProvider?: string
   mapText?: string
   videoUrl?: string

@@ -10,6 +10,7 @@ export const GalleryMock: TGallery = {
   gallery: [
     {
       date: '20 сентября 2024',
+      altDescription: 'Строительство одноэтажного дома из газобетонных блоков с установленными окнами',
       // text: ['блаблабла', 'блаблабла', 'блаблабла'],
       imgUrls: [
         {
@@ -68,6 +69,7 @@ export const GalleryMock: TGallery = {
     },
     {
       date: '16 сентября 2024',
+      altDescription: 'Фасад дома с панорамными окнами на этапе отделки',
       // text: ['блаблабла', 'блаблабла', 'блаблабла'],
       imgUrls: [
         { full: '/img/gallery/16.09.2024/IMG_3947.JPG', thumb: '/img/gallery/16.09.2024/IMG_3947.JPG' },
@@ -115,6 +117,7 @@ export const GalleryMock: TGallery = {
     },
     {
       date: '23 марта 2024',
+      altDescription: 'Дом с панорамным остеклением на этапе внутренней и наружной отделки',
       // text: ['блаблабла', 'блаблабла', 'блаблабла'],
       imgUrls: [
         {
@@ -164,7 +167,8 @@ export const GalleryMock: TGallery = {
       ],
     },
     {
-      date: '18 Авгста 2023',
+      date: '18 августа 2023',
+      altDescription: 'Одноэтажный дом с террасой на этапе строительства и отделки',
       // text: ['блаблабла', 'блаблабла', 'блаблабла'],
       imgUrls: [
         {

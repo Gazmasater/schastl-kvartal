@@ -20,10 +20,12 @@
 
 .mapContainer {
   padding-top: 3.4375rem;
+  min-height: 28.4375rem;
 }
 
 @media (max-width: 899.95px) {
   .mapContainer {
     padding-top: 2.8125rem;
+    min-height: 27.8125rem;
   }
 }

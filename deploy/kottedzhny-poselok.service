@@ -1,0 +1,17 @@
+[Unit]
+Description=Kottedzhny Poselok Next.js site
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/kottedzhny-poselok
+Environment=NODE_ENV=production
+Environment=PORT=3002
+Environment=HOSTNAME=0.0.0.0
+ExecStart=/usr/bin/node /root/kottedzhny-poselok/node_modules/next/dist/bin/next start -p 3002
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

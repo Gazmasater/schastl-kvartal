@@ -3,6 +3,7 @@
 import React, { FC, useState } from 'react'
 import { Fancybox } from '@fancyapps/ui'
 import { clx } from '@utils/clx'
+import { getPublicUrl } from '@utils/getPublicUrl'
 import { THouseTypeInfo } from '@localTypes/houseTypeInfo'
 import classes from './HouseTypeInfo.module.css'
 
@@ -46,20 +47,22 @@ export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
                 <span className="MuiTab-wrapper">{data.firstTabTitle}</span>
                 {currentTab === 'firstTab' && <span className={classes.tabButtonUnderline} />}
               </button>
-              <button
-                className={clx([
-                  'MuiButtonBase-root MuiTab-root MuiTab-textColorInherit',
-                  classes.tabButton,
-                  currentTab === 'secondTab' && classes.tabButtonSelected,
-                ])}
-                type="button"
-                role="tab"
-                aria-selected="false"
-                onClick={() => setCurrentTab('secondTab')}
-              >
-                <span className="MuiTab-wrapper">{data.secondTabTitle}</span>
-                {currentTab === 'secondTab' && <span className={classes.tabButtonUnderline} />}
-              </button>
+              {data.secondTabTitle && (
+                <button
+                  className={clx([
+                    'MuiButtonBase-root MuiTab-root MuiTab-textColorInherit',
+                    classes.tabButton,
+                    currentTab === 'secondTab' && classes.tabButtonSelected,
+                  ])}
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  onClick={() => setCurrentTab('secondTab')}
+                >
+                  <span className="MuiTab-wrapper">{data.secondTabTitle}</span>
+                  {currentTab === 'secondTab' && <span className={classes.tabButtonUnderline} />}
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -74,7 +77,13 @@ export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
             <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8 MuiGrid-grid-md-6 MuiGrid-grid-xl-5">
               <div className={classes.imageContainer} onClick={() => createFancyBox(currentTab === 'firstTab' ? 0 : 1)}>
                 <div className={classes.imageInner}>
-                  <img className={classes.imageImage} src={data[currentTab].imageUrl} alt="planning" />
+                  <img
+                    className={classes.imageImage}
+                    src={data[currentTab].imageUrl.replace(/\.(?:jpe?g)$/i, '.webp')}
+                    alt="planning"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </div>
             </div>
@@ -96,7 +105,7 @@ export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
                   ))}
                 </div>
                 <div className={classes.bottomButtons}>
-                  <a href={data[currentTab].firstLinkUrl} className={classes.bottomButtonsLink}>
+                  <a href={getPublicUrl(data[currentTab].firstLinkUrl)} className={classes.bottomButtonsLink}>
                     <svg className={classes.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 67">
                       <path
                         d="M56.7947 66.7759L8.85997 46.3316L0.0859375 15.8759L27.4725 7.93795L54.8914 1.52588e-05L65.73 37.8105L56.7947 66.7759Z"
@@ -110,7 +119,7 @@ export const HouseTypeInfo: FC<THouseTypeInfoProps> = ({ data }) => {
                     </svg>
                     <span>{data[currentTab].firstLinkText}</span>
                   </a>
-                  <a href={data[currentTab].secondLinkUrl} className={classes.bottomButtonsLink}>
+                  <a href={getPublicUrl(data[currentTab].secondLinkUrl)} className={classes.bottomButtonsLink}>
                     <svg
                       width="70"
                       height="59"

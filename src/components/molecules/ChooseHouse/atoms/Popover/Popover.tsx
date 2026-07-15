@@ -38,7 +38,13 @@ export const Popover: FC<TPopoverProps> = ({ currentHouse }) => {
         {currentHouse.imgUrl && (
           <div className={classes.imagePositioning}>
             <div className={classes.imageContainer}>
-              <img className={classes.imageImage} src={currentHouse.imgUrl} alt={currentHouse.imgAlt} />
+              <img
+                className={classes.imageImage}
+                src={currentHouse.imgUrl}
+                alt={currentHouse.imgAlt}
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         )}

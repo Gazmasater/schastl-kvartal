@@ -108,9 +108,10 @@ const SocialLinksGrid = styled.div`
 `
 
 const FooterMenuContainer = styled.div`
-  // jss128
-  @media (max-width: 639.95px) {
-    display: none;
+  width: 100%;
+
+  @media (min-width: 640px) {
+    width: auto;
   }
 `
 

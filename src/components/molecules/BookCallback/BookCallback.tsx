@@ -13,16 +13,20 @@ type TBookCallbackProps = {
 export const BookCallback: FC<TBookCallbackProps> = ({ data }) => {
   const [nameValue, setNameValue] = useState<string>('')
   const [phoneValue, setPhoneValue] = useState<string>('')
+  const [isConsentGranted, setIsConsentGranted] = useState<boolean>(false)
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [isSuccess, setIsSuccess] = useState<boolean>(true)
 
   const onSubmit = () => {
+    if (!isConsentGranted) return
+
     axios
       .post(
         '/api/contacts',
         {
           name: nameValue,
           phone: phoneValue,
+          consent: isConsentGranted,
         },
         {
           headers: {
@@ -150,6 +154,7 @@ export const BookCallback: FC<TBookCallbackProps> = ({ data }) => {
                       className={clx(['MuiButtonBase-root MuiButton-root MuiButton-text', classes.submitButton])}
                       type="submit"
                       onClick={() => onSubmit()}
+                      disabled={!isConsentGranted}
                     >
                       <span className="MuiButton-label">
                         <svg
@@ -168,6 +173,20 @@ export const BookCallback: FC<TBookCallbackProps> = ({ data }) => {
                         <span>{data.buttonText}</span>
                       </span>
                     </button>
+                  </div>
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12">
+                    <label className={classes.consent} htmlFor="personal-data-consent">
+                      <input
+                        id="personal-data-consent"
+                        type="checkbox"
+                        checked={isConsentGranted}
+                        onChange={event => setIsConsentGranted(event.target.checked)}
+                      />
+                      <span>
+                        Я даю согласие на обработку персональных данных в соответствии с{' '}
+                        <a href="/pdn">Политикой обработки персональных данных</a>.
+                      </span>
+                    </label>
                   </div>
                 </div>
               </div>

@@ -5,7 +5,7 @@ export const FooterMock: TFooter = {
   imageAlt: 'Логотип',
   imageTitle: 'Логотип',
   imageLinkUrl: '/',
-  copyrightText: 'ИП Приладышев Владимир Юрьевич ИНН 480224650506',
+  copyrightText: 'ИП Путилина Светлана Викторовна ИНН 482413386601',
   // socialLinks: {
   //   youtube: {
   //     title: 'Youtube канал',
@@ -32,6 +32,14 @@ export const FooterMock: TFooter = {
     {
       label: 'Контакты',
       url: '/contacts',
+    },
+    {
+      label: 'Дома рядом с «Парковыми Кварталами»',
+      url: '/doma-ryadom-s-parkovymi-kvartalami',
+    },
+    {
+      label: 'Политика обработки персональных данных',
+      url: '/pdn',
     },
   ],
 }

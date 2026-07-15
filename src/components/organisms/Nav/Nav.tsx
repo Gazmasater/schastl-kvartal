@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react'
 import { TNav } from '@localTypes/nav'
+import { getPublicUrl } from '@utils/getPublicUrl'
 import { BlurContainer } from './molecules'
 import { Styled } from './styled'
 
@@ -58,7 +59,7 @@ export const Nav: FC<TNavProps> = ({ navData }) => {
                 <div key={label} className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto">
                   <Styled.RightLink
                     className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                    href={url}
+                    href={getPublicUrl(url)}
                   >
                     {label}
                   </Styled.RightLink>
@@ -66,7 +67,13 @@ export const Nav: FC<TNavProps> = ({ navData }) => {
               ))}
             </Styled.LinksRightContainer>
           </Styled.LinksRight>
-          <Styled.CustomButton type="button" onClick={() => setIsNavOpen(!isNavOpen)}>
+          <Styled.CustomButton
+            type="button"
+            aria-label={isNavOpen ? 'Закрыть меню' : 'Открыть меню'}
+            aria-expanded={isNavOpen}
+            aria-controls="site-navigation"
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          >
             <Styled.CustomButtonLabel>
               {isNavOpen ? (
                 <Styled.CustomSVGCross xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" fill="none">

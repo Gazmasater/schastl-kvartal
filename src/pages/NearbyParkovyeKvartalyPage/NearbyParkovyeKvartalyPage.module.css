@@ -1,0 +1,110 @@
+.page {
+  color: #202020;
+  padding: 4rem 0 5rem;
+}
+
+.content {
+  max-width: 48rem;
+}
+
+.eyebrow {
+  color: #965a46;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.content h1,
+.content h2 {
+  line-height: 1.18;
+}
+
+.content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0;
+}
+
+.content h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 3rem 0 1rem;
+}
+
+.lead,
+.content li,
+.faq p {
+  color: rgba(32, 32, 32, 0.75);
+  font-size: 1.125rem;
+  line-height: 1.55;
+}
+
+.lead {
+  margin: 1.5rem 0 0;
+}
+
+.features {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.features li + li {
+  margin-top: 0.625rem;
+}
+
+.cards {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.cards a {
+  border: 1px solid rgba(32, 32, 32, 0.15);
+  color: #202020;
+  font-weight: 600;
+  padding: 1.25rem;
+  text-decoration: none;
+}
+
+.cards a:hover {
+  border-color: #965a46;
+  color: #5c2a26;
+}
+
+.faq details {
+  border-top: 1px solid rgba(32, 32, 32, 0.15);
+  padding: 1rem 0;
+}
+
+.faq details:last-of-type {
+  border-bottom: 1px solid rgba(32, 32, 32, 0.15);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq p {
+  margin: 0.75rem 0 0;
+}
+
+.cta {
+  background: #965a46;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: #5c2a26;
+}
+
+@media (min-width: 640px) {
+  .page {
+    padding: 5.5rem 0 6rem;
+  }
+}
