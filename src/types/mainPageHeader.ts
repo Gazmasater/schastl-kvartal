@@ -3,6 +3,7 @@ export type TMainPageHeader = {
   mainPageLabel: string
   separator: string
   subitemText: string
+  showBreadcrumbs?: boolean
   headingFirst: string
   headingSecond?: string
   headingSecondProps?: {

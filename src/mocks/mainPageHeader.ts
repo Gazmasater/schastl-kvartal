@@ -11,6 +11,7 @@ export const MainPageHeaderMock: TMainPageHeader = {
   mainPageLabel: 'Главная страница',
   separator: '/',
   subitemText: 'Счастливый квартал',
+  showBreadcrumbs: false,
   headingFirst: 'Купить готовый дом в Липецком районе',
   // TODO красивые курсивные буквы
   // убрать акцент от СК "Лазурный" в пользу текста ниже (другим цветом или как-нибудь еще)
@@ -23,8 +24,8 @@ export const MainPageHeaderMock: TMainPageHeader = {
   mainPageImageXs: '/img/mainPageBanner/mainPageBanner-xs.webp', // mainPageImageXs: 720x720
   mainPageImageMd: '/img/mainPageBanner/mainPageBanner-md.webp', // mainPageImageMd: 1280x721
   mainPageImageLg: '/img/mainPageBanner/mainPageBanner-lg.jpg', // mainPageImageLg: 2160x1080
-  customHeadingHexColor: '#202020', // цвет заголовка
+  customHeadingHexColor: '#ffffff', // цвет заголовка
   customFeaturesBaseColor: '#ffffff', // optional param
   breadcrumbsColor: 'rgba(10, 0, 0)', // цвет хл крошек
-  darkenBgColor: 'rgba(255, 255, 255, 0.88)',
+  darkenBgColor: 'rgba(0, 0, 0, 0.55)',
 }
