@@ -27,9 +27,13 @@ const HousesInLipetskDistrictPage: React.FC = () => (
                 подключён к коммуникациям. Стоимость — от 8,5 млн ₽.
               </p>
             </section>
+          </div>
+        </div>
 
-            <ThreeHousesRow data={ThreeHousesRowMock} />
+        <ThreeHousesRow data={ThreeHousesRowMock} />
 
+        <div className="MuiContainer-root MuiContainer-maxWidthXl">
+          <div className={classes.content}>
             <section>
               <h2>О коттеджном посёлке</h2>
               <ul className={classes.features}>

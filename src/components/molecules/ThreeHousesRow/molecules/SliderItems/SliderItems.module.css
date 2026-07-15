@@ -4,6 +4,7 @@
 }
 
 .slideContainer {
+  box-sizing: border-box;
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -15,10 +16,11 @@ a.noDecoration,
 
 .imageClipContainer {
   width: 100%;
+  aspect-ratio: 10 / 7;
   overflow: hidden;
   position: relative;
   font-size: inherit;
-  padding-bottom: 70%;
+  padding-bottom: 0;
 }
 
 .imageClipFirst {
@@ -48,7 +50,9 @@ a.noDecoration,
   width: 100%;
   height: 100%;
   max-width: initial;
+  display: block;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.35s ease-out;
 }
 
