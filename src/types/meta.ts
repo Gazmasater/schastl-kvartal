@@ -3,5 +3,5 @@ export type TMeta = {
   description: string
   image?: string
   robots?: string
-  structuredData?: Record<string, unknown>
+  structuredData?: Record<string, unknown> | Record<string, unknown>[]
 }

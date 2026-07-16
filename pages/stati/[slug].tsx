@@ -17,13 +17,27 @@ const ArticlePage: NextPage<TArticlePageProps> = ({ article }) => (
     <Meta
       title={`${article.title} — «Счастливый Квартал»`}
       description={article.description}
-      structuredData={{
-        '@type': 'Article',
-        headline: article.title,
-        description: article.description,
-        author: { '@type': 'Organization', name: 'Счастливый Квартал' },
-        publisher: { '@type': 'Organization', name: 'Счастливый Квартал' },
-      }}
+      structuredData={[
+        {
+          '@type': 'Article',
+          headline: article.title,
+          description: article.description,
+          author: { '@type': 'Organization', name: 'Счастливый Квартал' },
+          publisher: { '@type': 'Organization', name: 'Счастливый Квартал' },
+        },
+        ...(article.faq
+          ? [
+              {
+                '@type': 'FAQPage',
+                mainEntity: article.faq.map(item => ({
+                  '@type': 'Question',
+                  name: item.question,
+                  acceptedAnswer: { '@type': 'Answer', text: item.answer },
+                })),
+              },
+            ]
+          : []),
+      ]}
     />
     <HomeTemplate navData={NavMock} footerData={FooterMock}>
       <article className={classes.page}>
@@ -54,6 +68,11 @@ const ArticlePage: NextPage<TArticlePageProps> = ({ article }) => (
                   </section>
                 ))}
               </div>
+
+              <p className={classes.text}>
+                Хотите оценить эту локацию лично?{' '}
+                <a href="/doma-v-lipetskom-rayone">Посмотрите готовые дома в Липецком районе</a>.
+              </p>
 
               {article.faq && (
                 <section className={classes.faq}>

@@ -159,25 +159,7 @@ const Policy = styled.div`
 const PolicyPage: FC = () => {
   const policyRef = useRef<HTMLDivElement>(null)
 
-  const downloadPolicy = () => {
-    const content = [
-      'Политика в отношении обработки персональных данных',
-      'на сайте https://kvartal-lipetsk.ru/',
-      'Редакция от 15 июля 2026 г.',
-      '',
-      ...policySections.flatMap(({ title, paragraphs }) => [title, ...paragraphs, '']),
-    ].join('\n')
-    const file = new Blob([content], { type: 'text/plain;charset=utf-8' })
-    const url = URL.createObjectURL(file)
-    const link = document.createElement('a')
-
-    link.href = url
-    link.download = 'politika-obrabotki-personalnyh-dannyh.txt'
-    document.body.appendChild(link)
-    link.click()
-    link.remove()
-    URL.revokeObjectURL(url)
-  }
+  const downloadPolicyAsPdf = () => window.print()
 
   useEffect(() => {
     const isPolicyTarget = (target: EventTarget | null) => target instanceof Node && policyRef.current?.contains(target)
@@ -223,8 +205,8 @@ const PolicyPage: FC = () => {
               <h1>Политика в отношении обработки персональных данных</h1>
               <p className="site">на сайте https://kvartal-lipetsk.ru/</p>
               <p className="edition">Редакция от 15 июля 2026 г.</p>
-              <button type="button" onClick={downloadPolicy}>
-                Скачать текст политики (.txt)
+              <button type="button" onClick={downloadPolicyAsPdf}>
+                Скачать в PDF
               </button>
 
               {policySections.map(({ title, paragraphs }) => (
