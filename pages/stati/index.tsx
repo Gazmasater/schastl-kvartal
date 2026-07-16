@@ -15,22 +15,24 @@ const ArticlesPage: React.FC = () => (
     <HomeTemplate navData={NavMock} footerData={FooterMock}>
       <article className={classes.page}>
         <div className="MuiContainer-root MuiContainer-maxWidthXl">
-          <div className={classes.content}>
-            <p className={classes.eyebrow}>Полезные материалы</p>
-            <h1>Статьи о покупке дома</h1>
-            <p className={classes.lead}>
-              Собрали практические материалы о выборе готового дома, участка и загородной жизни рядом с Липецком.
-            </p>
-            <section className={classes.articles} aria-label="Список статей">
-              {Articles.map(article => (
-                <a className={classes.articleCard} href={`/stati/${article.slug}`} key={article.slug}>
-                  <span>{article.eyebrow}</span>
-                  <h2>{article.title}</h2>
-                  <p>{article.description}</p>
-                  <b>Читать статью →</b>
-                </a>
-              ))}
-            </section>
+          <div className={classes.articleLayout}>
+            <div className={classes.articlesPageContent}>
+              <p className={classes.eyebrow}>Полезные материалы</p>
+              <h1>Статьи о покупке дома</h1>
+              <p className={classes.lead}>
+                Собрали практические материалы о выборе готового дома, участка и загородной жизни рядом с Липецком.
+              </p>
+              <section className={classes.articles} aria-label="Список статей">
+                {Articles.map(article => (
+                  <a className={classes.articleCard} href={`/stati/${article.slug}`} key={article.slug}>
+                    <span>{article.eyebrow}</span>
+                    <h2>{article.title}</h2>
+                    <p>{article.description}</p>
+                    <b>Читать статью →</b>
+                  </a>
+                ))}
+              </section>
+            </div>
           </div>
         </div>
       </article>

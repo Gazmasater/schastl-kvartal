@@ -32,9 +32,13 @@ export const Meta: FC<TMeta> = ({
       addressCountry: 'RU',
     },
   }
+  let pageStructuredData: Record<string, unknown>[] = []
+  if (structuredData) {
+    pageStructuredData = Array.isArray(structuredData) ? structuredData : [structuredData]
+  }
   const schemaMarkup = JSON.stringify({
     '@context': 'https://schema.org',
-    '@graph': [organizationStructuredData, ...(structuredData ? [structuredData] : [])],
+    '@graph': [organizationStructuredData, ...pageStructuredData],
   })
 
   return (

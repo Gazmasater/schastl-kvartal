@@ -159,6 +159,8 @@ const Policy = styled.div`
 const PolicyPage: FC = () => {
   const policyRef = useRef<HTMLDivElement>(null)
 
+  const downloadPolicyAsPdf = () => window.print()
+
   useEffect(() => {
     const isPolicyTarget = (target: EventTarget | null) => target instanceof Node && policyRef.current?.contains(target)
 
@@ -203,6 +205,9 @@ const PolicyPage: FC = () => {
               <h1>Политика в отношении обработки персональных данных</h1>
               <p className="site">на сайте https://kvartal-lipetsk.ru/</p>
               <p className="edition">Редакция от 15 июля 2026 г.</p>
+              <button type="button" onClick={downloadPolicyAsPdf}>
+                Скачать в PDF
+              </button>
 
               {policySections.map(({ title, paragraphs }) => (
                 <section key={title}>

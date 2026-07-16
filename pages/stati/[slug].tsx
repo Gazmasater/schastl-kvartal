@@ -17,40 +17,62 @@ const ArticlePage: NextPage<TArticlePageProps> = ({ article }) => (
     <Meta
       title={`${article.title} — «Счастливый Квартал»`}
       description={article.description}
-      structuredData={{
-        '@type': 'Article',
-        headline: article.title,
-        description: article.description,
-        author: { '@type': 'Organization', name: 'Счастливый Квартал' },
-        publisher: { '@type': 'Organization', name: 'Счастливый Квартал' },
-      }}
+      structuredData={[
+        {
+          '@type': 'Article',
+          headline: article.title,
+          description: article.description,
+          author: { '@type': 'Organization', name: 'Счастливый Квартал' },
+          publisher: { '@type': 'Organization', name: 'Счастливый Квартал' },
+        },
+        ...(article.faq
+          ? [
+              {
+                '@type': 'FAQPage',
+                mainEntity: article.faq.map(item => ({
+                  '@type': 'Question',
+                  name: item.question,
+                  acceptedAnswer: { '@type': 'Answer', text: item.answer },
+                })),
+              },
+            ]
+          : []),
+      ]}
     />
     <HomeTemplate navData={NavMock} footerData={FooterMock}>
       <article className={classes.page}>
         <div className="MuiContainer-root MuiContainer-maxWidthXl">
           <div className={classes.articleLayout}>
-            <div className={classes.content}>
+            <header className={classes.articleHeader}>
               <p className={classes.eyebrow}>{article.eyebrow}</p>
               <h1>{article.title}</h1>
               <p className={classes.lead}>{article.lead}</p>
+            </header>
+            <div className={classes.articleBody}>
+              <div className={classes.articleSections}>
+                {article.sections.map(section => (
+                  <section key={section.heading}>
+                    <h2>{section.heading}</h2>
+                    {section.paragraphs.map(paragraph => (
+                      <p className={classes.text} key={paragraph}>
+                        {paragraph}
+                      </p>
+                    ))}
+                    {section.list && (
+                      <ul className={classes.features}>
+                        {section.list.map(item => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </section>
+                ))}
+              </div>
 
-              {article.sections.map(section => (
-                <section key={section.heading}>
-                  <h2>{section.heading}</h2>
-                  {section.paragraphs.map(paragraph => (
-                    <p className={classes.text} key={paragraph}>
-                      {paragraph}
-                    </p>
-                  ))}
-                  {section.list && (
-                    <ul className={classes.features}>
-                      {section.list.map(item => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  )}
-                </section>
-              ))}
+              <p className={classes.text}>
+                Хотите оценить эту локацию лично?{' '}
+                <a href="/doma-v-lipetskom-rayone">Посмотрите готовые дома в Липецком районе</a>.
+              </p>
 
               {article.faq && (
                 <section className={classes.faq}>
@@ -68,11 +90,6 @@ const ArticlePage: NextPage<TArticlePageProps> = ({ article }) => (
                 Посмотреть готовые дома
               </a>
             </div>
-            <div
-              aria-label="Готовый дом в коттеджном посёлке «Счастливый Квартал»"
-              className={classes.articlePhoto}
-              role="img"
-            />
           </div>
         </div>
       </article>
