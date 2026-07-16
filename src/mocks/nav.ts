@@ -23,11 +23,11 @@ export const NavMock: TNav = {
     },
     {
       label: 'Галерея',
-      url: '/gallery',
+      url: '/galereya-stroitelstva',
     },
     {
       label: 'Контакты',
-      url: '/contacts',
+      url: '/kontakty',
     },
   ],
   // socialLinks: {

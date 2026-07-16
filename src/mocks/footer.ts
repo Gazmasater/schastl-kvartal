@@ -31,7 +31,7 @@ export const FooterMock: TFooter = {
     // },
     {
       label: 'Контакты',
-      url: '/contacts',
+      url: '/kontakty',
     },
     {
       label: 'Дома рядом с «Парковыми Кварталами»',

@@ -54,7 +54,7 @@ const NearbyParkovyeKvartalyPage: React.FC = () => (
               </details>
             </section>
 
-            <a className={classes.cta} href="/contacts">
+            <a className={classes.cta} href="/kontakty">
               Записаться на просмотр
             </a>
           </div>
